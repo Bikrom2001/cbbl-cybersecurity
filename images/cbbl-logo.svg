@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="htitle hdesc">
+  <title id="htitle">CBBL horizontal logo</title>
+  <desc id="hdesc">Horizontal CBBL logo lockup with shield mark, wordmark and descriptor.</desc>
+  <path d="M48 6 82 19v29c0 22-14 35-34 42C28 83 14 70 14 48V19Z" fill="#0B3D3A"/>
+  <rect x="30" y="56" width="9" height="15" rx="2" fill="#FFFFFF" opacity=".55"/>
+  <rect x="43.5" y="47" width="9" height="24" rx="2" fill="#FFFFFF" opacity=".8"/>
+  <rect x="57" y="36" width="9" height="35" rx="2" fill="#12A46B"/>
+  <text x="102" y="49" font-family="Sora, 'Segoe UI', system-ui, sans-serif" font-size="40" font-weight="700" letter-spacing="1.5" fill="#0B3D3A">CBBL</text>
+  <text x="104" y="69" font-family="'Source Sans 3', 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.1" fill="#566967">CREATING BETTER BANGLADESH</text>
+</svg>

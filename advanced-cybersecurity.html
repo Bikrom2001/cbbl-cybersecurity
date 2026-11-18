@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced Cybersecurity Tracks — For Practitioners | CBBL</title>
+<meta name="description" content="13 advanced cybersecurity tracks for working IT and security practitioners in Bangladesh. Pentesting, red team, SOC, DFIR, cloud architecture, malware analysis.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- Custom Styles -->
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Creating Better Bangladesh Limited","alternateName":"CBBL","url":"https://cbbl.com.bd","logo":"https://cbbl.com.bd/images/cbbl-logo.svg","foundingDate":"2016","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"description":"Cybersecurity services, IT solutions, software development and professional training."}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- Bootstrap 5 Navbar Header -->
+<header class="site-header sticky-top bg-white border-bottom shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light py-2">
+    <div class="container-xl d-flex align-items-center">
+      <a class="navbar-brand me-3" href="index.html" aria-label="CBBL home">
+        <img src="images/cbbl-logo.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="42">
+      </a>
+      
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-2" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu dropdown-menu-wide p-3 shadow-lg border-0 rounded-3" aria-labelledby="servicesDropdown">
+              <div class="row g-3">
+                <div class="col-md-6 border-end-md">
+                  <h6 class="dropdown-header text-uppercase text-muted fw-bold px-2 py-1 mb-1">Capability</h6>
+                  <a class="dropdown-item py-2 px-2 rounded" href="cybersecurity-services.html">
+                    <span class="d-block fw-semibold text-dark">Cybersecurity Services</span>
+                    <span class="d-block small text-muted">Assessments, consulting, readiness</span>
+                  </a>
+                  <a class="dropdown-item py-2 px-2 rounded" href="cybersecurity-services.html#it">
+                    <span class="d-block fw-semibold text-dark">IT Solutions</span>
+                    <span class="d-block small text-muted">Infrastructure, networking, support</span>
+                  </a>
+                  <a class="dropdown-item py-2 px-2 rounded" href="projects.html">
+                    <span class="d-block fw-semibold text-dark">Software Development</span>
+                    <span class="d-block small text-muted">Web, mobile, business systems</span>
+                  </a>
+                  <a class="dropdown-item py-2 px-2 rounded" href="contact.html">
+                    <span class="d-block fw-semibold text-dark">IT Procurement &amp; Import</span>
+                    <span class="d-block small text-muted">Equipment supply and sourcing</span>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h6 class="dropdown-header text-uppercase text-muted fw-bold px-2 py-1 mb-1">Popular security services</h6>
+                  <a class="dropdown-item py-1 px-2 rounded text-dark" href="cybersecurity-services.html#assessment">Security assessment</a>
+                  <a class="dropdown-item py-1 px-2 rounded text-dark" href="cybersecurity-services.html#pentest">Penetration testing support</a>
+                  <a class="dropdown-item py-1 px-2 rounded text-dark" href="cybersecurity-services.html#cloud">Cloud security</a>
+                  <a class="dropdown-item py-1 px-2 rounded text-dark" href="cybersecurity-services.html#ir">Incident-response readiness</a>
+                  <a class="dropdown-item py-1 px-2 rounded text-dark" href="cybersecurity-services.html#awareness">Security awareness</a>
+                </div>
+                <div class="col-12 border-top pt-2 mt-2">
+                  <a class="dropdown-item text-primary fw-semibold small px-2" href="contact.html">Not sure what you need? Request a scoping call →</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-2 active" aria-current="page" href="#" id="trainingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Training
+            </a>
+            <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-2" aria-labelledby="trainingDropdown">
+              <li><a class="dropdown-item py-2 px-3 rounded" href="nsda-training.html"><span class="d-block fw-semibold text-dark">NSDA Training Programs</span><span class="d-block small text-muted">Levels 3–5, competency-based</span></a></li>
+              <li><a class="dropdown-item py-2 px-3 rounded" href="professional-training.html"><span class="d-block fw-semibold text-dark">Regular Professional Training</span><span class="d-block small text-muted">20 practical courses</span></a></li>
+              <li><a class="dropdown-item py-2 px-3 rounded active" href="advanced-cybersecurity.html"><span class="d-block fw-semibold text-dark">Advanced Cybersecurity</span><span class="d-block small text-muted">13 tracks for practitioners</span></a></li>
+              <li><a class="dropdown-item py-2 px-3 rounded" href="corporate-training.html"><span class="d-block fw-semibold text-dark">Corporate &amp; Custom Training</span><span class="d-block small text-muted">Needs assessment and delivery</span></a></li>
+              <li><a class="dropdown-item py-2 px-3 rounded" href="law-enforcement-training.html"><span class="d-block fw-semibold text-dark">Institutional Training</span><span class="d-block small text-muted">Confidential, subject-area only</span></a></li>
+              <li><a class="dropdown-item py-2 px-3 rounded" href="vendor-vouchers.html"><span class="d-block fw-semibold text-dark">Vendor Exam Vouchers</span><span class="d-block small text-muted">Guidance and procurement</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="job-placement.html">Placement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center gap-2 ms-auto">
+        <button class="btn btn-light btn-icon rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search the site">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        </button>
+        <span class="badge bg-light text-muted border rounded-pill px-3 py-2 d-none d-sm-inline-block fw-medium">EN / বাংলা</span>
+        <a class="btn btn-accent btn-sm px-3 d-none d-xl-inline-flex" href="contact.html">Enroll Now</a>
+        <button class="btn btn-light btn-icon rounded-circle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileDrawer" aria-controls="mobileDrawer" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Bootstrap 5 Offcanvas Mobile Drawer -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileDrawer" aria-labelledby="mobileDrawerLabel">
+  <div class="offcanvas-header border-bottom">
+    <a href="index.html" class="d-flex align-items-center">
+      <img src="images/cbbl-logo.svg" alt="CBBL" height="36" id="mobileDrawerLabel">
+    </a>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column p-0">
+    <div class="p-3 flex-grow-1">
+      <nav class="nav flex-column mobile-nav">
+        <a class="nav-link py-2 px-3 fw-medium text-dark" href="index.html">Home</a>
+        <a class="nav-link py-2 px-3 fw-medium text-dark" href="about.html">About</a>
+        <div class="accordion accordion-flush" id="mobileNavAccordion">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingMobileServices">
+              <button class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobileServices" aria-expanded="false" aria-controls="collapseMobileServices">
+                Services
+              </button>
+            </h2>
+            <div id="collapseMobileServices" class="accordion-collapse collapse" aria-labelledby="headingMobileServices" data-bs-parent="#mobileNavAccordion">
+              <div class="accordion-body py-1 ps-4 pe-2">
+                <a class="nav-link py-2 text-muted" href="cybersecurity-services.html">Cybersecurity Services</a>
+                <a class="nav-link py-2 text-muted" href="cybersecurity-services.html#it">IT Solutions</a>
+                <a class="nav-link py-2 text-muted" href="projects.html">Software Development</a>
+                <a class="nav-link py-2 text-muted" href="contact.html">IT Procurement &amp; Import</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingMobileTraining">
+              <button class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobileTraining" aria-expanded="false" aria-controls="collapseMobileTraining">
+                Training
+              </button>
+            </h2>
+            <div id="collapseMobileTraining" class="accordion-collapse collapse" aria-labelledby="headingMobileTraining" data-bs-parent="#mobileNavAccordion">
+              <div class="accordion-body py-1 ps-4 pe-2">
+                <a class="nav-link py-2 text-muted" href="nsda-training.html">NSDA Training Programs</a>
+                <a class="nav-link py-2 text-muted" href="professional-training.html">Regular Professional Training</a>
+                <a class="nav-link py-2 text-muted" href="advanced-cybersecurity.html">Advanced Cybersecurity</a>
+                <a class="nav-link py-2 text-muted" href="corporate-training.html">Corporate &amp; Custom Training</a>
+                <a class="nav-link py-2 text-muted" href="law-enforcement-training.html">Institutional Training</a>
+                <a class="nav-link py-2 text-muted" href="vendor-vouchers.html">Vendor Exam Vouchers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link py-2 px-3 fw-medium text-dark" href="job-placement.html">Placement</a>
+        <a class="nav-link py-2 px-3 fw-medium text-dark" href="projects.html">Projects</a>
+        <a class="nav-link py-2 px-3 fw-medium text-dark" href="contact.html">Contact</a>
+        <a class="nav-link py-2 px-3 fw-medium text-dark" href="trust-and-credentials.html">Trust &amp; Credentials</a>
+      </nav>
+    </div>
+    <div class="p-3 border-top bg-white">
+      <a class="btn btn-accent w-100" href="contact.html">Enroll Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow-lg rounded-4 p-3 p-md-4">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-semibold" id="searchModalLabel">Search courses, services and pages</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-3">
+        <form action="professional-training.html" role="search">
+          <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control form-control-lg" name="q" placeholder="e.g. ethical hacking, NSDA level 5, cloud security" aria-label="Search" required>
+            <button class="btn btn-primary px-4" type="submit">Search</button>
+          </div>
+        </form>
+        <p class="search-suggest text-muted small mb-0">
+          Popular: 
+          <a href="professional-training.html" class="badge bg-light text-dark text-decoration-none border me-1">cybersecurity course</a>
+          <a href="nsda-training.html" class="badge bg-light text-dark text-decoration-none border me-1">NSDA</a>
+          <a href="cybersecurity-services.html" class="badge bg-light text-dark text-decoration-none border me-1">security assessment</a>
+          <a href="corporate-training.html" class="badge bg-light text-dark text-decoration-none border me-1">corporate training</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb-wrap" aria-label="breadcrumb">
+  <div class="container-xl">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="training.html">Training</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Advanced Cybersecurity</li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container-xl">
+    <p class="eyebrow">Training · Advanced</p>
+    <h1 class="display-5 fw-bold mb-3">For practitioners who already do the work</h1>
+    <p class="lead mb-4">These tracks assume you are employed in security or infrastructure and want depth, not an introduction. Every track is lab-intensive and assessed on a professional deliverable.</p>
+    <div class="btn-row">
+      <a class="btn btn-accent" href="contact.html">Apply for a track</a>
+      <a class="btn btn-secondary" href="#prereqs">Review prerequisites</a>
+    </div>
+  </div>
+</section>
+
+<!-- Prerequisite Notice -->
+<section class="section py-4">
+  <div class="container-xl">
+    <div class="notice notice--danger my-0 shadow-sm">
+      <strong>Prerequisite check</strong>
+      Advanced tracks are not entry-level. Applicants without the stated experience are redirected to a foundation course. We would rather turn away a fee than set someone up to fail.
+    </div>
+  </div>
+</section>
+
+<!-- Thirteen Tracks Section -->
+<section class="section pt-0">
+  <div class="container-xl">
+    <div class="section-head mb-4">
+      <p class="eyebrow">Thirteen tracks</p>
+      <h2 class="h1">Choose the discipline, not the badge</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Advanced Penetration Testing</h3>
+          <p>Web, network and Active Directory paths, evidencing and reporting.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: full penetration test report</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Red Team Operations</h3>
+          <p>Campaign design, infrastructure, OPSEC, safety controls and debrief.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: campaign plan and debrief</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Blue Team &amp; SOC Operations</h3>
+          <p>Detection engineering, triage, escalation and tuning.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: detection use-case pack</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Threat Hunting</h3>
+          <p>Hypothesis-driven hunts, telemetry and evidence discipline.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: hunt report</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Digital Forensics</h3>
+          <p>Disk, memory and timeline analysis with chain of custody.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: forensic examination report</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Malware Analysis</h3>
+          <p>Static and dynamic analysis in a contained environment.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: analysis report with indicators</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Cloud Security Architecture</h3>
+          <p>Identity, network, data protection and guardrails at design stage.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: architecture document</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>DevSecOps</h3>
+          <p>Secure pipelines, secrets, supply chain and proportionate gates.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: hardened CI/CD pipeline</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Secure Software Development</h3>
+          <p>Threat modelling, secure coding and targeted security testing.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: threat model and code review</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Advanced Network Defense</h3>
+          <p>Segmentation, monitoring placement and zero-trust design.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: defence design and validation plan</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Incident Response</h3>
+          <p>Triage, containment, recovery and communications.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: playbook and post-incident report</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>Cybersecurity GRC</h3>
+          <p>Risk registers, policy, control mapping and audit readiness.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: risk and controls framework</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 shadow-sm">
+          <h3>AI-Enabled Security Operations</h3>
+          <p>Automation, enrichment and model risk in the SOC.</p>
+          <p class="small text-muted mt-auto mb-3">Deliverable: detection automation prototype</p>
+          <a class="card__links" href="contact.html">Apply →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Prerequisites Section -->
+<section class="section section--surface" id="prereqs">
+  <div class="container-xl">
+    <div class="section-head mb-4">
+      <p class="eyebrow">Prerequisites</p>
+      <h2 class="h1">Experience required, per track</h2>
+      <p class="lead">Applicants submit a short CV and a statement of experience. A 15-minute technical conversation confirms fit.</p>
+    </div>
+    <div class="table-responsive bg-white rounded-3 shadow-sm border">
+      <table class="table table-hover align-middle mb-0">
+        <caption class="p-3 text-muted small">Minimum entry requirements</caption>
+        <thead class="table-light">
+          <tr>
+            <th scope="col" class="py-3 px-3">Track</th>
+            <th scope="col" class="py-3 px-3">Experience</th>
+            <th scope="col" class="py-3 px-3">Knowledge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="fw-semibold px-3">Advanced Penetration Testing</td><td class="px-3">2+ years security or systems</td><td class="px-3">Networking, Linux, web</td></tr>
+          <tr><td class="fw-semibold px-3">Red Team Operations</td><td class="px-3">3+ years, prior testing</td><td class="px-3">Active Directory, scripting</td></tr>
+          <tr><td class="fw-semibold px-3">Blue Team &amp; SOC</td><td class="px-3">1+ year SOC or IT ops</td><td class="px-3">Log sources, SIEM, networking</td></tr>
+          <tr><td class="fw-semibold px-3">Digital Forensics</td><td class="px-3">2+ years IT or security</td><td class="px-3">File systems, OS internals</td></tr>
+          <tr><td class="fw-semibold px-3">Cloud Security Architecture</td><td class="px-3">2+ years cloud or infra</td><td class="px-3">IAM, networking, containers</td></tr>
+          <tr><td class="fw-semibold px-3">Cybersecurity GRC</td><td class="px-3">2+ years security, audit or risk</td><td class="px-3">Control frameworks, policy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Assessment Rubric & Lab Rules Section -->
+<section class="section">
+  <div class="container-xl">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-8">
+        <p class="eyebrow">Assessment</p>
+        <h2 class="h1 mb-4">One deliverable, four criteria</h2>
+        <div class="table-responsive bg-white rounded-3 shadow-sm border mb-2">
+          <table class="table table-hover align-middle mb-0">
+            <caption class="p-3 text-muted small">Rubric</caption>
+            <thead class="table-light">
+              <tr>
+                <th scope="col" class="py-3 px-3">Criterion</th>
+                <th scope="col" class="py-3 px-3 text-end">Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="px-3">Technical accuracy</td><td class="px-3 text-end">40%</td></tr>
+              <tr><td class="px-3">Depth of analysis</td><td class="px-3 text-end">25%</td></tr>
+              <tr><td class="px-3">Quality of written deliverable</td><td class="px-3 text-end">20%</td></tr>
+              <tr><td class="px-3">Communication in debrief</td><td class="px-3 text-end">15%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small text-muted mb-0">Pass requires 70% overall and no criterion below 50%. Feedback is written and specific.</p>
+      </div>
+      <div class="col-lg-4">
+        <aside class="aside-card shadow-sm sticky-top-nav">
+          <h3 class="h5 mb-3">Lab rules</h3>
+          <p class="small mb-2">All exercises run inside CBBL's isolated lab. Techniques learned are not applied to systems without written authorisation. Participants sign an acceptable-use agreement.</p>
+          <p class="small text-muted mb-0">Offensive tracks teach attack techniques in order to defend against them — within a controlled environment and a professional ethics framework.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Band -->
+<section class="section">
+  <div class="container-xl">
+    <div class="cta-band shadow-sm">
+      <h2 class="h1 text-white mb-2">Apply with your experience, not your ambition</h2>
+      <p class="text-white-50 mb-4">Send a short CV and one paragraph on the track you want and why. We will confirm whether you meet the prerequisites.</p>
+      <div class="btn-row">
+        <a class="btn btn-accent" href="contact.html">Apply for a track</a>
+        <a class="btn btn-onDark" href="professional-training.html">See professional courses</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Bootstrap 5 Footer -->
+<footer class="site-footer bg-dark-teal text-white-50 py-5">
+  <div class="container-xl">
+    <div class="row g-4 justify-content-between">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer__brand">
+          <img src="images/cbbl-logo.svg" alt="CBBL" height="40" class="mb-3 brightness-invert">
+          <p class="footer__tag text-white-50 small mb-3">Cybersecurity services, IT solutions and professional training. Build capability. Prove it.</p>
+          <p class="small text-white-50">[Address line], Dhaka, Bangladesh<br>[Phone] · [Email]</p>
+          <div class="d-flex gap-2 mt-3 footer__social">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:36px;height:36px" aria-label="CBBL on LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.5 4.76 5.75V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.47-2.2 3v5.8h-4z"/></svg></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:36px;height:36px" aria-label="CBBL on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:36px;height:36px" aria-label="CBBL on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15V9l5 3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Services</h6>
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+          <li><a href="cybersecurity-services.html" class="text-white-50 text-decoration-none">Cybersecurity Services</a></li>
+          <li><a href="cybersecurity-services.html#it">IT Solutions</a></li>
+          <li><a href="projects.html" class="text-white-50 text-decoration-none">Software Development</a></li>
+          <li><a href="contact.html" class="text-white-50 text-decoration-none">IT Procurement &amp; Import</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-6">
+        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Training</h6>
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+          <li><a href="nsda-training.html" class="text-white-50 text-decoration-none">NSDA Programs</a></li>
+          <li><a href="professional-training.html" class="text-white-50 text-decoration-none">Professional Training</a></li>
+          <li><a href="advanced-cybersecurity.html" class="text-white-50 text-decoration-none">Advanced Cybersecurity</a></li>
+          <li><a href="corporate-training.html" class="text-white-50 text-decoration-none">Corporate Training</a></li>
+          <li><a href="law-enforcement-training.html" class="text-white-50 text-decoration-none">Institutional Training</a></li>
+          <li><a href="vendor-vouchers.html" class="text-white-50 text-decoration-none">Vendor Vouchers</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Company</h6>
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+          <li><a href="about.html" class="text-white-50 text-decoration-none">About CBBL</a></li>
+          <li><a href="job-placement.html" class="text-white-50 text-decoration-none">Placement Support</a></li>
+          <li><a href="projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
+          <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          <li><a href="trust-and-credentials.html" class="text-white-50 text-decoration-none">Trust &amp; Credentials</a></li>
+          <li><a href="index.html#news" class="text-white-50 text-decoration-none">News &amp; Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal border-top border-secondary border-opacity-25 mt-5 pt-3 d-flex flex-wrap justify-content-between align-items-center gap-3 small text-white-50">
+      <p class="mb-0">© <span data-year>2026</span> Creating Better Bangladesh Limited. All rights reserved.</p>
+      <nav class="d-flex flex-wrap gap-3" aria-label="Legal">
+        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Privacy Policy</a>
+        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Terms of Use</a>
+        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Cookie Notice</a>
+        <a href="index.html" class="text-white-50 text-decoration-none">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Banner -->
+<div class="cookie bg-white border rounded-3 shadow-lg p-3 p-md-4" id="cookieBanner" role="region" aria-label="Cookie notice">
+  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+    <p class="mb-0 small text-muted"><strong>Cookies.</strong> We use necessary cookies to run the site and, with your consent, analytics cookies to understand which pages help. You can change this any time.</p>
+    <div class="d-flex flex-wrap gap-2 flex-shrink-0">
+      <button class="btn btn-primary btn-sm" data-cookie="all">Accept all</button>
+      <button class="btn btn-secondary btn-sm" data-cookie="essential">Reject non-essential</button>
+      <a class="btn btn-sm text-decoration-none" href="contact.html#legal">Cookie settings</a>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Main Interactions JS -->
+<script src="js/main.js"></script>
+</body>
+</html>

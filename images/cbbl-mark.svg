@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="ititle idesc">
+  <title id="ititle">CBBL icon</title>
+  <desc id="idesc">The CBBL rising shield mark with three ascending bars.</desc>
+  <rect width="96" height="96" rx="20" fill="#0B3D3A"/>
+  <rect x="28" y="55" width="9" height="16" rx="2" fill="#FFFFFF" opacity=".5"/>
+  <rect x="43.5" y="45" width="9" height="26" rx="2" fill="#FFFFFF" opacity=".78"/>
+  <rect x="59" y="33" width="9" height="38" rx="2" fill="#12A46B"/>
+</svg>
