@@ -1,0 +1,213 @@
+<svg viewBox="0 0 580 480" class="w-full h-auto drop-shadow-sm overflow-visible" role="img" aria-label="Animated illustration of a software developer engineering web and enterprise systems with CBBL Shield" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main Window Clip -->
+    <clipPath id="ide-window-clip">
+      <rect x="82" y="114" width="420" height="236" rx="16"></rect>
+    </clipPath>
+    <!-- Top Floating Window Clip -->
+    <clipPath id="top-card-clip">
+      <rect x="248" y="64" width="196" height="108" rx="11"></rect>
+    </clipPath>
+    <!-- Left Floating Card Clip -->
+    <clipPath id="left-card-clip">
+      <rect x="108" y="182" width="154" height="190" rx="11"></rect>
+    </clipPath>
+    <!-- Soft Glow Filter -->
+    <filter id="card-shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0b1220" flood-opacity="0.12"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- 1. Soft Breathing Organic Backdrop Blobs -->
+  <g class="pt-blob-breathe">
+    <path d="M115,155 C60,220 45,330 135,380 C225,430 395,435 468,365 C540,295 520,165 445,105 C370,45 170,90 115,155 Z" fill="#dff3fd"></path>
+    <path d="M320,88 C395,55 485,105 505,195 C525,285 450,360 365,365 C280,370 245,120 320,88 Z" fill="#e0f7ef" opacity="0.7"></path>
+  </g>
+
+  <!-- Ground Shadow Ellipse Beneath Developer -->
+  <ellipse cx="362" cy="436" rx="135" ry="20" fill="#bae6fd" opacity="0.75"></ellipse>
+
+  <!-- 2. Animated Dashed Tech Circuit Connectors -->
+  <path d="M175 114 V 60 Q 175 42 193 42 H 312 Q 330 42 330 60 V 72" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round" class="pt-dash-flow"></path>
+  <path d="M84 235 H 52 Q 36 235 36 251 V 352 Q 36 368 52 368 H 165" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round" class="pt-dash-flow"></path>
+
+  <!-- 3. Main Dark Engineering IDE Window -->
+  <g filter="url(#card-shadow)">
+    <rect x="82" y="114" width="420" height="236" rx="16" fill="#334155" stroke="#1e293b" stroke-width="2.5"></rect>
+    <g clip-path="url(#ide-window-clip)">
+      <!-- Inner Dark Screen -->
+      <rect x="82" y="144" width="420" height="206" fill="#3b4754"></rect>
+
+      <!-- Interlocking Gear 1 (Large Left Gear) -->
+      <g transform="translate(226, 232)" opacity="0.32">
+        <g class="pt-gear-cw" fill="#0f172a">
+          <circle r="48"></circle>
+          <rect x="-10" y="-62" width="20" height="124" rx="4"></rect>
+          <rect x="-10" y="-62" width="20" height="124" rx="4" transform="rotate(36)"></rect>
+          <rect x="-10" y="-62" width="20" height="124" rx="4" transform="rotate(72)"></rect>
+          <rect x="-10" y="-62" width="20" height="124" rx="4" transform="rotate(108)"></rect>
+          <rect x="-10" y="-62" width="20" height="124" rx="4" transform="rotate(144)"></rect>
+          <circle r="22" fill="#3b4754"></circle>
+        </g>
+      </g>
+
+      <!-- Interlocking Gear 2 (Medium Center-Right Gear) -->
+      <g transform="translate(314, 286)" opacity="0.34">
+        <g class="pt-gear-ccw" fill="#0f172a">
+          <circle r="33"></circle>
+          <rect x="-8" y="-44" width="16" height="88" rx="3"></rect>
+          <rect x="-8" y="-44" width="16" height="88" rx="3" transform="rotate(45)"></rect>
+          <rect x="-8" y="-44" width="16" height="88" rx="3" transform="rotate(90)"></rect>
+          <rect x="-8" y="-44" width="16" height="88" rx="3" transform="rotate(135)"></rect>
+          <circle r="14" fill="#3b4754"></circle>
+        </g>
+      </g>
+
+      <!-- Interlocking Gear 3 (Small Right Accent Gear) -->
+      <g transform="translate(442, 198)" opacity="0.35">
+        <g class="pt-gear-cw-fast" fill="#0f172a">
+          <circle r="24"></circle>
+          <rect x="-6" y="-33" width="12" height="66" rx="2.5"></rect>
+          <rect x="-6" y="-33" width="12" height="66" rx="2.5" transform="rotate(45)"></rect>
+          <rect x="-6" y="-33" width="12" height="66" rx="2.5" transform="rotate(90)"></rect>
+          <rect x="-6" y="-33" width="12" height="66" rx="2.5" transform="rotate(135)"></rect>
+          <circle r="10" fill="#3b4754"></circle>
+        </g>
+      </g>
+
+      <!-- Orange Browser Top Bar -->
+      <rect x="82" y="114" width="420" height="32" fill="#ff6b35"></rect>
+      <line x1="82" y1="146" x2="502" y2="146" stroke="#1e293b" stroke-width="2"></line>
+      <circle cx="104" cy="130" r="4" fill="#1e293b"></circle>
+      <circle cx="120" cy="130" r="4" fill="#1e293b"></circle>
+      <circle cx="136" cy="130" r="4" fill="#1e293b"></circle>
+    </g>
+    <!-- Outer Window Frame Crisp Stroke -->
+    <rect x="82" y="114" width="420" height="236" rx="16" fill="none" stroke="#1e293b" stroke-width="2.5"></rect>
+  </g>
+
+  <!-- 4. Top-Right Floating UI Preview Window -->
+  <g class="pt-float-reverse" filter="url(#card-shadow)">
+    <rect x="248" y="64" width="196" height="108" rx="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"></rect>
+    <g clip-path="url(#top-card-clip)">
+      <rect x="248" y="64" width="196" height="22" fill="#ff6b35"></rect>
+      <line x1="248" y1="86" x2="444" y2="86" stroke="#1e293b" stroke-width="1.8"></line>
+      <circle cx="263" cy="75" r="2.8" fill="#1e293b"></circle>
+      <circle cx="274" cy="75" r="2.8" fill="#1e293b"></circle>
+      <circle cx="285" cy="75" r="2.8" fill="#1e293b"></circle>
+    </g>
+    <rect x="248" y="64" width="196" height="108" rx="11" fill="none" stroke="#1e293b" stroke-width="2"></rect>
+    <!-- Wireframe Image Box -->
+    <rect x="262" y="98" width="58" height="58" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="5 4"></rect>
+    <!-- Animated Content Lines -->
+    <g class="pt-code-pulse">
+      <rect x="332" y="102" width="94" height="5.5" rx="2.5" fill="#334155"></rect>
+      <rect x="332" y="114" width="76" height="5.5" rx="2.5" fill="#475569"></rect>
+      <rect x="332" y="126" width="88" height="5.5" rx="2.5" fill="#334155"></rect>
+    </g>
+    <g class="pt-code-pulse-delay">
+      <rect x="332" y="138" width="96" height="5.5" rx="2.5" fill="#04a9ff"></rect>
+      <rect x="332" y="150" width="60" height="5.5" rx="2.5" fill="#64748b"></rect>
+    </g>
+  </g>
+
+  <!-- 5. Left Floating Code & Spec Card -->
+  <g class="pt-float-slow" filter="url(#card-shadow)">
+    <rect x="108" y="182" width="154" height="190" rx="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"></rect>
+    <g clip-path="url(#left-card-clip)">
+      <rect x="108" y="182" width="154" height="24" fill="#ff6b35"></rect>
+      <line x1="108" y1="206" x2="262" y2="206" stroke="#1e293b" stroke-width="1.8"></line>
+    </g>
+    <rect x="108" y="182" width="154" height="190" rx="11" fill="none" stroke="#1e293b" stroke-width="2"></rect>
+    <!-- Block 1 -->
+    <rect x="122" y="218" width="38" height="6" rx="3" fill="#ff6b35"></rect>
+    <g class="pt-code-pulse">
+      <rect x="122" y="230" width="118" height="4.5" rx="2" fill="#334155"></rect>
+      <rect x="122" y="239" width="104" height="4.5" rx="2" fill="#475569"></rect>
+      <rect x="122" y="248" width="124" height="4.5" rx="2" fill="#334155"></rect>
+      <rect x="122" y="257" width="90" height="4.5" rx="2" fill="#64748b"></rect>
+    </g>
+    <!-- Block 2 -->
+    <rect x="122" y="274" width="44" height="6" rx="3" fill="#04a9ff"></rect>
+    <g class="pt-code-pulse-delay">
+      <rect x="122" y="286" width="116" height="4.5" rx="2" fill="#334155"></rect>
+      <rect x="122" y="295" width="98" height="4.5" rx="2" fill="#475569"></rect>
+      <rect x="122" y="304" width="122" height="4.5" rx="2" fill="#334155"></rect>
+    </g>
+    <!-- Block 3 -->
+    <rect x="122" y="324" width="34" height="6" rx="3" fill="#ff6b35"></rect>
+    <rect x="122" y="336" width="84" height="4.5" rx="2" fill="#334155"></rect>
+    <rect x="122" y="345" width="56" height="4.5" rx="2" fill="#94a3b8"></rect>
+  </g>
+
+  <!-- 6. Floating Code Tag Badge </> -->
+  <g class="pt-badge-bob" filter="url(#card-shadow)">
+    <rect x="418" y="214" width="58" height="36" rx="10" fill="#ffffff" stroke="#04a9ff" stroke-width="2"></rect>
+    <text x="447" y="238" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="800" fill="#0b1220">
+      &lt;/&gt;
+    </text>
+  </g>
+
+  <!-- 7. Seated Developer Character with Laptop -->
+  <g id="hero-developer">
+    <!-- Crossed Legs / Dark Navy Trousers -->
+    <path d="M320,362 C282,366 266,396 296,410 C328,424 388,422 426,408 C456,396 446,365 405,362 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2"></path>
+    <!-- Left Sneaker (Orange) -->
+    <path d="M276,405 C268,412 272,424 286,424 L318,421 C324,420 326,412 318,408 L292,400 Z" fill="#ff6b35" stroke="#1e293b" stroke-width="2"></path>
+    <path d="M274,421 Q296,426 322,419" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"></path>
+    <!-- Right Sneaker (Orange) -->
+    <path d="M442,405 C450,412 446,424 432,424 L400,421 C394,420 392,412 400,408 L426,400 Z" fill="#ff6b35" stroke="#1e293b" stroke-width="2"></path>
+    <path d="M444,421 Q422,426 396,419" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"></path>
+
+    <!-- Torso / Orange Knit Sweater -->
+    <path d="M312,282 C304,310 302,344 316,364 L406,364 C420,344 418,310 410,282 C394,274 328,274 312,282 Z" fill="#ff6b35" stroke="#1e293b" stroke-width="2"></path>
+    <!-- Left & Right Arms Reaching Laptop -->
+    <path d="M312,284 C290,308 282,340 296,356 L326,352 L322,334 L312,334 C312,322 318,308 324,298" fill="#ff6b35" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></path>
+    <path d="M410,284 C432,308 440,340 426,356 L396,352 L400,334 L410,334 C410,322 404,308 398,298" fill="#ff6b35" stroke="#1e293b" stroke-width="2" stroke-linejoin="round"></path>
+
+    <!-- Crisp White Collar -->
+    <polygon points="344,275 361,292 351,296 338,281" fill="#ffffff" stroke="#1e293b" stroke-width="1.8" stroke-linejoin="round"></polygon>
+    <polygon points="378,275 361,292 371,296 384,281" fill="#ffffff" stroke="#1e293b" stroke-width="1.8" stroke-linejoin="round"></polygon>
+    <circle cx="361" cy="303" r="2" fill="#1e293b"></circle>
+
+    <!-- Neck -->
+    <rect x="353" y="256" width="16" height="22" rx="6" fill="#fff7ed" stroke="#1e293b" stroke-width="1.8"></rect>
+
+    <!-- Head & Ears -->
+    <circle cx="337" cy="233" r="5" fill="#fff7ed" stroke="#1e293b" stroke-width="1.8"></circle>
+    <circle cx="385" cy="233" r="5" fill="#fff7ed" stroke="#1e293b" stroke-width="1.8"></circle>
+    <rect x="339" y="206" width="44" height="52" rx="22" fill="#fff7ed" stroke="#1e293b" stroke-width="2"></rect>
+
+    <!-- Styled Dark Hair -->
+    <path d="M337,226 C334,204 348,191 364,193 C378,195 388,205 386,225 C382,213 372,208 359,211 C348,213 341,218 337,226 Z" fill="#1e293b"></path>
+    <path d="M348,195 C354,187 372,188 377,199" fill="#1e293b"></path>
+
+    <!-- Glasses & Friendly Smile -->
+    <circle cx="350" cy="231" r="8.5" fill="#ffffff" fill-opacity="0.35" stroke="#1e293b" stroke-width="2"></circle>
+    <circle cx="372" cy="231" r="8.5" fill="#ffffff" fill-opacity="0.35" stroke="#1e293b" stroke-width="2"></circle>
+    <line x1="358.5" y1="231" x2="363.5" y2="231" stroke="#1e293b" stroke-width="2"></line>
+    <circle cx="350" cy="231" r="1.8" fill="#1e293b"></circle>
+    <circle cx="372" cy="231" r="1.8" fill="#1e293b"></circle>
+    <path d="M356,245 Q361,249 366,245" fill="none" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round"></path>
+
+    <!-- Hands Holding Laptop Base -->
+    <circle cx="322" cy="346" r="5.5" fill="#fff7ed" stroke="#1e293b" stroke-width="1.8"></circle>
+    <circle cx="400" cy="346" r="5.5" fill="#fff7ed" stroke="#1e293b" stroke-width="1.8"></circle>
+
+    <!-- Sleek Glowing Laptop -->
+    <path d="M312,318 L410,318 L404,370 L318,370 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="2.2" stroke-linejoin="round"></path>
+    
+    <!-- CBBL SHIELD LOGO ON LAPTOP (Replacing the placeholder blue dot) -->
+    <g transform="translate(361, 344) scale(0.9)">
+      <!-- Dark Teal Shield with Emerald Border -->
+      <path d="M 0 -13.5 l 14 7.5 v 13 c 0 9.5 -6 15.5 -14 18.5 c -8 -3 -14 -9 -14 -18.5 v -13 z" fill="#0B3D3A" stroke="#12A46B" stroke-width="2" stroke-linejoin="round"/>
+      <!-- 3 Rising Capability Bars -->
+      <rect x="-7.5" y="7" width="3.6" height="8" rx="1.2" fill="#94A3B8"/>
+      <rect x="-1.8" y="2.5" width="3.6" height="12.5" rx="1.2" fill="#CBD5E1"/>
+      <rect x="3.9" y="-3" width="3.6" height="18" rx="1.2" fill="#12A46B"/>
+    </g>
+
+    <!-- Laptop Base Keyboard Edge -->
+    <rect x="306" y="368" width="110" height="7" rx="3.5" fill="#cbd5e1" stroke="#1e293b" stroke-width="2"></rect>
+  </g>
+</svg>
