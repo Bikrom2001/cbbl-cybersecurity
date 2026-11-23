@@ -1879,7 +1879,7 @@ textarea.form-control {
   margin-bottom: 18px;
 }
 .form-success.is-visible {
-  display: block;
+  display: block !important;
 }
 
 /* ==========================================================================
@@ -3100,6 +3100,8 @@ textarea.form-control {
   min-height: 100px;
 }
 
+.btn-submit-main,
+.btn-submit-contact,
 .contact-form-modern .btn-submit-contact {
   background: linear-gradient(135deg, #15803d 0%, #064e3b 100%);
   color: #ffffff !important;
@@ -3116,12 +3118,29 @@ textarea.form-control {
   gap: 10px;
   width: 100%;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none !important;
 }
 
+.btn-submit-main:hover,
+.btn-submit-contact:hover,
 .contact-form-modern .btn-submit-contact:hover {
   background: linear-gradient(135deg, #16a34a 0%, #065f46 100%);
   transform: translateY(-2px);
   box-shadow: 0 8px 22px rgba(6, 78, 59, 0.42);
+  color: #ffffff !important;
+}
+
+.btn-submit-main svg,
+.btn-submit-contact svg,
+.contact-form-modern .btn-submit-contact svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-submit-main:hover svg,
+.btn-submit-contact:hover svg,
+.contact-form-modern .btn-submit-contact:hover svg {
+  transform: translateX(4px);
 }
 
 /* ==========================================================================
@@ -4245,185 +4264,17 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   Cyber Page Hero — Centered Dark Style with Light Rays & Grid
-   ========================================================================== */
-.cyber-page-hero {
-  position: relative;
-  background-color: #041412;
-  background-image:
-    radial-gradient(
-      ellipse 65% 55% at 50% -5%,
-      rgba(34, 197, 94, 0.3) 0%,
-      rgba(18, 164, 107, 0.14) 38%,
-      transparent 72%
-    ),
-    radial-gradient(ellipse 90% 85% at 50% 0%, #072823 0%, #031210 100%);
-  padding: 85px 0 75px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .cyber-page-hero {
-    padding: 105px 0 95px;
-  }
-}
-
-/* Conic & Radial Light Rays Stream */
-.cyber-page-hero__rays {
-  position: absolute;
-  inset: 0;
-  background: repeating-conic-gradient(
-    from 250deg at 50% -15%,
-    rgba(52, 211, 153, 0.14) 0deg,
-    transparent 7deg,
-    rgba(18, 164, 107, 0.08) 12deg,
-    transparent 19deg
-  );
-  mask-image: radial-gradient(
-    ellipse 85% 75% at 50% 0%,
-    black 20%,
-    transparent 80%
-  );
-  -webkit-mask-image: radial-gradient(
-    ellipse 85% 75% at 50% 0%,
-    black 20%,
-    transparent 80%
-  );
-  pointer-events: none;
-  opacity: 0.85;
-}
-
-/* Subtle Cyber Grid Cells */
-.cyber-page-hero__grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
-  background-position: center top;
-  mask-image: radial-gradient(
-    ellipse 80% 80% at 50% 25%,
-    black 25%,
-    transparent 85%
-  );
-  -webkit-mask-image: radial-gradient(
-    ellipse 80% 80% at 50% 25%,
-    black 25%,
-    transparent 85%
-  );
-  pointer-events: none;
-}
-
-/* Display Title */
-.cyber-page-hero__title {
-  font-family: var(--font-body);
-  font-size: clamp(2.5rem, 5vw, 3.8rem);
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-  margin-bottom: 12px;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
-}
-
-/* Centered Minimal Breadcrumb Below Title */
-.cyber-page-hero__breadcrumb .breadcrumb {
-  font-family: var(--font-body);
-  font-size: 0.92rem;
-  background: transparent;
-  padding: 0;
-  margin: 0;
-}
-
-.cyber-page-hero__breadcrumb .breadcrumb-item a {
-  color: rgba(255, 255, 255, 0.65);
-  text-decoration: none;
-  transition: color 0.18s ease;
-}
-
-.cyber-page-hero__breadcrumb .breadcrumb-item a:hover {
-  color: #34d399;
-}
-
-.cyber-page-hero__breadcrumb .breadcrumb-item.active {
-  color: #ffffff;
-  font-weight: 500;
-}
-
-.cyber-page-hero__breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  color: rgba(255, 255, 255, 0.4);
-  content: "/";
-  padding: 0 10px;
-}
-
-/* ==========================================================================
-   Hero Version Switcher Bar (For live preview & comparison)
-   ========================================================================== */
-.hero-version-bar {
-  background: #030f0d;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 10px 0;
-  font-size: 0.82rem;
-  position: relative;
-  z-index: 20;
-}
-
-.hero-version-note {
-  color: #94a3b8;
-}
-
-.hero-version-tabs {
-  display: inline-flex;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 3px;
-  border-radius: 9999px;
-  gap: 4px;
-}
-
-.hero-version-btn {
-  background: transparent;
-  border: none;
-  color: #94a3b8;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 5px 14px;
-  border-radius: 9999px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.hero-version-btn:hover {
-  color: #ffffff;
-}
-
-.hero-version-btn.active {
-  background: #12a46b;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(18, 164, 107, 0.35);
-}
-
-.hero-version-btn .v-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-}
-
-/* ==========================================================================
-   Version 2: Tech Glow Page Hero (Aligned with CBBL Brand Palette - Compact)
+   Contact Page Hero — Modern Light Theme (CBBL Brand Canvas)
    ========================================================================== */
 .tech-glow-hero {
   position: relative;
-  background-color: #041412;
+  background-color: #f8fbf9;
+  background-image: 
+    radial-gradient(circle at 90% 25%, rgba(18, 164, 107, 0.12) 0%, transparent 55%),
+    radial-gradient(circle at 10% 80%, rgba(13, 148, 136, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #f2f8f5 0%, #ffffff 100%);
   padding: 38px 0 34px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1.5px solid #e2ece9;
   overflow: hidden;
 }
 
@@ -4433,62 +4284,51 @@ textarea.form-control {
   }
 }
 
-/* Dot Grid Pattern */
+/* Light Mode Dot Grid Pattern */
 .tech-glow-hero__dots {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 1px
-  );
-  background-size: 28px 28px;
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
   background-position: center;
   pointer-events: none;
   opacity: 0.55;
+  mask-image: radial-gradient(ellipse 90% 85% at 50% 50%, black 30%, transparent 90%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 85% at 50% 50%, black 30%, transparent 90%);
 }
 
-/* Cosmic Left Glow (Deep Forest Teal / Ambient) */
+/* Left Glow (Soft Mint Ambient) */
 .tech-glow-hero__glow-left {
   position: absolute;
   bottom: -30%;
   left: -15%;
   width: 580px;
   height: 580px;
-  background: radial-gradient(
-    circle,
-    rgba(13, 148, 136, 0.22) 0%,
-    rgba(7, 39, 35, 0.15) 45%,
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(18, 164, 107, 0.12) 0%, rgba(52, 211, 153, 0.05) 45%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
 }
 
-/* Cosmic Right Glow (CBBL Brand Vibrant Emerald & Mint Aura) */
+/* Right Glow (CBBL Brand Emerald Aura) */
 .tech-glow-hero__glow-right {
   position: absolute;
   top: -20%;
   right: -8%;
   width: 720px;
   height: 720px;
-  background: radial-gradient(
-    circle,
-    rgba(18, 164, 107, 0.42) 0%,
-    rgba(52, 211, 153, 0.22) 35%,
-    rgba(11, 61, 58, 0.15) 55%,
-    transparent 72%
-  );
+  background: radial-gradient(circle, rgba(18, 164, 107, 0.16) 0%, rgba(52, 211, 153, 0.08) 40%, transparent 72%);
   filter: blur(65px);
   pointer-events: none;
 }
 
-/* Top Pill Badge (CBBL Brand Emerald Style) */
+/* Pill Badge */
 .tech-glow-hero__badge {
   display: inline-flex;
   align-items: center;
-  background: rgba(18, 164, 107, 0.16);
-  border: 1px solid rgba(52, 211, 153, 0.38);
-  color: #6ee7b7;
+  gap: 7px;
+  background: rgba(18, 164, 107, 0.09);
+  border: 1px solid rgba(18, 164, 107, 0.28);
+  color: #0b3d3a;
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -4496,20 +4336,28 @@ textarea.form-control {
   padding: 5px 13px;
   border-radius: 9999px;
   margin-bottom: 12px;
-  box-shadow: 0 0 16px rgba(18, 164, 107, 0.22);
+  box-shadow: 0 2px 8px rgba(18, 164, 107, 0.1);
 }
 
-/* Display Title (Single Line, Compact Gap) */
+.tech-glow-hero__badge .badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #12a46b;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(18, 164, 107, 0.2);
+}
+
+/* Display Title (Single Line) */
 .tech-glow-hero__title {
   font-family: var(--font-body);
   font-size: clamp(1.9rem, 3.8vw, 2.85rem);
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 800;
+  color: #0b3d3a;
   line-height: 1.2;
   letter-spacing: -0.025em;
   margin-bottom: 10px;
   max-width: 900px;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   white-space: nowrap;
 }
 
@@ -4519,11 +4367,11 @@ textarea.form-control {
   }
 }
 
-/* Lead Paragraph (Compact Gap) */
+/* Lead Paragraph */
 .tech-glow-hero__lead {
   font-family: var(--font-body);
-  font-size: 1rem;
-  color: #94a3b8;
+  font-size: 1.02rem;
+  color: #475569;
   line-height: 1.6;
   max-width: 660px;
   margin-bottom: 16px;
@@ -4538,22 +4386,389 @@ textarea.form-control {
 }
 
 .tech-glow-hero__breadcrumb a {
-  color: #94a3b8;
+  color: #64748b;
   text-decoration: none;
   transition: color 0.18s ease;
 }
 
 .tech-glow-hero__breadcrumb a:hover {
-  color: #ffffff;
+  color: #12a46b;
 }
 
 .tech-glow-hero__breadcrumb .separator {
-  color: #64748b;
+  color: #94a3b8;
   font-size: 0.8rem;
   user-select: none;
 }
 
 .tech-glow-hero__breadcrumb .current {
-  color: #2dd4bf;
-  font-weight: 500;
+  color: #12a46b;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Placement Standalone Image & Candidate Form Card
+   ========================================================================== */
+.placement-img-standalone {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--bs-border-radius-xl, 1rem);
+  overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+  .placement-img-standalone {
+    min-height: 340px;
+    height: 340px;
+  }
+}
+
+.placement-img-standalone img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--bs-border-radius-xl, 1rem);
+}
+
+
+/* ==========================================================================
+   5-Stage Placement Pipeline Cards (Modern 5-Column Roadmap)
+   ========================================================================== */
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  position: relative;
+}
+
+@media (max-width: 1199.98px) {
+  .pipeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pipeline-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+.pipeline-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.pipeline-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #12a46b, #10b981);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.pipeline-card:hover {
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(18, 164, 107, 0.15);
+}
+
+.pipeline-card:hover::before {
+  opacity: 1;
+}
+
+.pipeline-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.pipeline-card__num {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.pipeline-card:hover .pipeline-card__num {
+  color: #12a46b;
+}
+
+.pipeline-card__icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(18, 164, 107, 0.08);
+  color: #12a46b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.pipeline-card:hover .pipeline-card__icon {
+  background: #12a46b;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.pipeline-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #475569;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+.pipeline-card:hover .pipeline-card__badge {
+  background: rgba(18, 164, 107, 0.12);
+  color: #0d8354;
+}
+
+.pipeline-card__title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.pipeline-card__desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+.pipeline-card__timing {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0d8354;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  border-radius: 8px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: auto;
+}
+
+
+/* ==========================================================================
+   Support Commitments & SLA Matrix (Modern Redesign)
+   ========================================================================== */
+.support-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px -4px rgba(15, 23, 42, 0.04);
+  padding: 28px 24px;
+}
+
+@media (min-width: 768px) {
+  .support-card {
+    padding: 36px 32px;
+  }
+}
+
+.support-header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid #f1f5f9;
+}
+
+.support-header-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(18, 164, 107, 0.1);
+  color: #12a46b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.support-matrix {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.support-matrix__header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.support-matrix__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.support-matrix__row:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06);
+  transform: translateY(-1px);
+}
+
+.support-matrix__row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  background: #12a46b;
+  border-radius: 0 4px 4px 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.support-matrix__row:hover::before {
+  opacity: 1;
+}
+
+.support-col-activity {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.support-activity-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0b3d3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.support-matrix__row:hover .support-activity-icon {
+  background: #12a46b;
+  border-color: #12a46b;
+  color: #ffffff;
+}
+
+.support-activity-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.support-col-who {
+  flex: 1 1 25%;
+}
+
+.support-badge--counsellor {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.support-badge--counsellor i {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.support-col-timing {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.support-badge--timing {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0d8354;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.support-badge--timing i {
+  color: #12a46b;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 767.98px) {
+  .support-matrix__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .support-col-activity,
+  .support-col-who,
+  .support-col-timing {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }

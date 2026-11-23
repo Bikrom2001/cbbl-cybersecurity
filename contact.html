@@ -724,26 +724,8 @@
     </div>
 
     <main id="main">
-      <!-- Interactive Version Switcher Bar (Preview Tool) -->
-      <div class="hero-version-bar">
-        <div class="container-xl d-flex align-items-center justify-content-between flex-wrap gap-2">
-          <span class="hero-version-note">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#12A46B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="me-1 align-text-bottom"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-            <strong>Contact Page Title:</strong> Choose preferred design
-          </span>
-          <div class="hero-version-tabs" role="tablist">
-            <button type="button" class="hero-version-btn active" id="tab-v2" onclick="switchHeroVersion('v2')">
-              <span class="v-dot"></span> Version 2 (Tech Glow &amp; Text)
-            </button>
-            <button type="button" class="hero-version-btn" id="tab-v1" onclick="switchHeroVersion('v1')">
-              <span class="v-dot"></span> Version 1 (Centered Cyber)
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Version 2: Tech Glow Page Hero (Matches Nexvera Reference Design - ACTIVE) -->
-      <section class="tech-glow-hero" id="contact-hero-v2">
+      <!-- Page Hero (Modern Light Theme) -->
+      <section class="tech-glow-hero">
         <div class="tech-glow-hero__dots" aria-hidden="true"></div>
         <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
         <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
@@ -751,6 +733,7 @@
         <div class="container-xl position-relative">
           <!-- Pill Badge -->
           <div class="tech-glow-hero__badge">
+            <span class="badge-dot" aria-hidden="true"></span>
             <span>CBBL CONTACT</span>
           </div>
 
@@ -769,21 +752,6 @@
             <a href="index.html">Home</a>
             <span class="separator" aria-hidden="true">&gt;</span>
             <span class="current" aria-current="page">Contact</span>
-          </nav>
-        </div>
-      </section>
-
-      <!-- Version 1: Centered Dark Cyber Page Hero (Minimal) -->
-      <section class="cyber-page-hero d-none" id="contact-hero-v1">
-        <div class="cyber-page-hero__rays" aria-hidden="true"></div>
-        <div class="cyber-page-hero__grid" aria-hidden="true"></div>
-        <div class="container-xl position-relative text-center">
-          <h1 class="cyber-page-hero__title">Contact us</h1>
-          <nav class="cyber-page-hero__breadcrumb" aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center mb-0">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-            </ol>
           </nav>
         </div>
       </section>
@@ -1860,26 +1828,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Main Interactions JS -->
     <script src="js/main.js"></script>
-    <!-- Hero Version Switcher Script -->
-    <script>
-      function switchHeroVersion(version) {
-        var v1Hero = document.getElementById('contact-hero-v1');
-        var v2Hero = document.getElementById('contact-hero-v2');
-        var tabV1 = document.getElementById('tab-v1');
-        var tabV2 = document.getElementById('tab-v2');
-
-        if (version === 'v1') {
-          if (v1Hero) v1Hero.classList.remove('d-none');
-          if (v2Hero) v2Hero.classList.add('d-none');
-          if (tabV1) tabV1.classList.add('active');
-          if (tabV2) tabV2.classList.remove('active');
-        } else {
-          if (v2Hero) v2Hero.classList.remove('d-none');
-          if (v1Hero) v1Hero.classList.add('d-none');
-          if (tabV2) tabV2.classList.add('active');
-          if (tabV1) tabV1.classList.remove('active');
-        }
-      }
-    </script>
   </body>
 </html>
