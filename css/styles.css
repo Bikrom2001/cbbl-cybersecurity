@@ -1485,7 +1485,9 @@ a:hover {
 .stat {
   background-color: #fff;
   padding: 22px 20px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 .stat:hover {
   background-color: #fafdfc;
@@ -2154,23 +2156,51 @@ textarea.form-control {
 .site-footer a {
   color: #94a3b8;
   text-decoration: none;
-  transition: color 0.18s ease;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .site-footer a:hover {
-  color: #ffffff;
+  color: #34d399 !important;
 }
 
+/* Footer Section Headings (SERVICES, TRAINING, COMPANY) */
 .site-footer h6,
 .site-footer .footer__heading {
-  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  color: #f59e0b !important;
   font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  transition: all 0.25s ease;
 }
 
+.site-footer h6::after,
+.site-footer .footer__heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 22px;
+  height: 2px;
+  background: #f59e0b;
+  border-radius: 2px;
+  transition:
+    width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.site-footer .col-lg-2:hover h6::after,
+.site-footer .col-lg-3:hover h6::after,
+.site-footer h6:hover::after {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+/* Footer Column Link Lists */
 .site-footer .footer-links,
 .site-footer .footer__links {
   list-style: none;
@@ -2179,22 +2209,64 @@ textarea.form-control {
 }
 
 .site-footer .footer-links li,
-.site-footer .footer__links li {
-  margin-bottom: 10px;
+.site-footer .footer__links li,
+.site-footer ul li {
+  margin-bottom: 2px;
 }
 
+/* Footer Navigation Items Hover Effect */
+.site-footer ul li a,
 .site-footer .footer-links a,
 .site-footer .footer__links a {
+  display: inline-flex !important;
+  align-items: center;
+  color: #94a3b8 !important;
   font-size: 0.9rem;
-  color: #94a3b8;
-  display: inline-block;
-  transition: all 0.18s ease;
+  line-height: 1.5;
+  text-decoration: none !important;
+  padding: 3px 0;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
+.site-footer ul li a::before,
+.site-footer .footer-links a::before,
+.site-footer .footer__links a::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background: #34d399;
+  border-radius: 2px;
+  margin-right: 0;
+  opacity: 0;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-footer ul li a:hover,
 .site-footer .footer-links a:hover,
 .site-footer .footer__links a:hover {
-  color: #ffffff;
-  transform: translateX(3px);
+  color: #34d399 !important;
+  transform: translateX(6px) !important;
+  text-shadow: 0 0 12px rgba(52, 211, 153, 0.25);
+}
+
+.site-footer ul li a:hover::before,
+.site-footer .footer-links a:hover::before,
+.site-footer .footer__links a:hover::before {
+  width: 8px;
+  margin-right: 8px;
+  opacity: 1;
+}
+
+/* Footer Bottom Legal Links Hover */
+.site-footer .footer__legal a {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.site-footer .footer__legal a:hover {
+  color: #34d399 !important;
+  transform: translateY(-1px);
 }
 
 /* Status Pill in Footer */
@@ -3403,7 +3475,6 @@ textarea.form-control {
   color: #0b3d3a;
 }
 
-
 /* ==========================================================================
    CTA Band with Image Split (Dark Forest Green with Right Image)
    ========================================================================== */
@@ -3476,7 +3547,7 @@ textarea.form-control {
 }
 
 .cta-band__media::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3547,7 +3618,6 @@ textarea.form-control {
   }
 }
 
-
 /* ==========================================================================
    Visit Our Office Location Section (Unique Map + Clean Borderless Layout)
    ========================================================================== */
@@ -3579,11 +3649,13 @@ textarea.form-control {
   width: 100%;
   height: 100%;
   background-color: #f1f6f4;
-  background-image: 
+  background-image:
     radial-gradient(#d1fae5 1.5px, transparent 1.5px),
     radial-gradient(#cbd5e1 1.5px, #f1f6f4 1.5px);
   background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
+  background-position:
+    0 0,
+    15px 15px;
 }
 
 /* Custom Center Marker Pin (Matches User's Reference: Dark Navy + Gold Ring + CBBL + Radar Pulse) */
@@ -3900,7 +3972,12 @@ textarea.form-control {
 .v2-thumb-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 43, 41, 0.25) 0%, rgba(7, 43, 41, 0) 35%, rgba(7, 43, 41, 0.8) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(7, 43, 41, 0.25) 0%,
+    rgba(7, 43, 41, 0) 35%,
+    rgba(7, 43, 41, 0.8) 100%
+  );
   pointer-events: none;
   z-index: 1;
 }
@@ -4033,9 +4110,15 @@ textarea.form-control {
 }
 
 @keyframes v2Pulse {
-  0% { box-shadow: 0 0 0 0 rgba(18, 164, 107, 0.7); }
-  70% { box-shadow: 0 0 0 6px rgba(18, 164, 107, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(18, 164, 107, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(18, 164, 107, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(18, 164, 107, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(18, 164, 107, 0);
+  }
 }
 
 .course-card-v2-body {
@@ -4159,4 +4242,318 @@ textarea.form-control {
 .v2-card-action-btn--primary:hover {
   background: #0b3d3a;
   color: #ffffff;
+}
+
+/* ==========================================================================
+   Cyber Page Hero — Centered Dark Style with Light Rays & Grid
+   ========================================================================== */
+.cyber-page-hero {
+  position: relative;
+  background-color: #041412;
+  background-image:
+    radial-gradient(
+      ellipse 65% 55% at 50% -5%,
+      rgba(34, 197, 94, 0.3) 0%,
+      rgba(18, 164, 107, 0.14) 38%,
+      transparent 72%
+    ),
+    radial-gradient(ellipse 90% 85% at 50% 0%, #072823 0%, #031210 100%);
+  padding: 85px 0 75px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .cyber-page-hero {
+    padding: 105px 0 95px;
+  }
+}
+
+/* Conic & Radial Light Rays Stream */
+.cyber-page-hero__rays {
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from 250deg at 50% -15%,
+    rgba(52, 211, 153, 0.14) 0deg,
+    transparent 7deg,
+    rgba(18, 164, 107, 0.08) 12deg,
+    transparent 19deg
+  );
+  mask-image: radial-gradient(
+    ellipse 85% 75% at 50% 0%,
+    black 20%,
+    transparent 80%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 85% 75% at 50% 0%,
+    black 20%,
+    transparent 80%
+  );
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Subtle Cyber Grid Cells */
+.cyber-page-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: center top;
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 25%,
+    black 25%,
+    transparent 85%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 25%,
+    black 25%,
+    transparent 85%
+  );
+  pointer-events: none;
+}
+
+/* Display Title */
+.cyber-page-hero__title {
+  font-family: var(--font-body);
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Centered Minimal Breadcrumb Below Title */
+.cyber-page-hero__breadcrumb .breadcrumb {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.cyber-page-hero__breadcrumb .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.cyber-page-hero__breadcrumb .breadcrumb-item a:hover {
+  color: #34d399;
+}
+
+.cyber-page-hero__breadcrumb .breadcrumb-item.active {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.cyber-page-hero__breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.4);
+  content: "/";
+  padding: 0 10px;
+}
+
+/* ==========================================================================
+   Hero Version Switcher Bar (For live preview & comparison)
+   ========================================================================== */
+.hero-version-bar {
+  background: #030f0d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 0;
+  font-size: 0.82rem;
+  position: relative;
+  z-index: 20;
+}
+
+.hero-version-note {
+  color: #94a3b8;
+}
+
+.hero-version-tabs {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3px;
+  border-radius: 9999px;
+  gap: 4px;
+}
+
+.hero-version-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero-version-btn:hover {
+  color: #ffffff;
+}
+
+.hero-version-btn.active {
+  background: #12a46b;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(18, 164, 107, 0.35);
+}
+
+.hero-version-btn .v-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ==========================================================================
+   Version 2: Tech Glow Page Hero (Aligned with CBBL Brand Palette - Compact)
+   ========================================================================== */
+.tech-glow-hero {
+  position: relative;
+  background-color: #041412;
+  padding: 38px 0 34px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .tech-glow-hero {
+    padding: 48px 0 44px;
+  }
+}
+
+/* Dot Grid Pattern */
+.tech-glow-hero__dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+/* Cosmic Left Glow (Deep Forest Teal / Ambient) */
+.tech-glow-hero__glow-left {
+  position: absolute;
+  bottom: -30%;
+  left: -15%;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(
+    circle,
+    rgba(13, 148, 136, 0.22) 0%,
+    rgba(7, 39, 35, 0.15) 45%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* Cosmic Right Glow (CBBL Brand Vibrant Emerald & Mint Aura) */
+.tech-glow-hero__glow-right {
+  position: absolute;
+  top: -20%;
+  right: -8%;
+  width: 720px;
+  height: 720px;
+  background: radial-gradient(
+    circle,
+    rgba(18, 164, 107, 0.42) 0%,
+    rgba(52, 211, 153, 0.22) 35%,
+    rgba(11, 61, 58, 0.15) 55%,
+    transparent 72%
+  );
+  filter: blur(65px);
+  pointer-events: none;
+}
+
+/* Top Pill Badge (CBBL Brand Emerald Style) */
+.tech-glow-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(18, 164, 107, 0.16);
+  border: 1px solid rgba(52, 211, 153, 0.38);
+  color: #6ee7b7;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 13px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 16px rgba(18, 164, 107, 0.22);
+}
+
+/* Display Title (Single Line, Compact Gap) */
+.tech-glow-hero__title {
+  font-family: var(--font-body);
+  font-size: clamp(1.9rem, 3.8vw, 2.85rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+  max-width: 900px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .tech-glow-hero__title {
+    white-space: normal;
+  }
+}
+
+/* Lead Paragraph (Compact Gap) */
+.tech-glow-hero__lead {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 660px;
+  margin-bottom: 16px;
+}
+
+/* Breadcrumb with Chevron */
+.tech-glow-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.tech-glow-hero__breadcrumb a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.tech-glow-hero__breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.tech-glow-hero__breadcrumb .separator {
+  color: #64748b;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+.tech-glow-hero__breadcrumb .current {
+  color: #2dd4bf;
+  font-weight: 500;
 }
