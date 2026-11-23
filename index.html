@@ -661,22 +661,22 @@
         <div class="container-xl">
           <div class="stats shadow-sm">
             <div class="stat">
-              <div class="stat__value">2016</div>
+              <div class="stat__value" data-counter="2016" data-start="0" data-duration="2000">2016</div>
               <div class="stat__label">Operating since</div>
               <div class="stat__source">Company registration</div>
             </div>
             <div class="stat">
-              <div class="stat__value">5</div>
+              <div class="stat__value" data-counter="5" data-suffix="+" data-start="0" data-duration="1400">5+</div>
               <div class="stat__label">NSDA-aligned programmes</div>
               <div class="stat__source">Levels 3–5</div>
             </div>
             <div class="stat">
-              <div class="stat__value">33</div>
+              <div class="stat__value" data-counter="33" data-suffix="+" data-start="0" data-duration="1700">33+</div>
               <div class="stat__label">Professional &amp; advanced courses</div>
               <div class="stat__source">Course catalogue</div>
             </div>
             <div class="stat">
-              <div class="stat__value">3</div>
+              <div class="stat__value" data-counter="3" data-suffix="+" data-start="0" data-duration="1400">3+</div>
               <div class="stat__label">Delivery modes</div>
               <div class="stat__source">Online, on-site, hybrid</div>
             </div>
@@ -1437,44 +1437,30 @@
         </div>
       </section>
 
-      <!-- Call to Action Band — Hero Banner Style -->
-      <section class="section cta-hero-section">
+      <!-- Call to Action Band -->
+      <section class="section py-4">
         <div class="container-xl">
-          <div class="cta-hero-band">
-            <!-- Left: Text + Buttons -->
-            <div class="cta-hero-left">
-              <h2 class="cta-hero-title">
-                Start with a conversation,<br>not a quotation
+          <div class="cta-band cta-band--split shadow-sm">
+            <div class="cta-band__content">
+              <h2 class="h1 text-white mb-2">
+                Start with a conversation, not a quotation
               </h2>
-              <p class="cta-hero-sub">
+              <p class="text-white-50 mb-4">
                 A 30-minute scoping call costs nothing and usually clarifies
                 whether you need an assessment, a control, or simply a policy.
               </p>
-              <div class="cta-hero-btns">
-                <a class="btn-cta-primary" href="contact.html">
+              <div class="btn-row">
+                <a class="btn btn-accent" href="contact.html">
                   <span>Request a Security Consultation</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a class="btn-cta-secondary" href="training.html">
+                <a class="btn btn-onDark" href="training.html">
                   <span>Explore Training</span>
                 </a>
               </div>
             </div>
-            <!-- Right: Image + Stat Badge -->
-            <div class="cta-hero-right">
-              <img src="images/hero-learner-photo.jpg" alt="CBBL cybersecurity professional" class="cta-hero-img">
-              <div class="cta-stat-badge">
-                <div class="cta-stat-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <path d="m9 12 2 2 4-4"/>
-                  </svg>
-                </div>
-                <div class="cta-stat-info">
-                  <div class="cta-stat-value">98%</div>
-                  <div class="cta-stat-label">Client Satisfaction</div>
-                </div>
-              </div>
+            <div class="cta-band__media">
+              <img src="images/hero-learner-photo.jpg" alt="CBBL cybersecurity professional" class="cta-band__img">
             </div>
           </div>
         </div>

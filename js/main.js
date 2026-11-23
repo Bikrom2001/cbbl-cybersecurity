@@ -126,4 +126,78 @@
   $$("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
+
+  /* =========================================================================
+     Count-up Counter Animation for Stats (IntersectionObserver + smooth easing)
+     ========================================================================= */
+  var counters = $$("[data-counter]");
+  if (counters.length) {
+    var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    var animateCounter = function (el) {
+      var rawTarget = el.getAttribute("data-counter") || el.textContent || "";
+      var target = parseInt(rawTarget, 10);
+      var start = parseInt(el.getAttribute("data-start") || "0", 10);
+      var prefix = el.getAttribute("data-prefix") || "";
+      var suffix = el.getAttribute("data-suffix") || "";
+      
+      // Auto-detect suffix (e.g. "+", "%") if not explicitly provided
+      if (!suffix && /[^\d\s]$/.test(rawTarget.trim())) {
+        suffix = rawTarget.trim().match(/[^\d\s]+$/)[0];
+      }
+      
+      var duration = parseInt(el.getAttribute("data-duration") || "2000", 10);
+
+      if (prefersReducedMotion || isNaN(target)) {
+        el.textContent = prefix + target + suffix;
+        return;
+      }
+
+      var startTime = null;
+
+      // Cubic ease-out curve for smooth deceleration
+      var easeOutExpo = function (t) {
+        return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+      };
+
+      var step = function (timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var easedProgress = easeOutExpo(progress);
+        var current = Math.floor(start + (target - start) * easedProgress);
+
+        el.textContent = prefix + current + suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = prefix + target + suffix;
+        }
+      };
+
+      requestAnimationFrame(step);
+    };
+
+    if ("IntersectionObserver" in window) {
+      var counterObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.2,
+        rootMargin: "0px 0px -40px 0px"
+      });
+
+      counters.forEach(function (el) {
+        counterObserver.observe(el);
+      });
+    } else {
+      counters.forEach(function (el) {
+        animateCounter(el);
+      });
+    }
+  }
 })();
