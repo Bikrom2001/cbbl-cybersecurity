@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mfgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="factoryWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="gearGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="shadowMfg" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="60" r="48" fill="url(#mfgGlow)"/>
+
+  <!-- 3D Factory Building -->
+  <g filter="url(#shadowMfg)">
+    <!-- Main Plant Block -->
+    <rect x="22" y="48" width="60" height="42" rx="8" fill="url(#factoryWall)"/>
+
+    <!-- Sawtooth Factory Roof -->
+    <path d="M22 48 L37 36 L37 48 L52 36 L52 48 L67 36 L67 48 L82 36 L82 48 Z" fill="url(#roofGrad)"/>
+
+    <!-- Chimney Tower -->
+    <rect x="70" y="24" width="12" height="24" rx="3" fill="#1e40af"/>
+    <ellipse cx="76" cy="24" rx="6" ry="2" fill="#60a5fa"/>
+
+    <!-- Glowing Smoke Rings -->
+    <ellipse cx="76" cy="16" rx="4" ry="2" fill="#94a3b8" opacity="0.7"/>
+    <ellipse cx="80" cy="10" rx="6" ry="3" fill="#cbd5e1" opacity="0.5"/>
+
+    <!-- Factory Windows -->
+    <rect x="30" y="56" width="10" height="12" rx="2" fill="#fef08a"/>
+    <rect x="46" y="56" width="10" height="12" rx="2" fill="#fef08a"/>
+    <rect x="62" y="56" width="10" height="12" rx="2" fill="#fef08a"/>
+
+    <!-- Factory Entrance Gate -->
+    <rect x="44" y="74" width="16" height="16" rx="3" fill="#0f172a"/>
+  </g>
+
+  <!-- Floating 3D Industrial Smart Gear -->
+  <g filter="url(#shadowMfg)" transform="translate(86, 72)">
+    <circle cx="0" cy="0" r="18" fill="url(#gearGold)"/>
+    <!-- Gear Teeth -->
+    <rect x="-3" y="-22" width="6" height="4" rx="1.5" fill="#f59e0b"/>
+    <rect x="-3" y="18" width="6" height="4" rx="1.5" fill="#ea580c"/>
+    <rect x="-22" y="-3" width="4" height="6" rx="1.5" fill="#f59e0b"/>
+    <rect x="18" y="-3" width="4" height="6" rx="1.5" fill="#ea580c"/>
+    <circle cx="0" cy="0" r="9" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="5" fill="#ea580c"/>
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="16" cy="38" r="2.5" fill="#fbbf24"/>
+  <circle cx="106" cy="42" r="3" fill="#38bdf8"/>
+</svg>

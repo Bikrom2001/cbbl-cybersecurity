@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bankGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vaultBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="vaultDoor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="emeraldShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="goldCoin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="shadow3d" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="6" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+    <filter id="coinGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#f59e0b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="62" r="48" fill="url(#bankGlow)"/>
+
+  <!-- Main 3D Safe Vault Box -->
+  <g filter="url(#shadow3d)">
+    <!-- Vault Outer Frame -->
+    <rect x="26" y="28" width="68" height="66" rx="18" fill="url(#vaultBody)"/>
+    <rect x="27" y="29" width="66" height="64" rx="17" fill="none" stroke="#475569" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Vault Door Recessed -->
+    <rect x="34" y="36" width="52" height="50" rx="12" fill="url(#vaultDoor)"/>
+    <rect x="35" y="37" width="50" height="48" rx="11" fill="none" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+
+    <!-- Vault Dial Wheel -->
+    <circle cx="60" cy="61" r="16" fill="url(#emeraldShield)"/>
+    <circle cx="60" cy="61" r="11" fill="#0f172a"/>
+    <circle cx="60" cy="61" r="5" fill="#34d399"/>
+    
+    <!-- Dial Notches -->
+    <circle cx="60" cy="48" r="1.5" fill="#34d399"/>
+    <circle cx="73" cy="61" r="1.5" fill="#34d399"/>
+    <circle cx="60" cy="74" r="1.5" fill="#34d399"/>
+    <circle cx="47" cy="61" r="1.5" fill="#34d399"/>
+
+    <!-- Handle Bar -->
+    <rect x="58.5" y="53" width="3" height="16" rx="1.5" fill="#ffffff" opacity="0.9"/>
+    <rect x="52" y="59.5" width="16" height="3" rx="1.5" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Floating 3D Gold Coins -->
+  <g filter="url(#coinGlow)">
+    <!-- Coin 1 (Top Right) -->
+    <ellipse cx="88" cy="30" rx="13" ry="13" fill="url(#goldCoin)"/>
+    <ellipse cx="88" cy="30" rx="10" ry="10" fill="none" stroke="#fef08a" stroke-width="1.5" opacity="0.8"/>
+    <text x="88" y="35" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#78350f" text-anchor="middle">$</text>
+
+    <!-- Coin 2 (Bottom Left) -->
+    <ellipse cx="25" cy="78" rx="10" ry="10" fill="url(#goldCoin)"/>
+    <ellipse cx="25" cy="78" rx="7.5" ry="7.5" fill="none" stroke="#fef08a" stroke-width="1.2" opacity="0.8"/>
+    <text x="25" y="82" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#78350f" text-anchor="middle">৳</text>
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M98 52 L99.5 56 L103.5 57.5 L99.5 59 L98 63 L96.5 59 L92.5 57.5 L96.5 56 Z" fill="#fbbf24"/>
+  <circle cx="28" cy="24" r="2.5" fill="#34d399"/>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="techGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="laptopScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="laptopBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadowTech" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="6" stdDeviation="5" flood-color="#1e1b4b" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="58" r="48" fill="url(#techGlow)"/>
+
+  <!-- 3D Laptop Device -->
+  <g filter="url(#shadowTech)">
+    <!-- Laptop Display Lid -->
+    <rect x="24" y="24" width="72" height="48" rx="8" fill="url(#laptopBody)"/>
+    <rect x="27" y="27" width="66" height="42" rx="5" fill="url(#laptopScreen)"/>
+
+    <!-- Display Code Brackets -->
+    <path d="M43 40 L36 48 L43 56" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M77 40 L84 48 L77 56" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M56 36 L64 60" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Code Line Accents -->
+    <rect x="48" y="42" width="12" height="2.5" rx="1.2" fill="#818cf8"/>
+    <rect x="48" y="48" width="8" height="2.5" rx="1.2" fill="#a78bfa"/>
+
+    <!-- Laptop Base / Keyboard -->
+    <path d="M14 74 L106 74 L98 84 L22 84 Z" fill="url(#laptopBody)"/>
+    <!-- Trackpad -->
+    <rect x="49" y="76" width="22" height="5" rx="1.5" fill="#475569"/>
+    <!-- Front Lip Highlight -->
+    <path d="M14 74 L106 74" stroke="#94a3b8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Floating 3D Cloud Node -->
+  <g filter="url(#shadowTech)">
+    <circle cx="94" cy="24" r="10" fill="url(#cloudGrad)"/>
+    <circle cx="86" cy="26" r="7" fill="url(#cloudGrad)"/>
+    <circle cx="102" cy="26" r="6" fill="url(#cloudGrad)"/>
+    <rect x="85" y="25" width="20" height="9" rx="4" fill="url(#cloudGrad)"/>
+    <!-- Little Lock in Cloud -->
+    <rect x="91" y="25" width="6" height="5" rx="1" fill="#ffffff"/>
+    <path d="M92.5 25 V23 A1.5 1.5 0 0 1 95.5 23 V25" fill="none" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Floating Binary Particle -->
+  <circle cx="20" cy="38" r="3" fill="#38bdf8"/>
+  <circle cx="104" cy="62" r="2.5" fill="#10b981"/>
+</svg>

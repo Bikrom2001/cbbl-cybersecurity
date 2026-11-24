@@ -378,25 +378,38 @@
   </div>
 </div>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">About CBBL</li>
-    </ol>
-  </div>
-</nav>
-
 <main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <p class="eyebrow">About us</p>
-    <h1 class="display-5 fw-bold mb-3">A Bangladeshi technology company built around capability</h1>
-    <p class="lead mb-0">Creating Better Bangladesh Limited was established in 2016 to do two connected things: help organisations use technology securely, and help people build skills that employers actually need.</p>
-  </div>
-</section>
+  <!-- Page Hero (Modern Light Theme matching Contact Page) -->
+  <section class="tech-glow-hero">
+    <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+    <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+    <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
+
+    <div class="container-xl position-relative">
+      <!-- Pill Badge -->
+      <div class="tech-glow-hero__badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span>ABOUT CBBL</span>
+      </div>
+
+      <!-- Main Display Title (Single Line, Concise) -->
+      <h1 class="tech-glow-hero__title">
+        A Company Built Around Capability
+      </h1>
+
+      <!-- Lead Paragraph -->
+      <p class="tech-glow-hero__lead">
+        Creating Better Bangladesh Limited was established in 2016 to do two connected things: help organisations use technology securely, and help people build skills that employers actually need.
+      </p>
+
+      <!-- Breadcrumb with Chevron -->
+      <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator" aria-hidden="true">&gt;</span>
+        <span class="current" aria-current="page">About CBBL</span>
+      </nav>
+    </div>
+  </section>
 
 <!-- Content Section -->
 <section class="section">
@@ -461,30 +474,74 @@
 <!-- Sector Map Section -->
 <section class="section section--surface">
   <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">Who we work with</p>
-      <h2 class="h1">Sectors, not client names</h2>
-      <p class="lead">Client names appear only with written permission. Here is the kind of work we do where.</p>
+    <div class="mb-4">
+      <p class="text-success text-uppercase fw-bold small mb-1">
+        Who we work with
+      </p>
+      <h2 class="h2 fw-bold text-dark mb-2">
+        Sectors, not client names
+      </h2>
+      <p class="text-muted mb-0">
+        Client names appear only with written permission. Here is the kind of work we do where.
+      </p>
     </div>
-    <div class="table-responsive bg-white rounded-3 shadow-sm border">
-      <table class="table table-hover align-middle mb-0">
-        <caption class="p-3 text-muted small">Sector map</caption>
-        <thead class="table-light">
-          <tr>
-            <th scope="col" class="py-3 px-3">Sector</th>
-            <th scope="col" class="py-3 px-3">Typical need</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="fw-semibold px-3">Banking and financial services</td><td class="px-3">Security assessment support, policy and compliance advisory, staff awareness</td></tr>
-          <tr><td class="fw-semibold px-3">Technology and software</td><td class="px-3">Secure development training, cloud security, penetration testing coordination</td></tr>
-          <tr><td class="fw-semibold px-3">Manufacturing and RMG</td><td class="px-3">Network security, endpoint guidance, IT support, supervisor awareness</td></tr>
-          <tr><td class="fw-semibold px-3">Education</td><td class="px-3">Lab setup, IT support, faculty and student training</td></tr>
-          <tr><td class="fw-semibold px-3">Healthcare</td><td class="px-3">Infrastructure security, awareness training, incident readiness</td></tr>
-          <tr><td class="fw-semibold px-3">SMEs</td><td class="px-3">Practical security reviews, IT support, affordable upskilling</td></tr>
-          <tr><td class="fw-semibold px-3">Public-safety and institutional</td><td class="px-3">Structured, confidential professional training</td></tr>
-        </tbody>
-      </table>
+    <!-- 7 Sector Cards Grid (3D Illustrated Tech Icons) -->
+    <div class="sector-grid-row mb-0">
+      <!-- 1. Banking and financial services -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-banking.svg" alt="Banking & Financial Services" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">Banking & Financial Services</h3>
+      </div>
+
+      <!-- 2. Technology and software -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-technology.svg" alt="Technology & Software" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">Technology & Software</h3>
+      </div>
+
+      <!-- 3. Manufacturing and RMG -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-manufacturing.svg" alt="Manufacturing & RMG" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">Manufacturing & RMG</h3>
+      </div>
+
+      <!-- 4. Education -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-education.svg" alt="Education" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">Education</h3>
+      </div>
+
+      <!-- 5. Healthcare -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-healthcare.svg" alt="Healthcare" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">Healthcare</h3>
+      </div>
+
+      <!-- 6. SMEs -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-smes.svg" alt="SMEs" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">SMEs</h3>
+      </div>
+
+      <!-- 7. Public-safety and institutional -->
+      <div class="sector-ref-card">
+        <div class="sector-ref-icon-img-wrap">
+          <img src="images/sector-public-safety.svg" alt="Public-Safety & Institutional" class="sector-ref-icon-img" width="72" height="72" loading="lazy">
+        </div>
+        <h3 class="sector-ref-title">Public-Safety & Institutional</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -492,20 +549,162 @@
 <!-- Commitments Section -->
 <section class="section">
   <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">Quality</p>
-      <h2 class="h1">What we commit to</h2>
-    </div>
-    <ul class="ticks" style="max-width:70ch">
-      <li>Written scope and acceptance criteria on every engagement.</li>
-      <li>Documented curriculum with defined outcomes and practical assessment.</li>
-      <li>Personal data handled under our Privacy Policy and applicable Bangladeshi law.</li>
-      <li>Accreditation and authorisation status stated exactly as it stands — never implied.</li>
-      <li>Every statistic published on this site carries a source and a date.</li>
-    </ul>
-    <div class="notice mt-4" style="max-width:70ch">
-      <strong>Leadership page</strong>
-      Profiles are published only with each person's written consent, a current title and an approved photograph. Until then, the page remains unpublished rather than filled with stock portraits.
+    <div class="row align-items-center g-4 g-lg-5">
+      <!-- Left Column: Commitments Checklist -->
+      <div class="col-lg-7">
+        <div class="mb-4">
+          <p class="text-success text-uppercase fw-bold small mb-1">
+            Quality
+          </p>
+          <h2 class="h2 fw-bold text-dark">
+            What we commit to
+          </h2>
+        </div>
+        
+        <div class="commitments-list">
+          <div class="commitment-item">
+            <div class="commitment-icon">
+              <i class="bi bi-check2"></i>
+            </div>
+            <div class="commitment-text">
+              Written scope and acceptance criteria on every engagement.
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <div class="commitment-icon">
+              <i class="bi bi-check2"></i>
+            </div>
+            <div class="commitment-text">
+              Documented curriculum with defined outcomes and practical assessment.
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <div class="commitment-icon">
+              <i class="bi bi-check2"></i>
+            </div>
+            <div class="commitment-text">
+              Personal data handled under our Privacy Policy and applicable Bangladeshi law.
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <div class="commitment-icon">
+              <i class="bi bi-check2"></i>
+            </div>
+            <div class="commitment-text">
+              Accreditation and authorisation status stated exactly as it stands — never implied.
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <div class="commitment-icon">
+              <i class="bi bi-check2"></i>
+            </div>
+            <div class="commitment-text">
+              Every statistic published on this site carries a source and a date.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Student Career & Skill Network Graphic (Clean Floating Graphic) -->
+      <div class="col-lg-5">
+        <div class="student-network-canvas">
+          <!-- Background Curved Dotted Connection Lines SVG -->
+          <svg class="student-network-lines" viewBox="0 0 420 280" preserveAspectRatio="none">
+            <!-- Line 1: Top-Left to Center -->
+            <path d="M 60 70 Q 140 30 200 120" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+            <!-- Line 2: Center to Top-Right -->
+            <path d="M 200 120 Q 280 50 350 70" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+            <!-- Line 3: Center to Bottom-Left -->
+            <path d="M 200 120 Q 120 170 80 220" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+            <!-- Line 4: Center to Bottom-Right -->
+            <path d="M 200 120 Q 270 180 340 210" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.6"/>
+            <!-- Line 5: Cross link Top-Left to Bottom-Left -->
+            <path d="M 60 70 Q 20 145 80 220" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.4"/>
+            <!-- Line 6: Cross link Top-Right to Bottom-Right -->
+            <path d="M 350 70 Q 390 140 340 210" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.4"/>
+          </svg>
+
+          <!-- Node 1: Top Left Avatar -->
+          <div class="student-node student-node--1">
+            <div class="student-avatar">
+              <svg viewBox="0 0 40 40" width="38" height="38">
+                <circle cx="20" cy="20" r="18" fill="#d1fae5"/>
+                <circle cx="20" cy="14" r="6.5" fill="#047857"/>
+                <path d="M8 34 C8 24 14 21 20 21 C26 21 32 24 32 34 Z" fill="#047857"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Floating Bubble 1 -->
+          <div class="student-floating-tag student-floating-tag--1">
+            <span>Assessment Passed! 🚀</span>
+          </div>
+
+          <!-- Node 2: Center Hero Avatar -->
+          <div class="student-node student-node--2">
+            <div class="student-avatar student-avatar--center">
+              <svg viewBox="0 0 40 40" width="46" height="46">
+                <circle cx="20" cy="20" r="18" fill="#fef3c7"/>
+                <circle cx="20" cy="14" r="7" fill="#b45309"/>
+                <path d="M7 35 C7 24 13 21 20 21 C27 21 33 24 33 35 Z" fill="#1e293b"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Floating Bubble 2 (Center Hero Badge) -->
+          <div class="student-floating-tag student-floating-tag--center">
+            <i class="bi bi-patch-check-fill text-success"></i>
+            <span>Placed as SOC Analyst 🎯</span>
+          </div>
+
+          <!-- Node 3: Top Right Avatar -->
+          <div class="student-node student-node--3">
+            <div class="student-avatar">
+              <svg viewBox="0 0 40 40" width="38" height="38">
+                <circle cx="20" cy="20" r="18" fill="#dbeafe"/>
+                <circle cx="20" cy="14" r="6.5" fill="#1d4ed8"/>
+                <path d="M8 34 C8 24 14 21 20 21 C26 21 32 24 32 34 Z" fill="#1d4ed8"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Floating Bubble 3 -->
+          <div class="student-floating-tag student-floating-tag--3">
+            <span>Hands-on Lab Drills 💻</span>
+          </div>
+
+          <!-- Node 4: Bottom Left Avatar -->
+          <div class="student-node student-node--4">
+            <div class="student-avatar">
+              <svg viewBox="0 0 40 40" width="36" height="36">
+                <circle cx="20" cy="20" r="18" fill="#fef08a"/>
+                <circle cx="20" cy="14" r="6" fill="#ca8a04"/>
+                <path d="M8 34 C8 25 14 22 20 22 C26 22 32 25 32 34 Z" fill="#ca8a04"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Floating Bubble 4 -->
+          <div class="student-floating-tag student-floating-tag--4">
+            <span>CV &amp; Portfolio Ready 📄</span>
+          </div>
+
+          <!-- Node 5: Bottom Right Avatar -->
+          <div class="student-node student-node--5">
+            <div class="student-avatar">
+              <svg viewBox="0 0 40 40" width="38" height="38">
+                <circle cx="20" cy="20" r="18" fill="#f3e8ff"/>
+                <circle cx="20" cy="14" r="6.5" fill="#7e22ce"/>
+                <path d="M8 34 C8 24 14 21 20 21 C26 21 32 24 32 34 Z" fill="#7e22ce"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Floating Bubble 5 -->
+          <div class="student-floating-tag student-floating-tag--5">
+            <span>Interview Scheduled 🤝</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

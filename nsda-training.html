@@ -524,59 +524,81 @@
   </div>
 </section>
 
-<!-- FAQ Accordion Section -->
+<!-- FAQ Accordion Section (2-Column Showcase Matching Reference) -->
 <section class="section section--surface">
-  <div class="container-xl" style="max-width:920px">
-    <div class="section-head mb-4 text-center mx-auto">
-      <p class="eyebrow">FAQ</p>
-      <h2 class="h1">NSDA programme questions</h2>
+  <div class="container-xl">
+    <div class="section-head mb-5 text-center mx-auto" style="max-width: 640px;">
+      <p class="eyebrow text-success fw-bold text-uppercase small mb-2">FAQ</p>
+      <h2 class="display-6 fw-bold text-dark">NSDA programme questions</h2>
     </div>
-    <div class="accordion shadow-sm rounded-3 overflow-hidden border" id="nsdaFaqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingN1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN1" aria-expanded="true" aria-controls="collapseN1">
-            Is CBBL an NSDA-accredited training provider?
-          </button>
-        </h2>
-        <div id="collapseN1" class="accordion-collapse collapse show" aria-labelledby="headingN1" data-bs-parent="#nsdaFaqAccordion">
-          <div class="accordion-body">
-            The current status is stated in the notice at the top of this page. We publish exactly what is granted and nothing more.
+
+    <div class="row g-4 g-lg-5 align-items-center">
+      <!-- Left Column: Numbered Questions Accordion -->
+      <div class="col-lg-7">
+        <div class="numbered-faq-accordion" id="nsdaFaqAccordion">
+          <!-- Item 1 -->
+          <div class="numbered-faq-item">
+            <button class="numbered-faq-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN1" aria-expanded="true" aria-controls="collapseN1">
+              <span class="numbered-faq-num">01.</span>
+              <span class="numbered-faq-title">Is CBBL an NSDA-accredited training provider?</span>
+              <i class="bi bi-chevron-down numbered-faq-icon"></i>
+            </button>
+            <div id="collapseN1" class="collapse show" data-bs-parent="#nsdaFaqAccordion">
+              <div class="numbered-faq-body">
+                The current status is stated in the notice at the top of this page. We publish exactly what is granted and nothing more.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="numbered-faq-item">
+            <button class="numbered-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN2" aria-expanded="false" aria-controls="collapseN2">
+              <span class="numbered-faq-num">02.</span>
+              <span class="numbered-faq-title">Are these recognised by employers?</span>
+              <i class="bi bi-chevron-down numbered-faq-icon"></i>
+            </button>
+            <div id="collapseN2" class="collapse" data-bs-parent="#nsdaFaqAccordion">
+              <div class="numbered-faq-body">
+                The programmes are built around competency standards and assessed on practical work, which is what employers ask about. Recognition of a specific credential is a matter for each employer.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="numbered-faq-item">
+            <button class="numbered-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN3" aria-expanded="false" aria-controls="collapseN3">
+              <span class="numbered-faq-num">03.</span>
+              <span class="numbered-faq-title">Can I start at Level 5 without Level 3?</span>
+              <i class="bi bi-chevron-down numbered-faq-icon"></i>
+            </button>
+            <div id="collapseN3" class="collapse" data-bs-parent="#nsdaFaqAccordion">
+              <div class="numbered-faq-body">
+                Yes, if you meet the entry requirements. Each programme page states its prerequisites honestly; if you do not meet them we will recommend a different starting point.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="numbered-faq-item">
+            <button class="numbered-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN4" aria-expanded="false" aria-controls="collapseN4">
+              <span class="numbered-faq-num">04.</span>
+              <span class="numbered-faq-title">What happens if I am assessed not yet competent?</span>
+              <i class="bi bi-chevron-down numbered-faq-icon"></i>
+            </button>
+            <div id="collapseN4" class="collapse" data-bs-parent="#nsdaFaqAccordion">
+              <div class="numbered-faq-body">
+                You receive a written gap list and one re-assessment opportunity within the agreed window.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingN2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN2" aria-expanded="false" aria-controls="collapseN2">
-            Are these recognised by employers?
-          </button>
-        </h2>
-        <div id="collapseN2" class="accordion-collapse collapse" aria-labelledby="headingN2" data-bs-parent="#nsdaFaqAccordion">
-          <div class="accordion-body">
-            The programmes are built around competency standards and assessed on practical work, which is what employers ask about. Recognition of a specific credential is a matter for each employer.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingN3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN3" aria-expanded="false" aria-controls="collapseN3">
-            Can I start at Level 5 without Level 3?
-          </button>
-        </h2>
-        <div id="collapseN3" class="accordion-collapse collapse" aria-labelledby="headingN3" data-bs-parent="#nsdaFaqAccordion">
-          <div class="accordion-body">
-            Yes, if you meet the entry requirements. Each programme page states its prerequisites honestly; if you do not meet them we will recommend a different starting point.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingN4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseN4" aria-expanded="false" aria-controls="collapseN4">
-            What happens if I am assessed not yet competent?
-          </button>
-        </h2>
-        <div id="collapseN4" class="accordion-collapse collapse" aria-labelledby="headingN4" data-bs-parent="#nsdaFaqAccordion">
-          <div class="accordion-body">
-            You receive a written gap list and one re-assessment opportunity within the agreed window.
+
+      <!-- Right Column: Visual Graphic Card Matching Reference -->
+      <div class="col-lg-5">
+        <div class="faq-visual-wrapper text-center">
+          <div class="faq-visual-card">
+            <img src="images/nsda-faq-illustration.jpg" alt="NSDA Student Training &amp; Growth" class="img-fluid faq-visual-img" width="440" height="440" />
           </div>
         </div>
       </div>
