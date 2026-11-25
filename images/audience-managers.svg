@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mgrGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="caseBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b3d3a"/>
+      <stop offset="100%" stop-color="#062826"/>
+    </linearGradient>
+    <linearGradient id="caseFlap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#155e59"/>
+      <stop offset="100%" stop-color="#0b3d3a"/>
+    </linearGradient>
+    <linearGradient id="goldClasp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="reportBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadowMgr" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="6" stdDeviation="4.5" flood-color="#0f172a" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="60" r="48" fill="url(#mgrGlow)"/>
+
+  <!-- 3D Executive Briefcase -->
+  <g filter="url(#shadowMgr)">
+    <!-- Handle -->
+    <path d="M46 36 V30 A4 4 0 0 1 50 26 H70 A4 4 0 0 1 74 30 V36" fill="none" stroke="#0b3d3a" stroke-width="5" stroke-linecap="round"/>
+    <!-- Case Base -->
+    <rect x="20" y="36" width="80" height="54" rx="10" fill="url(#caseBody)"/>
+    <!-- Case Top Flap -->
+    <path d="M20 46 Q20 36 30 36 H90 Q100 36 100 46 V56 Q60 64 20 56 Z" fill="url(#caseFlap)"/>
+    <!-- Gold Clasp -->
+    <rect x="53" y="53" width="14" height="10" rx="3" fill="url(#goldClasp)"/>
+    <circle cx="60" cy="58" r="2" fill="#0b3d3a"/>
+  </g>
+
+  <!-- Floating Executive Report / Check Badge -->
+  <g filter="url(#shadowMgr)">
+    <rect x="78" y="20" width="26" height="32" rx="6" fill="#ffffff"/>
+    <rect x="84" y="27" width="14" height="3" rx="1.5" fill="#cbd5e1"/>
+    <rect x="84" y="33" width="10" height="3" rx="1.5" fill="#cbd5e1"/>
+    <circle cx="91" cy="43" r="6" fill="url(#reportBadge)"/>
+    <path d="M88.5 43 L90.2 44.8 L93.8 41.2" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="22" cy="28" r="3" fill="#fbbf24"/>
+  <circle cx="104" cy="76" r="2.5" fill="#10b981"/>
+</svg>

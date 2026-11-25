@@ -1,722 +1,2206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ethical Hacking Fundamentals — Course Details | CBBL</title>
-<meta name="description" content="Course details for Ethical Hacking Fundamentals: outcomes, 10-week curriculum, tools, prerequisites, assessment, fees, batch schedule and enrolment.">
-<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!-- Custom Styles -->
-<link rel="stylesheet" href="css/styles.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Creating Better Bangladesh Limited","alternateName":"CBBL","url":"https://cbbl.com.bd","logo":"https://cbbl.com.bd/images/cbbl-logo.svg","foundingDate":"2016","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"description":"Cybersecurity services, IT solutions, software development and professional training."}
-</script>
-</head>
-<body>
-<a class="skip" href="#main">Skip to main content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ethical Hacking Fundamentals — Course Details | CBBL</title>
+    <meta
+      name="description"
+      content="Course details for Ethical Hacking Fundamentals: outcomes, 10-week curriculum, tools, prerequisites, assessment, fees, batch schedule and enrolment."
+    />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Creating Better Bangladesh Limited",
+        "alternateName": "CBBL",
+        "url": "https://cbbl.com.bd",
+        "logo": "https://cbbl.com.bd/images/cbbl-logo.svg",
+        "foundingDate": "2016",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "BD"
+        },
+        "description": "Cybersecurity services, IT solutions, software development and professional training."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
 
-<!-- Bootstrap 5 Navbar Header -->
-<header class="site-header sticky-top">
-  <nav class="navbar navbar-expand-lg py-2">
-    <div class="container-xl d-flex align-items-center">
-      <a class="navbar-brand me-3" href="index.html" aria-label="CBBL home">
-        <img src="images/cbbl-logo.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="40">
-      </a>
-      
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item">
-            <a class="nav-link px-3" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="about.html">About</a>
-          </li>
-                    <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle px-3" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu dropdown-menu--services shadow-lg border-0" aria-labelledby="servicesDropdown">
-              <div class="row g-3">
-                <div class="col-lg-7">
-                  <div class="dropdown-col-title">Core Capabilities</div>
-                  <div class="d-flex flex-column gap-1">
-                    <a class="dropdown-rich-item" href="cybersecurity-services.html">
-                      <div class="dropdown-icon-box">
-                        <i class="bi bi-shield-check"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>Cybersecurity Services</span>
-                          <span class="dropdown-mini-tag">Core</span>
-                        </div>
-                        <p class="dropdown-rich-desc">VAPT assessments, threat modeling, cloud audit &amp; compliance.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-
-                    <a class="dropdown-rich-item" href="cybersecurity-services.html#it">
-                      <div class="dropdown-icon-box dropdown-icon-box--blue">
-                        <i class="bi bi-hdd-network"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>IT Solutions</span>
-                        </div>
-                        <p class="dropdown-rich-desc">Enterprise infrastructure, firewalls, routing &amp; 24/7 support.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-
-                    <a class="dropdown-rich-item" href="projects.html">
-                      <div class="dropdown-icon-box dropdown-icon-box--purple">
-                        <i class="bi bi-code-slash"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>Software Development</span>
-                        </div>
-                        <p class="dropdown-rich-desc">Web, mobile &amp; enterprise business portals with secure SDLC.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-
-                    <a class="dropdown-rich-item" href="contact.html">
-                      <div class="dropdown-icon-box dropdown-icon-box--amber">
-                        <i class="bi bi-box-seam"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>IT Procurement &amp; Import</span>
-                        </div>
-                        <p class="dropdown-rich-desc">Certified hardware, server appliances &amp; equipment sourcing.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col-lg-5">
-                  <div class="dropdown-highlight-panel">
-                    <div class="dropdown-highlight-title">
-                      <i class="bi bi-stars text-success"></i> Popular Security Tracks
-                    </div>
-                    <div class="dropdown-quick-links">
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#assessment">
-                        <span>Security Assessment</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#pentest">
-                        <span>Penetration Testing (VAPT)</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#cloud">
-                        <span>Cloud Security &amp; ISO 27001</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#ir">
-                        <span>Incident Response Readiness</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#awareness">
-                        <span>Security Awareness Training</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="dropdown-bottom-strip">
-                    <div class="dropdown-bottom-strip-text">
-                      <i class="bi bi-shield-lock-fill text-success fs-5"></i>
-                      <span>Every engagement begins with a documented written scope.</span>
-                    </div>
-                    <a class="dropdown-bottom-strip-cta" href="contact.html">
-                      <span>Request scoping call</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-                    <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle px-3" href="#" id="trainingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Training
-            </a>
-            <div class="dropdown-menu dropdown-menu--training shadow-lg border-0" aria-labelledby="trainingDropdown">
-              <div class="dropdown-col-title">Training Ecosystem &amp; Certifications</div>
-              <div class="row g-2">
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="nsda-training.html">
-                    <div class="dropdown-icon-box">
-                      <i class="bi bi-award"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>NSDA Training Programs</span>
-                        <span class="dropdown-mini-tag">Govt.</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Levels 3–5, competency-based national qualifications.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="professional-training.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--blue">
-                      <i class="bi bi-laptop"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Regular Professional Training</span>
-                        <span class="dropdown-mini-tag">20 Courses</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Hands-on job-ready IT courses with practical labs.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="advanced-cybersecurity.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--purple">
-                      <i class="bi bi-shield-shaded"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Advanced Cybersecurity</span>
-                        <span class="dropdown-mini-tag">13 Tracks</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Offensive &amp; defensive security tracks for practitioners.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="corporate-training.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--amber">
-                      <i class="bi bi-building"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Corporate &amp; Custom Training</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Tailored syllabus, workforce upskilling &amp; delivery.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="law-enforcement-training.html">
-                    <div class="dropdown-icon-box">
-                      <i class="bi bi-file-lock2"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Institutional Training</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Confidential, specialized technical instruction.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="vendor-vouchers.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--blue">
-                      <i class="bi bi-ticket-perforated"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Vendor Exam Vouchers</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Global exam voucher procurement &amp; registration.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-12 mt-3">
-                  <div class="dropdown-bottom-strip">
-                    <div class="dropdown-bottom-strip-text">
-                      <i class="bi bi-mortarboard-fill text-success fs-5"></i>
-                      <span>Small batches, active cyber range access &amp; certified instructors.</span>
-                    </div>
-                    <a class="dropdown-bottom-strip-cta" href="training.html">
-                      <span>Explore all courses</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="job-placement.html">Placement</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="d-flex align-items-center gap-2 ms-auto">
-        <button class="btn btn-search-trigger rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search the site">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
-        </button>
-        <a class="btn-navbar-pill d-none d-xl-inline-flex" href="contact.html">
-          <span>Enroll Now</span>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <button class="btn btn-light btn-icon rounded-circle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileDrawer" aria-controls="mobileDrawer" aria-label="Toggle navigation">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<!-- Bootstrap 5 Offcanvas Mobile Drawer -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileDrawer" aria-labelledby="mobileDrawerLabel">
-  <div class="offcanvas-header border-bottom">
-    <a href="index.html" class="d-flex align-items-center">
-      <img src="images/cbbl-logo.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="40">
-    </a>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column p-0">
-    <div class="p-3 flex-grow-1">
-      <nav class="nav flex-column mobile-nav">
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="index.html">Home</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="about.html">About</a>
-        <div class="accordion accordion-flush" id="mobileNavAccordion">
-          <div class="accordion-item border-0">
-            <h2 class="accordion-header" id="headingMobileServices">
-              <button class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobileServices" aria-expanded="false" aria-controls="collapseMobileServices">
-                Services
-              </button>
-            </h2>
-            <div id="collapseMobileServices" class="accordion-collapse collapse" aria-labelledby="headingMobileServices" data-bs-parent="#mobileNavAccordion">
-              <div class="accordion-body py-1 ps-4 pe-2">
-                <a class="nav-link py-2 text-muted" href="cybersecurity-services.html">Cybersecurity Services</a>
-                <a class="nav-link py-2 text-muted" href="cybersecurity-services.html#it">IT Solutions</a>
-                <a class="nav-link py-2 text-muted" href="projects.html">Software Development</a>
-                <a class="nav-link py-2 text-muted" href="contact.html">IT Procurement &amp; Import</a>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item border-0">
-            <h2 class="accordion-header" id="headingMobileTraining">
-              <button class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobileTraining" aria-expanded="false" aria-controls="collapseMobileTraining">
-                Training
-              </button>
-            </h2>
-            <div id="collapseMobileTraining" class="accordion-collapse collapse" aria-labelledby="headingMobileTraining" data-bs-parent="#mobileNavAccordion">
-              <div class="accordion-body py-1 ps-4 pe-2">
-                <a class="nav-link py-2 text-muted" href="nsda-training.html">NSDA Training Programs</a>
-                <a class="nav-link py-2 text-muted" href="professional-training.html">Regular Professional Training</a>
-                <a class="nav-link py-2 text-muted" href="advanced-cybersecurity.html">Advanced Cybersecurity</a>
-                <a class="nav-link py-2 text-muted" href="corporate-training.html">Corporate &amp; Custom Training</a>
-                <a class="nav-link py-2 text-muted" href="law-enforcement-training.html">Institutional Training</a>
-                <a class="nav-link py-2 text-muted" href="vendor-vouchers.html">Vendor Exam Vouchers</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="job-placement.html">Placement</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="projects.html">Projects</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="contact.html">Contact</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="trust-and-credentials.html">Trust &amp; Credentials</a>
-      </nav>
-    </div>
-    <div class="p-3 border-top bg-white">
-      <a class="btn-navbar-pill w-100 text-center" href="contact.html">
-        <span>Enroll Now</span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap 5 Search Modal -->
-<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 shadow-lg rounded-4 p-3 p-md-4">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-semibold" id="searchModalLabel">Search courses, services and pages</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body pt-3">
-        <form action="professional-training.html" role="search">
-          <div class="input-group mb-3">
-            <input type="text" id="searchInput" class="form-control form-control-lg" name="q" placeholder="e.g. ethical hacking, NSDA level 5, cloud security" aria-label="Search" required>
-            <button class="btn btn-primary px-4" type="submit">Search</button>
-          </div>
-        </form>
-        <p class="search-suggest text-muted small mb-0">
-          Popular: 
-          <a href="professional-training.html" class="badge bg-light text-dark text-decoration-none border me-1">cybersecurity course</a>
-          <a href="nsda-training.html" class="badge bg-light text-dark text-decoration-none border me-1">NSDA</a>
-          <a href="cybersecurity-services.html" class="badge bg-light text-dark text-decoration-none border me-1">security assessment</a>
-          <a href="corporate-training.html" class="badge bg-light text-dark text-decoration-none border me-1">corporate training</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="training.html">Training</a></li>
-      <li class="breadcrumb-item"><a href="professional-training.html">Professional Training</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Ethical Hacking Fundamentals</li>
-    </ol>
-  </div>
-</nav>
-
-<main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <div class="card__meta mb-2">
-      <span class="chip chip--level">Beginner</span>
-      <span class="chip">Professional</span>
-      <span class="chip">Hybrid</span>
-    </div>
-    <h1 class="display-5 fw-bold mb-3">Ethical Hacking Fundamentals</h1>
-    <p class="lead mb-4">A ten-week, lab-based introduction to offensive security practice: how systems are attacked, how to prove it safely, and how to write a report a client can act on.</p>
-    <div class="row g-3">
-      <div class="col-sm-4 kv__item">
-        <h3>Duration</h3>
-        <p>10 weeks · 2 evenings</p>
-      </div>
-      <div class="col-sm-4 kv__item">
-        <h3>Effort</h3>
-        <p>6–8 hours per week</p>
-      </div>
-      <div class="col-sm-4 kv__item">
-        <h3>Mode</h3>
-        <p>Hybrid — online theory, on-campus labs</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Subnav -->
-<div class="subnav">
-  <div class="container-xl">
-    <ul>
-      <li><a href="#outcomes">Outcomes</a></li>
-      <li><a href="#curriculum">Curriculum</a></li>
-      <li><a href="#assessment">Assessment</a></li>
-      <li><a href="#fees">Fees</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- Main Split Section -->
-<section class="section">
-  <div class="container-xl">
-    <div class="row g-4 g-lg-5">
-      <div class="col-lg-8">
-        <h2 class="h1 mb-3" id="outcomes">What you will be able to do</h2>
-        <p class="lead mb-4">By the end of the course, with the lab environment and your notes, you can:</p>
-        <ul class="ticks mb-5">
-          <li>Plan a scoped assessment and explain the legal boundary in writing.</li>
-          <li>Perform structured reconnaissance on an authorised target.</li>
-          <li>Identify and validate common web and network weaknesses.</li>
-          <li>Explain the business impact of a finding in plain language.</li>
-          <li>Write a findings report with evidence, severity and remediation.</li>
-          <li>Present findings in a short client-style debrief.</li>
-        </ul>
-
-        <h2 class="h1 mb-4" id="curriculum">Curriculum</h2>
-        <div class="accordion shadow-sm rounded-3 overflow-hidden border mb-5" id="curriculumAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingM1">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM1" aria-expanded="true" aria-controls="collapseM1">
-                Module 1 · Foundations and the legal boundary
-              </button>
-            </h2>
-            <div id="collapseM1" class="accordion-collapse collapse show" aria-labelledby="headingM1" data-bs-parent="#curriculumAccordion">
-              <div class="accordion-body">
-                Authorisation, scope documents, rules of engagement, and the difference between testing and unauthorised access. Lab setup and safety rules.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingM2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM2" aria-expanded="false" aria-controls="collapseM2">
-                Module 2 · Reconnaissance
-              </button>
-            </h2>
-            <div id="collapseM2" class="accordion-collapse collapse" aria-labelledby="headingM2" data-bs-parent="#curriculumAccordion">
-              <div class="accordion-body">
-                Passive and active discovery, DNS and certificate sources, service enumeration, and recording evidence as you go.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingM3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM3" aria-expanded="false" aria-controls="collapseM3">
-                Module 3 · Web application weaknesses
-              </button>
-            </h2>
-            <div id="collapseM3" class="accordion-collapse collapse" aria-labelledby="headingM3" data-bs-parent="#curriculumAccordion">
-              <div class="accordion-body">
-                Authentication and session issues, injection classes, access-control failures and file handling — validated manually, not just flagged by a scanner.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingM4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM4" aria-expanded="false" aria-controls="collapseM4">
-                Module 4 · Network and system exposure
-              </button>
-            </h2>
-            <div id="collapseM4" class="accordion-collapse collapse" aria-labelledby="headingM4" data-bs-parent="#curriculumAccordion">
-              <div class="accordion-body">
-                Service misconfiguration, credential hygiene, lateral-movement concepts and the controls that would have prevented each.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingM5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM5" aria-expanded="false" aria-controls="collapseM5">
-                Module 5 · Validation and evidence
-              </button>
-            </h2>
-            <div id="collapseM5" class="accordion-collapse collapse" aria-labelledby="headingM5" data-bs-parent="#curriculumAccordion">
-              <div class="accordion-body">
-                Reproducing a finding, capturing minimal evidence, avoiding data exposure, and deciding when a finding is real.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingM6">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseM6" aria-expanded="false" aria-controls="collapseM6">
-                Module 6 · Reporting and debrief
-              </button>
-            </h2>
-            <div id="collapseM6" class="accordion-collapse collapse" aria-labelledby="headingM6" data-bs-parent="#curriculumAccordion">
-              <div class="accordion-body">
-                Severity that reflects business impact, remediation that a developer can implement, and a ten-minute debrief you can deliver calmly.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="h1 mb-3" id="assessment">Assessment</h2>
-        <div class="table-responsive bg-white rounded-3 shadow-sm border mb-2">
-          <table class="table table-hover align-middle mb-0">
-            <caption class="p-3 text-muted small">Assessment components</caption>
-            <thead class="table-light">
-              <tr>
-                <th scope="col" class="py-3 px-3">Component</th>
-                <th scope="col" class="py-3 px-3 text-end">Weight</th>
-                <th scope="col" class="py-3 px-3 text-end">Pass mark</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="px-3">Weekly lab tasks (6 of 8 must pass)</td><td class="px-3 text-end">30%</td><td class="px-3 text-end">60%</td></tr>
-              <tr><td class="px-3">Practical assessment — scoped lab target</td><td class="px-3 text-end">40%</td><td class="px-3 text-end">60%</td></tr>
-              <tr><td class="px-3">Written findings report</td><td class="px-3 text-end">20%</td><td class="px-3 text-end">60%</td></tr>
-              <tr><td class="px-3">Debrief presentation</td><td class="px-3 text-end">10%</td><td class="px-3 text-end">50%</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="small text-muted mb-5">Pass requires 60% overall. One re-assessment opportunity is included within 30 days.</p>
-
-        <h2 class="h1 mb-3">Who it is for</h2>
-        <p class="mb-5">IT support staff, junior administrators, developers and graduates moving toward security work. It is also suitable for managers who need to understand what a penetration test actually delivers.</p>
-
-        <h2 class="h1 mb-3">Prerequisites</h2>
-        <ul class="ticks mb-5">
-          <li>Comfort with Windows or Linux as a user.</li>
-          <li>Basic understanding of IP addressing and the web request/response cycle.</li>
-          <li>No prior offensive-security experience required.</li>
-        </ul>
-
-        <h2 class="h1 mb-3">Tools you will use</h2>
-        <p class="small text-muted mb-5">A Linux attack VM, an intercepting proxy, a network scanner, a web-assessment toolkit, and a virtualised target range. Everything runs inside the CBBL lab; no external systems are targeted.</p>
-
-        <h2 class="h1 mb-4" id="faq">Questions</h2>
-        <div class="accordion shadow-sm rounded-3 overflow-hidden border mb-4" id="courseFaqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCF1">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCF1" aria-expanded="true" aria-controls="collapseCF1">
-                Do I need my own laptop?
-              </button>
-            </h2>
-            <div id="collapseCF1" class="accordion-collapse collapse show" aria-labelledby="headingCF1" data-bs-parent="#courseFaqAccordion">
-              <div class="accordion-body">
-                Recommended, and required if you want to keep your lab notes. Campus machines are available during lab sessions.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCF2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCF2" aria-expanded="false" aria-controls="collapseCF2">
-                Is this enough to get a security job?
-              </button>
-            </h2>
-            <div id="collapseCF2" class="accordion-collapse collapse" aria-labelledby="headingCF2" data-bs-parent="#courseFaqAccordion">
-              <div class="accordion-body">
-                It is a foundation, not a full qualification. Most graduates pair it with networking or SOC training and a portfolio. Our placement team will tell you honestly what else you need.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCF3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCF3" aria-expanded="false" aria-controls="collapseCF3">
-                Will I learn to hack real systems?
-              </button>
-            </h2>
-            <div id="collapseCF3" class="accordion-collapse collapse" aria-labelledby="headingCF3" data-bs-parent="#courseFaqAccordion">
-              <div class="accordion-body">
-                You will learn the techniques inside an isolated lab and, more importantly, the authorisation, evidence and reporting discipline that makes the work professional.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCF4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCF4" aria-expanded="false" aria-controls="collapseCF4">
-                What certificate do I receive?
-              </button>
-            </h2>
-            <div id="collapseCF4" class="accordion-collapse collapse" aria-labelledby="headingCF4" data-bs-parent="#courseFaqAccordion">
-              <div class="accordion-body">
-                A CBBL Certificate of Completion after passing the assessment. Vendor certifications are separate and require their own exams.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCF5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCF5" aria-expanded="false" aria-controls="collapseCF5">
-                Can my employer pay?
-              </button>
-            </h2>
-            <div id="collapseCF5" class="accordion-collapse collapse" aria-labelledby="headingCF5" data-bs-parent="#courseFaqAccordion">
-              <div class="accordion-body">
-                Yes — corporate invoicing is available, and this course can run as a closed cohort.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sticky Sidebar -->
-      <div class="col-lg-4">
-        <aside class="aside-card shadow-sm sticky-top-nav" id="fees">
-          <h3 class="h5 mb-2">Enrol</h3>
-          <p class="fee display-6 text-primary mb-1">BDT [fee]</p>
-          <p class="small text-muted mb-3">Instalments by agreement · corporate invoicing available</p>
-          <dl class="mb-4">
-            <dt>Next batch</dt><dd>[Date] · evening</dd>
-            <dt>Seats</dt><dd>18 maximum</dd>
-            <dt>Duration</dt><dd>10 weeks</dd>
-            <dt>Assessment</dt><dd>Practical + report</dd>
-            <dt>Language</dt><dd>Bangla / English technical</dd>
-          </dl>
-          <a class="btn btn-accent w-100 mb-2" href="#enrol">Apply for this course</a>
-          <a class="btn btn-secondary w-100 mb-3" href="contact.html">Ask a question</a>
-          <p class="small text-muted mb-0">Fees include tuition, lab access, materials and the CBBL certificate. Vendor exam fees are separate.</p>
-        </aside>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Application Form Section -->
-<section class="section section--surface" id="enrol">
-  <div class="container-xl" style="max-width:760px">
-    <div class="section-head mb-4 text-center mx-auto">
-      <p class="eyebrow">Admission</p>
-      <h2 class="h1">Apply for Ethical Hacking Fundamentals</h2>
-      <p class="lead">Three minutes. A counsellor calls within one working day to confirm fit and batch.</p>
-    </div>
-    <form class="form-card shadow-sm" data-demo-form novalidate>
-      <div class="form-success" role="status" aria-live="polite">
-        <strong>Application received.</strong> Reference <span data-ref>CBBL-2026-0000</span>. A counsellor will call within one working day.
-      </div>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <label for="a-name" class="form-label">Full name <span class="req text-danger">*</span></label>
-          <input id="a-name" type="text" class="form-control" required>
-          <div class="invalid-feedback">Enter your name.</div>
-        </div>
-        <div class="col-md-6">
-          <label for="a-email" class="form-label">Email <span class="req text-danger">*</span></label>
-          <input id="a-email" type="email" class="form-control" required>
-          <div class="invalid-feedback">Enter a valid email.</div>
-        </div>
-        <div class="col-md-6">
-          <label for="a-phone" class="form-label">Phone <span class="req text-danger">*</span></label>
-          <input id="a-phone" type="tel" class="form-control" required>
-          <div class="invalid-feedback">Enter a phone number.</div>
-        </div>
-        <div class="col-md-6">
-          <label for="a-batch" class="form-label">Preferred batch <span class="req text-danger">*</span></label>
-          <select id="a-batch" class="form-select" required>
-            <option value="">Select</option>
-            <option>Evening (Sun/Tue)</option>
-            <option>Evening (Mon/Wed)</option>
-            <option>Weekend (Friday)</option>
-          </select>
-          <div class="invalid-feedback">Choose a batch.</div>
-        </div>
-        <div class="col-12">
-          <label for="a-exp" class="form-label">Your background</label>
-          <textarea id="a-exp" class="form-control" rows="3" placeholder="Current role or study, and what you want to do next."></textarea>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="a-check" required>
-            <label class="form-check-label text-muted small" for="a-check">
-              I have read the course outline and understand the assessment requirements.
-            </label>
-            <div class="invalid-feedback">You must confirm before submitting.</div>
-          </div>
-        </div>
-        <div class="col-12 mt-3">
-          <button class="btn btn-primary w-100" type="submit">Submit application</button>
-          <p class="small text-muted mt-2 mb-0">This is a demo form. In production it posts to the CBBL admissions system and creates a lead record.</p>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
-</main>
-
-<!-- Bootstrap 5 Footer -->
-<footer class="site-footer bg-dark-teal text-white-50 py-5">
-  <div class="container-xl">
-    <div class="row g-4 justify-content-between">
-      <div class="col-lg-4 col-md-6">
-        <div class="footer__brand">
-          <a href="index.html" class="d-inline-block mb-3" aria-label="CBBL Home">
-            <img src="images/cbbl-logo-light.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="40">
+    <!-- Bootstrap 5 Navbar Header -->
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg py-2">
+        <div class="container-xl d-flex align-items-center">
+          <a class="navbar-brand me-3" href="index.html" aria-label="CBBL home">
+            <img
+              src="images/cbbl-logo.svg"
+              alt="CBBL — Creating Better Bangladesh"
+              width="160"
+              height="40"
+            />
           </a>
-          <p class="footer__tag text-white-50 small mb-3">Cybersecurity services, IT solutions and professional training. Build capability. Prove it.</p>
-          <p class="small text-white-50 mb-3">Panthapath, Dhaka 1205, Bangladesh<br><a href="tel:+8801799446655" class="text-white-50 text-decoration-none">+880 1799-446655</a> · <a href="mailto:info@cbbl.com.bd" class="text-white-50 text-decoration-none">info@cbbl.com.bd</a></p>
-          <div class="footer__social mt-3">
+
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link px-3" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-3"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu--services shadow-lg border-0"
+                  aria-labelledby="servicesDropdown"
+                >
+                  <div class="row g-3">
+                    <div class="col-lg-7">
+                      <div class="dropdown-col-title">Core Capabilities</div>
+                      <div class="d-flex flex-column gap-1">
+                        <a
+                          class="dropdown-rich-item"
+                          href="cybersecurity-services.html"
+                        >
+                          <div class="dropdown-icon-box">
+                            <i class="bi bi-shield-check"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>Cybersecurity Services</span>
+                              <span class="dropdown-mini-tag">Core</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              VAPT assessments, threat modeling, cloud audit
+                              &amp; compliance.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+
+                        <a
+                          class="dropdown-rich-item"
+                          href="cybersecurity-services.html#it"
+                        >
+                          <div
+                            class="dropdown-icon-box dropdown-icon-box--blue"
+                          >
+                            <i class="bi bi-hdd-network"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>IT Solutions</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              Enterprise infrastructure, firewalls, routing
+                              &amp; 24/7 support.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+
+                        <a class="dropdown-rich-item" href="projects.html">
+                          <div
+                            class="dropdown-icon-box dropdown-icon-box--purple"
+                          >
+                            <i class="bi bi-code-slash"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>Software Development</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              Web, mobile &amp; enterprise business portals with
+                              secure SDLC.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+
+                        <a class="dropdown-rich-item" href="contact.html">
+                          <div
+                            class="dropdown-icon-box dropdown-icon-box--amber"
+                          >
+                            <i class="bi bi-box-seam"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>IT Procurement &amp; Import</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              Certified hardware, server appliances &amp;
+                              equipment sourcing.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                      <div class="dropdown-highlight-panel">
+                        <div class="dropdown-highlight-title">
+                          <i class="bi bi-stars text-success"></i> Popular
+                          Security Tracks
+                        </div>
+                        <div class="dropdown-quick-links">
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#assessment"
+                          >
+                            <span>Security Assessment</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#pentest"
+                          >
+                            <span>Penetration Testing (VAPT)</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#cloud"
+                          >
+                            <span>Cloud Security &amp; ISO 27001</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#ir"
+                          >
+                            <span>Incident Response Readiness</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#awareness"
+                          >
+                            <span>Security Awareness Training</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="dropdown-bottom-strip">
+                        <div class="dropdown-bottom-strip-text">
+                          <i
+                            class="bi bi-shield-lock-fill text-success fs-5"
+                          ></i>
+                          <span
+                            >Every engagement begins with a documented written
+                            scope.</span
+                          >
+                        </div>
+                        <a
+                          class="dropdown-bottom-strip-cta"
+                          href="contact.html"
+                        >
+                          <span>Request scoping call</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-3"
+                  href="#"
+                  id="trainingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Training
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu--training shadow-lg border-0"
+                  aria-labelledby="trainingDropdown"
+                >
+                  <div class="dropdown-col-title">
+                    Training Ecosystem &amp; Certifications
+                  </div>
+                  <div class="row g-2">
+                    <div class="col-md-6">
+                      <a class="dropdown-rich-item" href="nsda-training.html">
+                        <div class="dropdown-icon-box">
+                          <i class="bi bi-award"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>NSDA Training Programs</span>
+                            <span class="dropdown-mini-tag">Govt.</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Levels 3–5, competency-based national
+                            qualifications.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="professional-training.html"
+                      >
+                        <div class="dropdown-icon-box dropdown-icon-box--blue">
+                          <i class="bi bi-laptop"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Regular Professional Training</span>
+                            <span class="dropdown-mini-tag">20 Courses</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Hands-on job-ready IT courses with practical labs.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="advanced-cybersecurity.html"
+                      >
+                        <div
+                          class="dropdown-icon-box dropdown-icon-box--purple"
+                        >
+                          <i class="bi bi-shield-shaded"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Advanced Cybersecurity</span>
+                            <span class="dropdown-mini-tag">13 Tracks</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Offensive &amp; defensive security tracks for
+                            practitioners.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="corporate-training.html"
+                      >
+                        <div class="dropdown-icon-box dropdown-icon-box--amber">
+                          <i class="bi bi-building"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Corporate &amp; Custom Training</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Tailored syllabus, workforce upskilling &amp;
+                            delivery.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="law-enforcement-training.html"
+                      >
+                        <div class="dropdown-icon-box">
+                          <i class="bi bi-file-lock2"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Institutional Training</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Confidential, specialized technical instruction.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a class="dropdown-rich-item" href="vendor-vouchers.html">
+                        <div class="dropdown-icon-box dropdown-icon-box--blue">
+                          <i class="bi bi-ticket-perforated"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Vendor Exam Vouchers</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Global exam voucher procurement &amp; registration.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                      <div class="dropdown-bottom-strip">
+                        <div class="dropdown-bottom-strip-text">
+                          <i
+                            class="bi bi-mortarboard-fill text-success fs-5"
+                          ></i>
+                          <span
+                            >Small batches, active cyber range access &amp;
+                            certified instructors.</span
+                          >
+                        </div>
+                        <a
+                          class="dropdown-bottom-strip-cta"
+                          href="training.html"
+                        >
+                          <span>Explore all courses</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="job-placement.html">Placement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center gap-2 ms-auto">
+            <button
+              class="btn btn-search-trigger rounded-circle"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+              aria-label="Search the site"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m16.5 16.5 4 4" />
+              </svg>
+            </button>
+            <a
+              class="btn-navbar-pill d-none d-xl-inline-flex"
+              href="contact.html"
+            >
+              <span>Enroll Now</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <button
+              class="btn btn-light btn-icon rounded-circle d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileDrawer"
+              aria-controls="mobileDrawer"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Bootstrap 5 Offcanvas Mobile Drawer -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileDrawer"
+      aria-labelledby="mobileDrawerLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <a href="index.html" class="d-flex align-items-center">
+          <img
+            src="images/cbbl-logo.svg"
+            alt="CBBL — Creating Better Bangladesh"
+            width="160"
+            height="40"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column p-0">
+        <div class="p-3 flex-grow-1">
+          <nav class="nav flex-column mobile-nav">
+            <a class="nav-link py-2 px-3 fw-medium text-dark" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link py-2 px-3 fw-medium text-dark" href="about.html"
+              >About</a
+            >
+            <div class="accordion accordion-flush" id="mobileNavAccordion">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingMobileServices">
+                  <button
+                    class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMobileServices"
+                    aria-expanded="false"
+                    aria-controls="collapseMobileServices"
+                  >
+                    Services
+                  </button>
+                </h2>
+                <div
+                  id="collapseMobileServices"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingMobileServices"
+                  data-bs-parent="#mobileNavAccordion"
+                >
+                  <div class="accordion-body py-1 ps-4 pe-2">
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="cybersecurity-services.html"
+                      >Cybersecurity Services</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="cybersecurity-services.html#it"
+                      >IT Solutions</a
+                    >
+                    <a class="nav-link py-2 text-muted" href="projects.html"
+                      >Software Development</a
+                    >
+                    <a class="nav-link py-2 text-muted" href="contact.html"
+                      >IT Procurement &amp; Import</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingMobileTraining">
+                  <button
+                    class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMobileTraining"
+                    aria-expanded="false"
+                    aria-controls="collapseMobileTraining"
+                  >
+                    Training
+                  </button>
+                </h2>
+                <div
+                  id="collapseMobileTraining"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingMobileTraining"
+                  data-bs-parent="#mobileNavAccordion"
+                >
+                  <div class="accordion-body py-1 ps-4 pe-2">
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="nsda-training.html"
+                      >NSDA Training Programs</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="professional-training.html"
+                      >Regular Professional Training</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="advanced-cybersecurity.html"
+                      >Advanced Cybersecurity</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="corporate-training.html"
+                      >Corporate &amp; Custom Training</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="law-enforcement-training.html"
+                      >Institutional Training</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="vendor-vouchers.html"
+                      >Vendor Exam Vouchers</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="job-placement.html"
+              >Placement</a
+            >
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="projects.html"
+              >Projects</a
+            >
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="contact.html"
+              >Contact</a
+            >
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="trust-and-credentials.html"
+              >Trust &amp; Credentials</a
+            >
+          </nav>
+        </div>
+        <div class="p-3 border-top bg-white">
+          <a class="btn-navbar-pill w-100 text-center" href="contact.html">
+            <span>Enroll Now</span>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Search Modal -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 p-3 p-md-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-semibold" id="searchModalLabel">
+              Search courses, services and pages
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-3">
+            <form action="professional-training.html" role="search">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control form-control-lg"
+                  name="q"
+                  placeholder="e.g. ethical hacking, NSDA level 5, cloud security"
+                  aria-label="Search"
+                  required
+                />
+                <button class="btn btn-primary px-4" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+            <p class="search-suggest text-muted small mb-0">
+              Popular:
+              <a
+                href="professional-training.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >cybersecurity course</a
+              >
+              <a
+                href="nsda-training.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >NSDA</a
+              >
+              <a
+                href="cybersecurity-services.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >security assessment</a
+              >
+              <a
+                href="corporate-training.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >corporate training</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- Page Hero (Modern Light Theme matching Site Architecture) -->
+      <section class="tech-glow-hero">
+        <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+        <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+        <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
+
+        <div class="container-xl position-relative">
+          <!-- Course Category Badge -->
+          <div class="tech-glow-hero__badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>COURSE OVERVIEW</span>
+          </div>
+
+          <!-- Main Course Title -->
+          <h1 class="tech-glow-hero__title">Ethical Hacking Fundamentals</h1>
+
+          <!-- Course Level & Meta Chips (Moved below Title) -->
+          <div class="course-meta-pills">
+            <span class="course-meta-pill">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              <span>Beginner</span>
+            </span>
+            <span class="course-meta-pill">
+              <i class="bi bi-briefcase" aria-hidden="true"></i>
+              <span>Professional</span>
+            </span>
+            <span class="course-meta-pill">
+              <i class="bi bi-laptop" aria-hidden="true"></i>
+              <span>Hybrid</span>
+            </span>
+          </div>
+
+          <!-- Course Lead Description -->
+          <p class="tech-glow-hero__lead">
+            A ten-week, lab-based introduction to offensive security practice:
+            how systems are attacked, how to prove it safely, and how to write a
+            report a client can act on.
+          </p>
+
+          <!-- Course Quick Specs (Sleek Streamlined Strip) -->
+          <div class="course-specs-streamline">
+            <div class="row g-3 align-items-center">
+              <div class="col-md-4">
+                <div class="spec-streamline-item">
+                  <div class="spec-streamline-icon">
+                    <i class="bi bi-calendar3"></i>
+                  </div>
+                  <div>
+                    <span class="spec-streamline-label">Duration</span>
+                    <span class="spec-streamline-val"
+                      >10 weeks · 2 evenings</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 spec-divider-left">
+                <div class="spec-streamline-item">
+                  <div class="spec-streamline-icon">
+                    <i class="bi bi-clock-history"></i>
+                  </div>
+                  <div>
+                    <span class="spec-streamline-label">Effort</span>
+                    <span class="spec-streamline-val">6–8 hours per week</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 spec-divider-left">
+                <div class="spec-streamline-item">
+                  <div class="spec-streamline-icon">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <div>
+                    <span class="spec-streamline-label">Mode</span>
+                    <span class="spec-streamline-val"
+                      >Hybrid (Online + Labs)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons (Pill CTAs) -->
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <a class="btn-hero-pill-primary" href="#apply">
+              <span>Apply for this batch</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a class="btn-hero-pill-secondary" href="#curriculum">
+              <span>View curriculum</span>
+            </a>
+          </div>
+
+          <!-- Breadcrumb with Chevron -->
+          <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator" aria-hidden="true">&gt;</span>
+            <a href="training.html">Training</a>
+            <span class="separator" aria-hidden="true">&gt;</span>
+            <a href="professional-training.html">Professional Training</a>
+            <span class="separator" aria-hidden="true">&gt;</span>
+            <span class="current" aria-current="page"
+              >Ethical Hacking Fundamentals</span
+            >
+          </nav>
+        </div>
+      </section>
+
+      <!-- Subnav -->
+      <div class="subnav">
+        <div class="container-xl">
+          <ul>
+            <li><a href="#outcomes">Outcomes</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#assessment">Assessment</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Split Section -->
+      <section class="section">
+        <div class="container-xl">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-8">
+              <h2 class="h1 mb-3" id="outcomes">What you will be able to do</h2>
+              <p class="lead mb-4">
+                By the end of the course, with the lab environment and your
+                notes, you can:
+              </p>
+              <ul class="ticks mb-5">
+                <li>
+                  Plan a scoped assessment and explain the legal boundary in
+                  writing.
+                </li>
+                <li>
+                  Perform structured reconnaissance on an authorised target.
+                </li>
+                <li>
+                  Identify and validate common web and network weaknesses.
+                </li>
+                <li>
+                  Explain the business impact of a finding in plain language.
+                </li>
+                <li>
+                  Write a findings report with evidence, severity and
+                  remediation.
+                </li>
+                <li>Present findings in a short client-style debrief.</li>
+              </ul>
+
+              <div class="course-curriculum-section mb-5">
+                <h2 class="h1 mb-4" id="curriculum">Curriculum</h2>
+                <div class="curriculum-accordion" id="curriculumAccordion">
+                  <!-- Module 1 -->
+                  <div class="curriculum-module-card">
+                    <button
+                      class="curriculum-module-trigger"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseM1"
+                      aria-expanded="true"
+                      aria-controls="collapseM1"
+                    >
+                      <span class="curriculum-module-badge">01</span>
+                      <span class="curriculum-module-meta">
+                        <span class="curriculum-module-kicker">Module 1</span>
+                        <span class="curriculum-module-title"
+                          >Foundations and the legal boundary</span
+                        >
+                      </span>
+                      <span
+                        class="curriculum-module-chevron"
+                        aria-hidden="true"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div
+                      id="collapseM1"
+                      class="collapse show"
+                      data-bs-parent="#curriculumAccordion"
+                    >
+                      <div class="curriculum-module-body">
+                        Authorisation, scope documents, rules of engagement, and
+                        the difference between testing and unauthorised access.
+                        Lab setup and safety rules.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Module 2 -->
+                  <div class="curriculum-module-card">
+                    <button
+                      class="curriculum-module-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseM2"
+                      aria-expanded="false"
+                      aria-controls="collapseM2"
+                    >
+                      <span class="curriculum-module-badge">02</span>
+                      <span class="curriculum-module-meta">
+                        <span class="curriculum-module-kicker">Module 2</span>
+                        <span class="curriculum-module-title"
+                          >Reconnaissance</span
+                        >
+                      </span>
+                      <span
+                        class="curriculum-module-chevron"
+                        aria-hidden="true"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div
+                      id="collapseM2"
+                      class="collapse"
+                      data-bs-parent="#curriculumAccordion"
+                    >
+                      <div class="curriculum-module-body">
+                        Passive and active discovery, DNS and certificate
+                        sources, service enumeration, and recording evidence as
+                        you go.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Module 3 -->
+                  <div class="curriculum-module-card">
+                    <button
+                      class="curriculum-module-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseM3"
+                      aria-expanded="false"
+                      aria-controls="collapseM3"
+                    >
+                      <span class="curriculum-module-badge">03</span>
+                      <span class="curriculum-module-meta">
+                        <span class="curriculum-module-kicker">Module 3</span>
+                        <span class="curriculum-module-title"
+                          >Web application weaknesses</span
+                        >
+                      </span>
+                      <span
+                        class="curriculum-module-chevron"
+                        aria-hidden="true"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div
+                      id="collapseM3"
+                      class="collapse"
+                      data-bs-parent="#curriculumAccordion"
+                    >
+                      <div class="curriculum-module-body">
+                        Authentication and session issues, injection classes,
+                        access-control failures and file handling — validated
+                        manually, not just flagged by a scanner.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Module 4 -->
+                  <div class="curriculum-module-card">
+                    <button
+                      class="curriculum-module-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseM4"
+                      aria-expanded="false"
+                      aria-controls="collapseM4"
+                    >
+                      <span class="curriculum-module-badge">04</span>
+                      <span class="curriculum-module-meta">
+                        <span class="curriculum-module-kicker">Module 4</span>
+                        <span class="curriculum-module-title"
+                          >Network and system exposure</span
+                        >
+                      </span>
+                      <span
+                        class="curriculum-module-chevron"
+                        aria-hidden="true"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div
+                      id="collapseM4"
+                      class="collapse"
+                      data-bs-parent="#curriculumAccordion"
+                    >
+                      <div class="curriculum-module-body">
+                        Service misconfiguration, credential hygiene,
+                        lateral-movement concepts and the controls that would
+                        have prevented each.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Module 5 -->
+                  <div class="curriculum-module-card">
+                    <button
+                      class="curriculum-module-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseM5"
+                      aria-expanded="false"
+                      aria-controls="collapseM5"
+                    >
+                      <span class="curriculum-module-badge">05</span>
+                      <span class="curriculum-module-meta">
+                        <span class="curriculum-module-kicker">Module 5</span>
+                        <span class="curriculum-module-title"
+                          >Validation and evidence</span
+                        >
+                      </span>
+                      <span
+                        class="curriculum-module-chevron"
+                        aria-hidden="true"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div
+                      id="collapseM5"
+                      class="collapse"
+                      data-bs-parent="#curriculumAccordion"
+                    >
+                      <div class="curriculum-module-body">
+                        Reproducing a finding, capturing minimal evidence,
+                        avoiding data exposure, and deciding when a finding is
+                        real.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Module 6 -->
+                  <div class="curriculum-module-card">
+                    <button
+                      class="curriculum-module-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseM6"
+                      aria-expanded="false"
+                      aria-controls="collapseM6"
+                    >
+                      <span class="curriculum-module-badge">06</span>
+                      <span class="curriculum-module-meta">
+                        <span class="curriculum-module-kicker">Module 6</span>
+                        <span class="curriculum-module-title"
+                          >Reporting and debrief</span
+                        >
+                      </span>
+                      <span
+                        class="curriculum-module-chevron"
+                        aria-hidden="true"
+                      >
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div
+                      id="collapseM6"
+                      class="collapse"
+                      data-bs-parent="#curriculumAccordion"
+                    >
+                      <div class="curriculum-module-body">
+                        Severity that reflects business impact, remediation that
+                        a developer can implement, and a ten-minute debrief you
+                        can deliver calmly.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-assessment-section mb-5">
+                <h2 class="h1 mb-4" id="assessment">Assessment</h2>
+
+                <div class="assessment-card">
+                  <div class="assessment-card__header">
+                    <span class="assessment-card__label"
+                      >Assessment components</span
+                    >
+                    <span class="assessment-overall-pill">
+                      <i class="bi bi-shield-check"></i>
+                      60% overall to pass
+                    </span>
+                  </div>
+
+                  <div class="assessment-list">
+                    <!-- Component 1 -->
+                    <div class="assessment-row">
+                      <div class="assessment-row__main">
+                        <div class="assessment-row__icon">
+                          <i class="bi bi-terminal"></i>
+                        </div>
+                        <div class="assessment-row__title">
+                          Weekly lab tasks (6 of 8 must pass)
+                        </div>
+                      </div>
+                      <div class="assessment-row__weight">
+                        <span class="assessment-row__weight-val"
+                          >30% weight</span
+                        >
+                        <div class="assessment-row__bar">
+                          <div
+                            class="assessment-row__bar-fill"
+                            style="width: 30%"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="assessment-row__pass">
+                        <span class="assessment-pass-badge">60% pass</span>
+                      </div>
+                    </div>
+
+                    <!-- Component 2 -->
+                    <div class="assessment-row">
+                      <div class="assessment-row__main">
+                        <div class="assessment-row__icon">
+                          <i class="bi bi-bullseye"></i>
+                        </div>
+                        <div class="assessment-row__title">
+                          Practical assessment — scoped lab target
+                        </div>
+                      </div>
+                      <div class="assessment-row__weight">
+                        <span class="assessment-row__weight-val"
+                          >40% weight</span
+                        >
+                        <div class="assessment-row__bar">
+                          <div
+                            class="assessment-row__bar-fill"
+                            style="width: 40%"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="assessment-row__pass">
+                        <span class="assessment-pass-badge">60% pass</span>
+                      </div>
+                    </div>
+
+                    <!-- Component 3 -->
+                    <div class="assessment-row">
+                      <div class="assessment-row__main">
+                        <div class="assessment-row__icon">
+                          <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                        <div class="assessment-row__title">
+                          Written findings report
+                        </div>
+                      </div>
+                      <div class="assessment-row__weight">
+                        <span class="assessment-row__weight-val"
+                          >20% weight</span
+                        >
+                        <div class="assessment-row__bar">
+                          <div
+                            class="assessment-row__bar-fill"
+                            style="width: 20%"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="assessment-row__pass">
+                        <span class="assessment-pass-badge">60% pass</span>
+                      </div>
+                    </div>
+
+                    <!-- Component 4 -->
+                    <div class="assessment-row">
+                      <div class="assessment-row__main">
+                        <div class="assessment-row__icon">
+                          <i class="bi bi-easel"></i>
+                        </div>
+                        <div class="assessment-row__title">
+                          Debrief presentation
+                        </div>
+                      </div>
+                      <div class="assessment-row__weight">
+                        <span class="assessment-row__weight-val"
+                          >10% weight</span
+                        >
+                        <div class="assessment-row__bar">
+                          <div
+                            class="assessment-row__bar-fill"
+                            style="width: 10%"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="assessment-row__pass">
+                        <span class="assessment-pass-badge">50% pass</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="assessment-card__footer">
+                    <i class="bi bi-info-circle-fill flex-shrink-0"></i>
+                    <span
+                      >Pass requires 60% overall. One re-assessment opportunity
+                      is included within 30 days.</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-audience-section mb-5">
+                <h2 class="h1 mb-4">Who it is for</h2>
+                <div class="audience-grid">
+                  <div class="audience-tile">
+                    <div class="audience-tile__icon">
+                      <img
+                        src="images/audience-it-support.svg"
+                        alt="IT support staff"
+                        width="58"
+                        height="58"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="audience-tile__content">
+                      <div class="audience-tile__title">IT support staff</div>
+                      <div class="audience-tile__sub">
+                        Moving toward security work
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="audience-tile">
+                    <div class="audience-tile__icon">
+                      <img
+                        src="images/audience-sysadmin.svg"
+                        alt="Junior administrators"
+                        width="58"
+                        height="58"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="audience-tile__content">
+                      <div class="audience-tile__title">
+                        Junior administrators
+                      </div>
+                      <div class="audience-tile__sub">
+                        Moving toward security work
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="audience-tile">
+                    <div class="audience-tile__icon">
+                      <img
+                        src="images/sector-technology.svg"
+                        alt="Developers"
+                        width="58"
+                        height="58"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="audience-tile__content">
+                      <div class="audience-tile__title">Developers</div>
+                      <div class="audience-tile__sub">
+                        Moving toward security work
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="audience-tile">
+                    <div class="audience-tile__icon">
+                      <img
+                        src="images/sector-education.svg"
+                        alt="Graduates"
+                        width="58"
+                        height="58"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="audience-tile__content">
+                      <div class="audience-tile__title">Graduates</div>
+                      <div class="audience-tile__sub">
+                        Moving toward security work
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="audience-tile audience-tile--wide">
+                    <div class="audience-tile__icon">
+                      <img
+                        src="images/audience-managers.svg"
+                        alt="Managers"
+                        width="58"
+                        height="58"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="audience-tile__content">
+                      <div class="audience-tile__title">Managers</div>
+                      <div class="audience-tile__sub">
+                        Understand what a penetration test actually delivers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="h1 mb-3">Prerequisites</h2>
+              <ul class="ticks mb-5">
+                <li>Comfort with Windows or Linux as a user.</li>
+                <li>
+                  Basic understanding of IP addressing and the web
+                  request/response cycle.
+                </li>
+                <li>No prior offensive-security experience required.</li>
+              </ul>
+
+              <h2 class="h1 mb-2">Tools you will use</h2>
+              <p class="text-muted mb-3">
+                Standard offensive security utilities, proxies, and target
+                platforms you will practice with:
+              </p>
+
+              <!-- Tools App Dock (Matching User's Mockup) -->
+              <div class="tool-dock-wrapper mb-5">
+                <div class="tool-dock">
+                  <!-- Tile 1: Kali Linux -->
+                  <div
+                    class="tool-dock-tile"
+                    title="Kali Linux — Offensive Security Attack VM"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#kali-grad)"
+                        />
+                        <path
+                          d="M11 16L18 21L11 26"
+                          stroke="#38bdf8"
+                          stroke-width="2.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <line
+                          x1="20"
+                          y1="26"
+                          x2="30"
+                          y2="26"
+                          stroke="#38bdf8"
+                          stroke-width="2.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M31 14C28 12 24 13 22 15C21 16 20 18 22 19C24 20 27 18 29 19C30 20 29 23 27 24C25 25 23 24 21 23"
+                          stroke="#22d3ee"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          opacity="0.6"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="kali-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#0f172a" />
+                            <stop offset="1" stop-color="#1e293b" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">Kali Linux</span>
+                  </div>
+
+                  <!-- Tile 2: Burp Suite -->
+                  <div
+                    class="tool-dock-tile"
+                    title="Burp Suite — Web Intercepting Proxy"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#burp-grad)"
+                        />
+                        <path
+                          d="M14 11H23C25.76 11 28 13.24 28 16C28 17.65 27.2 19.12 25.96 20.03C27.76 20.93 29 22.82 29 25C29 27.76 26.76 30 24 30H14V11Z"
+                          fill="#ffffff"
+                          fill-opacity="0.15"
+                        />
+                        <path
+                          d="M14 11H22C24.2 11 26 12.8 26 15C26 17.2 24.2 19 22 19H14V11ZM14 19H23C25.2 19 27 20.8 27 23C27 25.2 25.2 27 23 27H14V19Z"
+                          stroke="#ffffff"
+                          stroke-width="2.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <circle cx="28" cy="14" r="2" fill="#ffd166" />
+                        <defs>
+                          <linearGradient
+                            id="burp-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#ff6633" />
+                            <stop offset="1" stop-color="#e64a19" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">Burp Suite</span>
+                  </div>
+
+                  <!-- Tile 3: Nmap -->
+                  <div
+                    class="tool-dock-tile"
+                    title="Nmap — Network Scanner &amp; Reconnaissance"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#nmap-grad)"
+                        />
+                        <circle
+                          cx="21"
+                          cy="21"
+                          r="13"
+                          stroke="#93c5fd"
+                          stroke-width="1.5"
+                          stroke-dasharray="3 3"
+                        />
+                        <circle
+                          cx="21"
+                          cy="21"
+                          r="7"
+                          stroke="#60a5fa"
+                          stroke-width="1.5"
+                        />
+                        <circle cx="21" cy="21" r="2.5" fill="#38bdf8" />
+                        <line
+                          x1="21"
+                          y1="8"
+                          x2="21"
+                          y2="34"
+                          stroke="#93c5fd"
+                          stroke-width="1"
+                          stroke-opacity="0.4"
+                        />
+                        <line
+                          x1="8"
+                          y1="21"
+                          x2="34"
+                          y2="21"
+                          stroke="#93c5fd"
+                          stroke-width="1"
+                          stroke-opacity="0.4"
+                        />
+                        <line
+                          x1="21"
+                          y1="21"
+                          x2="30"
+                          y2="12"
+                          stroke="#38bdf8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                        <circle cx="28" cy="14" r="2" fill="#f87171" />
+                        <defs>
+                          <linearGradient
+                            id="nmap-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#1e3a8a" />
+                            <stop offset="1" stop-color="#172554" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">Nmap</span>
+                  </div>
+
+                  <!-- Tile 4: Wireshark -->
+                  <div
+                    class="tool-dock-tile"
+                    title="Wireshark — Traffic &amp; Packet Analyzer"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#ws-grad)"
+                        />
+                        <path
+                          d="M12 28C14 24 16 19 19 13C21 16 23 20 27 21C30 22 32 20 34 23C31 28 24 29 12 28Z"
+                          fill="#ffffff"
+                          fill-opacity="0.25"
+                        />
+                        <path
+                          d="M12 28C16 26 21 21 21 13C23 18 26 21 31 22C27 26 21 28 12 28Z"
+                          fill="#ffffff"
+                        />
+                        <path
+                          d="M10 30C16 29 23 29 32 29"
+                          stroke="#93c5fd"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="ws-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#0284c7" />
+                            <stop offset="1" stop-color="#0369a1" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">Wireshark</span>
+                  </div>
+
+                  <!-- Tile 5: OWASP ZAP -->
+                  <div
+                    class="tool-dock-tile"
+                    title="OWASP ZAP — Web Application Security Scanner"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#zap-grad)"
+                        />
+                        <path
+                          d="M21 8L12 12V20C12 26 16 31 21 33C26 31 30 26 30 20V12L21 8Z"
+                          fill="#ffffff"
+                          fill-opacity="0.15"
+                          stroke="#ffffff"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M22 13L16 22H21L20 28L26 19H21L22 13Z"
+                          fill="#facc15"
+                          stroke="#ca8a04"
+                          stroke-width="0.8"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="zap-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#1e293b" />
+                            <stop offset="1" stop-color="#0f172a" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">OWASP ZAP</span>
+                  </div>
+
+                  <!-- Tile 6: Metasploit -->
+                  <div
+                    class="tool-dock-tile"
+                    title="Metasploit — Penetration Testing Framework"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#ms-grad)"
+                        />
+                        <path
+                          d="M12 29V14L21 21L30 14V29"
+                          stroke="#38bdf8"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <circle cx="21" cy="27" r="2.5" fill="#38bdf8" />
+                        <defs>
+                          <linearGradient
+                            id="ms-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#091e3a" />
+                            <stop offset="1" stop-color="#021427" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">Metasploit</span>
+                  </div>
+
+                  <!-- Tile 7: Cyber Range -->
+                  <div
+                    class="tool-dock-tile"
+                    title="CBBL Cyber Range — Sandboxed Target Environment"
+                  >
+                    <div class="tool-dock-tile__icon">
+                      <svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="42"
+                          height="42"
+                          rx="10"
+                          fill="url(#cr-grad)"
+                        />
+                        <rect
+                          x="11"
+                          y="11"
+                          width="20"
+                          height="6"
+                          rx="2"
+                          stroke="#ffffff"
+                          stroke-width="1.5"
+                          fill="#ffffff"
+                          fill-opacity="0.15"
+                        />
+                        <circle cx="15" cy="14" r="1" fill="#4ade80" />
+                        <circle cx="18" cy="14" r="1" fill="#4ade80" />
+                        <rect
+                          x="11"
+                          y="19"
+                          width="20"
+                          height="6"
+                          rx="2"
+                          stroke="#ffffff"
+                          stroke-width="1.5"
+                          fill="#ffffff"
+                          fill-opacity="0.15"
+                        />
+                        <circle cx="15" cy="22" r="1" fill="#4ade80" />
+                        <circle cx="18" cy="22" r="1" fill="#facc15" />
+                        <path
+                          d="M15 28L21 31L27 28"
+                          stroke="#86efac"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="cr-grad"
+                            x1="0"
+                            y1="0"
+                            x2="42"
+                            y2="42"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#15803d" />
+                            <stop offset="1" stop-color="#064e3b" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="tool-dock-tile__name">Cyber Range</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-faq-section mb-5">
+                <h2 class="h1 mb-4" id="faq">Questions</h2>
+
+                <div class="numbered-faq-accordion" id="courseFaqAccordion">
+                  <!-- Item 01 -->
+                  <div class="numbered-faq-item">
+                    <button
+                      class="numbered-faq-trigger"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCF1"
+                      aria-expanded="true"
+                      aria-controls="collapseCF1"
+                    >
+                      <span class="numbered-faq-num">01.</span>
+                      <span class="numbered-faq-title"
+                        >Do I need my own laptop?</span
+                      >
+                      <i class="bi bi-chevron-down numbered-faq-icon"></i>
+                    </button>
+                    <div
+                      id="collapseCF1"
+                      class="collapse show"
+                      data-bs-parent="#courseFaqAccordion"
+                    >
+                      <div class="numbered-faq-body">
+                        Recommended, and required if you want to keep your lab
+                        notes. Campus machines are available during lab
+                        sessions.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 02 -->
+                  <div class="numbered-faq-item">
+                    <button
+                      class="numbered-faq-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCF2"
+                      aria-expanded="false"
+                      aria-controls="collapseCF2"
+                    >
+                      <span class="numbered-faq-num">02.</span>
+                      <span class="numbered-faq-title"
+                        >Is this enough to get a security job?</span
+                      >
+                      <i class="bi bi-chevron-down numbered-faq-icon"></i>
+                    </button>
+                    <div
+                      id="collapseCF2"
+                      class="collapse"
+                      data-bs-parent="#courseFaqAccordion"
+                    >
+                      <div class="numbered-faq-body">
+                        It is a foundation, not a full qualification. Most
+                        graduates pair it with networking or SOC training and a
+                        portfolio. Our placement team will tell you honestly
+                        what else you need.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 03 -->
+                  <div class="numbered-faq-item">
+                    <button
+                      class="numbered-faq-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCF3"
+                      aria-expanded="false"
+                      aria-controls="collapseCF3"
+                    >
+                      <span class="numbered-faq-num">03.</span>
+                      <span class="numbered-faq-title"
+                        >Will I learn to hack real systems?</span
+                      >
+                      <i class="bi bi-chevron-down numbered-faq-icon"></i>
+                    </button>
+                    <div
+                      id="collapseCF3"
+                      class="collapse"
+                      data-bs-parent="#courseFaqAccordion"
+                    >
+                      <div class="numbered-faq-body">
+                        You will learn the techniques inside an isolated lab
+                        and, more importantly, the authorisation, evidence and
+                        reporting discipline that makes the work professional.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 04 -->
+                  <div class="numbered-faq-item">
+                    <button
+                      class="numbered-faq-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCF4"
+                      aria-expanded="false"
+                      aria-controls="collapseCF4"
+                    >
+                      <span class="numbered-faq-num">04.</span>
+                      <span class="numbered-faq-title"
+                        >What certificate do I receive?</span
+                      >
+                      <i class="bi bi-chevron-down numbered-faq-icon"></i>
+                    </button>
+                    <div
+                      id="collapseCF4"
+                      class="collapse"
+                      data-bs-parent="#courseFaqAccordion"
+                    >
+                      <div class="numbered-faq-body">
+                        A CBBL Certificate of Completion after passing the
+                        assessment. Vendor certifications are separate and
+                        require their own exams.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 05 -->
+                  <div class="numbered-faq-item">
+                    <button
+                      class="numbered-faq-trigger collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCF5"
+                      aria-expanded="false"
+                      aria-controls="collapseCF5"
+                    >
+                      <span class="numbered-faq-num">05.</span>
+                      <span class="numbered-faq-title"
+                        >Can my employer pay?</span
+                      >
+                      <i class="bi bi-chevron-down numbered-faq-icon"></i>
+                    </button>
+                    <div
+                      id="collapseCF5"
+                      class="collapse"
+                      data-bs-parent="#courseFaqAccordion"
+                    >
+                      <div class="numbered-faq-body">
+                        Yes — corporate invoicing is available, and this course
+                        can run as a closed cohort.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sticky Sidebar -->
+            <div class="col-lg-4">
+              <aside
+                class="course-enrol-card sticky-top-nav shadow-sm"
+                id="fees"
+              >
+                <!-- Enrol Header & Pricing with Discount -->
+                <div class="pb-3 border-bottom mb-3">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2"
+                  >
+                    <span
+                      class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1 rounded-pill small fw-semibold"
+                    >
+                      <span
+                        class="badge-dot d-inline-block rounded-circle bg-success me-1"
+                        style="width: 6px; height: 6px"
+                      ></span>
+                      Enrolment Open
+                    </span>
+                    <span
+                      class="badge bg-danger-subtle text-danger border border-danger-subtle rounded-pill px-2.5 py-1 small fw-bold"
+                    >
+                      25% OFF
+                    </span>
+                  </div>
+
+                  <div class="d-flex align-items-baseline gap-2 mb-1">
+                    <span class="course-enrol-card__price-current"
+                      >BDT 22,500</span
+                    >
+                    <span class="course-enrol-card__price-original"
+                      >BDT 30,000</span
+                    >
+                  </div>
+                  <p class="small text-muted mb-0">
+                    Instalments by agreement · corporate invoicing available
+                  </p>
+                </div>
+
+                <!-- Course Specs List with Date -->
+                <ul class="course-enrol-specs-list mb-3">
+                  <li>
+                    <span class="text-muted d-flex align-items-center gap-2">
+                      <i class="bi bi-calendar-event text-success"></i>
+                      Next batch
+                    </span>
+                    <strong class="text-dark">15 Dec 2026 · evening</strong>
+                  </li>
+                  <li>
+                    <span class="text-muted d-flex align-items-center gap-2">
+                      <i class="bi bi-people text-success"></i>
+                      Seats
+                    </span>
+                    <strong class="text-dark">18 maximum</strong>
+                  </li>
+                  <li>
+                    <span class="text-muted d-flex align-items-center gap-2">
+                      <i class="bi bi-hourglass-split text-success"></i>
+                      Duration
+                    </span>
+                    <strong class="text-dark">10 weeks</strong>
+                  </li>
+                  <li>
+                    <span class="text-muted d-flex align-items-center gap-2">
+                      <i class="bi bi-clipboard-check text-success"></i>
+                      Assessment
+                    </span>
+                    <strong class="text-dark">Practical + report</strong>
+                  </li>
+                  <li>
+                    <span class="text-muted d-flex align-items-center gap-2">
+                      <i class="bi bi-translate text-success"></i>
+                      Language
+                    </span>
+                    <strong class="text-dark"
+                      >Bangla / English technical</strong
+                    >
+                  </li>
+                </ul>
+
+                <!-- CTAs (CBBL Brand Styled Buttons) -->
+                <div class="d-grid gap-2 mb-2">
+                  <a class="course-enrol-btn-primary" href="#enrol">
+                    <span>Apply for this course</span>
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </a>
+                  <a class="course-enrol-btn-secondary" href="contact.html">
+                    <span>Ask a question</span>
+                    <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+                <!-- Footer Note (Clean, Well-Spaced Brand Card) -->
+                <div class="course-enrol-note">
+                  <i class="bi bi-shield-check" aria-hidden="true"></i>
+                  <span
+                    >Fees include tuition, lab access, materials and the CBBL
+                    certificate. Vendor exam fees are separate.</span
+                  >
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application Form Section (2-Column: Visual Left, Form Right) -->
+      <section class="section section--surface" id="enrol">
+        <div class="container-xl">
+          <div
+            class="section-head mb-5 text-center mx-auto"
+            style="max-width: 680px"
+          >
+            <p class="eyebrow text-success fw-bold">Admission</p>
+            <h2 class="h1">Apply for Ethical Hacking Fundamentals</h2>
+            <p class="lead mb-0">
+              Three minutes. A counsellor calls within one working day to
+              confirm fit and batch.
+            </p>
+          </div>
+
+          <div class="row g-4 g-lg-5 align-items-center justify-content-center">
+            <!-- Left Column: Pure Visual (No Extra Content) -->
+            <div class="col-lg-5">
+              <div class="apply-visual-frame">
+                <img
+                  src="images/apply-counsellor.jpg"
+                  alt="CBBL Admissions Counsellor"
+                  class="apply-visual-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Right Column: Application Form -->
+            <div class="col-lg-7">
+              <form class="apply-form-card" data-demo-form novalidate>
+                <div class="form-success" role="status" aria-live="polite">
+                  <strong>Application received.</strong> Reference
+                  <span data-ref>CBBL-2026-0000</span>. A counsellor will call
+                  within one working day.
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="a-name" class="form-label"
+                      >Full name <span class="req text-danger">*</span></label
+                    >
+                    <input
+                      id="a-name"
+                      type="text"
+                      class="form-control"
+                      placeholder="e.g. Tariqul Islam"
+                      required
+                    />
+                    <div class="invalid-feedback">Enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="a-email" class="form-label"
+                      >Email <span class="req text-danger">*</span></label
+                    >
+                    <input
+                      id="a-email"
+                      type="email"
+                      class="form-control"
+                      placeholder="you@example.com"
+                      required
+                    />
+                    <div class="invalid-feedback">Enter a valid email.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="a-phone" class="form-label"
+                      >Phone <span class="req text-danger">*</span></label
+                    >
+                    <input
+                      id="a-phone"
+                      type="tel"
+                      class="form-control"
+                      placeholder="+880 1XXX-XXXXXX"
+                      required
+                    />
+                    <div class="invalid-feedback">Enter a phone number.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="a-batch" class="form-label"
+                      >Preferred batch
+                      <span class="req text-danger">*</span></label
+                    >
+                    <select id="a-batch" class="form-select" required>
+                      <option value="">Select a batch</option>
+                      <option>Evening (Sun/Tue)</option>
+                      <option>Evening (Mon/Wed)</option>
+                      <option>Weekend (Friday)</option>
+                    </select>
+                    <div class="invalid-feedback">Choose a batch.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="a-exp" class="form-label"
+                      >Your background</label
+                    >
+                    <textarea
+                      id="a-exp"
+                      class="form-control"
+                      rows="3"
+                      placeholder="Current role or study, and what you want to do next."
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="a-check"
+                        required
+                      />
+                      <label
+                        class="form-check-label text-muted small"
+                        for="a-check"
+                      >
+                        I have read the course outline and understand the
+                        assessment requirements.
+                      </label>
+                      <div class="invalid-feedback">
+                        You must confirm before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button class="apply-submit-btn" type="submit">
+                      <span>Submit application</span>
+                      <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap 5 Footer -->
+    <footer class="site-footer bg-dark-teal text-white-50 py-5">
+      <div class="container-xl">
+        <div class="row g-4 justify-content-between">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer__brand">
+              <a
+                href="index.html"
+                class="d-inline-block mb-3"
+                aria-label="CBBL Home"
+              >
+                <img
+                  src="images/cbbl-logo-light.svg"
+                  alt="CBBL — Creating Better Bangladesh"
+                  width="160"
+                  height="40"
+                />
+              </a>
+              <p class="footer__tag text-white-50 small mb-3">
+                Cybersecurity services, IT solutions and professional training.
+                Build capability. Prove it.
+              </p>
+              <p class="small text-white-50 mb-3">
+                Panthapath, Dhaka 1205, Bangladesh<br /><a
+                  href="tel:+8801799446655"
+                  class="text-white-50 text-decoration-none"
+                  >+880 1799-446655</a
+                >
+                ·
+                <a
+                  href="mailto:info@cbbl.com.bd"
+                  class="text-white-50 text-decoration-none"
+                  >info@cbbl.com.bd</a
+                >
+              </p>
+              <div class="footer__social mt-3">
                 <a
                   href="#"
                   class="footer__social-btn"
@@ -727,7 +2211,8 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.5 4.76 5.75V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.47-2.2 3v5.8h-4z"
                     /></svg
                 ></a>
@@ -741,21 +2226,20 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"
                     /></svg
                 ></a>
-                <a
-                  href="#"
-                  class="footer__social-btn"
-                  aria-label="CBBL on X"
+                <a href="#" class="footer__social-btn" aria-label="CBBL on X"
                   ><svg
                     width="14"
                     height="14"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
                     /></svg
                 ></a>
@@ -769,72 +2253,209 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15V9l5 3z"
                     /></svg
                 ></a>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h6
+              class="text-uppercase text-gold fw-bold mb-3 small tracking-wide"
+            >
+              Services
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+              <li>
+                <a
+                  href="cybersecurity-services.html"
+                  class="text-white-50 text-decoration-none"
+                  >Cybersecurity Services</a
+                >
+              </li>
+              <li><a href="cybersecurity-services.html#it">IT Solutions</a></li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-white-50 text-decoration-none"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >IT Procurement &amp; Import</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h6
+              class="text-uppercase text-gold fw-bold mb-3 small tracking-wide"
+            >
+              Training
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+              <li>
+                <a
+                  href="nsda-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >NSDA Programs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="professional-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >Professional Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="advanced-cybersecurity.html"
+                  class="text-white-50 text-decoration-none"
+                  >Advanced Cybersecurity</a
+                >
+              </li>
+              <li>
+                <a
+                  href="corporate-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >Corporate Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="law-enforcement-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >Institutional Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="vendor-vouchers.html"
+                  class="text-white-50 text-decoration-none"
+                  >Vendor Vouchers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6
+              class="text-uppercase text-gold fw-bold mb-3 small tracking-wide"
+            >
+              Company
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+              <li>
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  >About CBBL</a
+                >
+              </li>
+              <li>
+                <a
+                  href="job-placement.html"
+                  class="text-white-50 text-decoration-none"
+                  >Placement Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-white-50 text-decoration-none"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="trust-and-credentials.html"
+                  class="text-white-50 text-decoration-none"
+                  >Trust &amp; Credentials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#news"
+                  class="text-white-50 text-decoration-none"
+                  >News &amp; Events</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer__legal border-top border-secondary border-opacity-25 mt-5 pt-3 d-flex flex-wrap justify-content-between align-items-center gap-3 small text-white-50"
+        >
+          <p class="mb-0">
+            © <span data-year>2026</span> Creating Better Bangladesh Limited.
+            All rights reserved.
+          </p>
+          <nav class="d-flex flex-wrap gap-3" aria-label="Legal">
+            <a
+              href="contact.html#legal"
+              class="text-white-50 text-decoration-none"
+              >Privacy Policy</a
+            >
+            <a
+              href="contact.html#legal"
+              class="text-white-50 text-decoration-none"
+              >Terms of Use</a
+            >
+            <a
+              href="contact.html#legal"
+              class="text-white-50 text-decoration-none"
+              >Cookie Notice</a
+            >
+            <a href="index.html" class="text-white-50 text-decoration-none"
+              >Sitemap</a
+            >
+          </nav>
         </div>
       </div>
-      <div class="col-lg-2 col-md-6 col-6">
-        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Services</h6>
-        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-          <li><a href="cybersecurity-services.html" class="text-white-50 text-decoration-none">Cybersecurity Services</a></li>
-          <li><a href="cybersecurity-services.html#it">IT Solutions</a></li>
-          <li><a href="projects.html" class="text-white-50 text-decoration-none">Software Development</a></li>
-          <li><a href="contact.html" class="text-white-50 text-decoration-none">IT Procurement &amp; Import</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-6">
-        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Training</h6>
-        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-          <li><a href="nsda-training.html" class="text-white-50 text-decoration-none">NSDA Programs</a></li>
-          <li><a href="professional-training.html" class="text-white-50 text-decoration-none">Professional Training</a></li>
-          <li><a href="advanced-cybersecurity.html" class="text-white-50 text-decoration-none">Advanced Cybersecurity</a></li>
-          <li><a href="corporate-training.html" class="text-white-50 text-decoration-none">Corporate Training</a></li>
-          <li><a href="law-enforcement-training.html" class="text-white-50 text-decoration-none">Institutional Training</a></li>
-          <li><a href="vendor-vouchers.html" class="text-white-50 text-decoration-none">Vendor Vouchers</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-2 col-md-6">
-        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Company</h6>
-        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-          <li><a href="about.html" class="text-white-50 text-decoration-none">About CBBL</a></li>
-          <li><a href="job-placement.html" class="text-white-50 text-decoration-none">Placement Support</a></li>
-          <li><a href="projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
-          <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
-          <li><a href="trust-and-credentials.html" class="text-white-50 text-decoration-none">Trust &amp; Credentials</a></li>
-          <li><a href="index.html#news" class="text-white-50 text-decoration-none">News &amp; Events</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__legal border-top border-secondary border-opacity-25 mt-5 pt-3 d-flex flex-wrap justify-content-between align-items-center gap-3 small text-white-50">
-      <p class="mb-0">© <span data-year>2026</span> Creating Better Bangladesh Limited. All rights reserved.</p>
-      <nav class="d-flex flex-wrap gap-3" aria-label="Legal">
-        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Privacy Policy</a>
-        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Terms of Use</a>
-        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Cookie Notice</a>
-        <a href="index.html" class="text-white-50 text-decoration-none">Sitemap</a>
-      </nav>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<!-- Cookie Banner -->
-<div class="cookie bg-white border rounded-3 shadow-lg p-3 p-md-4" id="cookieBanner" role="region" aria-label="Cookie notice">
-  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
-    <p class="mb-0 small text-muted"><strong>Cookies.</strong> We use necessary cookies to run the site and, with your consent, analytics cookies to understand which pages help. You can change this any time.</p>
-    <div class="d-flex flex-wrap gap-2 flex-shrink-0">
-      <button class="btn btn-primary btn-sm" data-cookie="all">Accept all</button>
-      <button class="btn btn-secondary btn-sm" data-cookie="essential">Reject non-essential</button>
-      <a class="btn btn-sm text-decoration-none" href="contact.html#legal">Cookie settings</a>
+    <!-- Cookie Banner -->
+    <div
+      class="cookie bg-white border rounded-3 shadow-lg p-3 p-md-4"
+      id="cookieBanner"
+      role="region"
+      aria-label="Cookie notice"
+    >
+      <div
+        class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3"
+      >
+        <p class="mb-0 small text-muted">
+          <strong>Cookies.</strong> We use necessary cookies to run the site
+          and, with your consent, analytics cookies to understand which pages
+          help. You can change this any time.
+        </p>
+        <div class="d-flex flex-wrap gap-2 flex-shrink-0">
+          <button class="btn btn-primary btn-sm" data-cookie="all">
+            Accept all
+          </button>
+          <button class="btn btn-secondary btn-sm" data-cookie="essential">
+            Reject non-essential
+          </button>
+          <a class="btn btn-sm text-decoration-none" href="contact.html#legal"
+            >Cookie settings</a
+          >
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Bootstrap 5 Bundle JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Main Interactions JS -->
-<script src="js/main.js"></script>
-</body>
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main Interactions JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

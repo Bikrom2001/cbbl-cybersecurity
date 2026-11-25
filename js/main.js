@@ -5,6 +5,19 @@
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
+  /* Keep --header-h synced to actual .site-header height so sticky subnav sits flush */
+  function syncHeaderHeight() {
+    var header = $(".site-header");
+    if (!header) return;
+    var h = Math.floor(header.getBoundingClientRect().height);
+    if (h > 0) {
+      document.documentElement.style.setProperty("--header-h", h + "px");
+    }
+  }
+  syncHeaderHeight();
+  window.addEventListener("load", syncHeaderHeight);
+  window.addEventListener("resize", syncHeaderHeight);
+
   /* Search Modal Auto-focus */
   var searchModal = document.getElementById("searchModal");
   if (searchModal) {

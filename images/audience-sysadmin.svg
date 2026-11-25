@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sysGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rackBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="rackSlot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="shieldNode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12a46b"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+    <linearGradient id="amberNode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadowSys" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="6" stdDeviation="4.5" flood-color="#0f172a" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="60" r="48" fill="url(#sysGlow)"/>
+
+  <!-- 3D Server Stack -->
+  <g filter="url(#shadowSys)">
+    <!-- Top Blade -->
+    <rect x="22" y="24" width="76" height="20" rx="5" fill="url(#rackBody)"/>
+    <rect x="26" y="28" width="68" height="12" rx="3" fill="url(#rackSlot)"/>
+    <circle cx="34" cy="34" r="2.8" fill="#34d399"/>
+    <circle cx="43" cy="34" r="2.8" fill="#38bdf8"/>
+    <rect x="66" y="32" width="22" height="4" rx="2" fill="#475569"/>
+
+    <!-- Middle Blade -->
+    <rect x="22" y="49" width="76" height="20" rx="5" fill="url(#rackBody)"/>
+    <rect x="26" y="53" width="68" height="12" rx="3" fill="url(#rackSlot)"/>
+    <circle cx="34" cy="59" r="2.8" fill="#34d399"/>
+    <circle cx="43" cy="59" r="2.8" fill="#fbbf24"/>
+    <rect x="66" y="57" width="22" height="4" rx="2" fill="#475569"/>
+
+    <!-- Bottom Blade -->
+    <rect x="22" y="74" width="76" height="20" rx="5" fill="url(#rackBody)"/>
+    <rect x="26" y="78" width="68" height="12" rx="3" fill="url(#rackSlot)"/>
+    <circle cx="34" cy="84" r="2.8" fill="#34d399"/>
+    <circle cx="43" cy="84" r="2.8" fill="#34d399"/>
+    <rect x="66" y="82" width="22" height="4" rx="2" fill="#475569"/>
+  </g>
+
+  <!-- Floating 3D Key / Access Badge -->
+  <g filter="url(#shadowSys)">
+    <circle cx="94" cy="32" r="14" fill="url(#shieldNode)"/>
+    <path d="M88 32 L92 36 L100 28" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Floating Network Node -->
+  <g filter="url(#shadowSys)">
+    <circle cx="24" cy="68" r="8" fill="url(#amberNode)"/>
+    <circle cx="24" cy="68" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="18" cy="28" r="2.5" fill="#10b981"/>
+  <circle cx="102" cy="82" r="2.5" fill="#38bdf8"/>
+</svg>

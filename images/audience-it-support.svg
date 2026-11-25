@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="itGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="itMonitor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="itScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="itHeadset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="itBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadowIT" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="6" stdDeviation="4.5" flood-color="#0f172a" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="60" r="48" fill="url(#itGlow)"/>
+
+  <!-- 3D Support Monitor -->
+  <g filter="url(#shadowIT)">
+    <rect x="22" y="28" width="76" height="52" rx="9" fill="url(#itMonitor)"/>
+    <rect x="26" y="32" width="68" height="40" rx="5" fill="url(#itScreen)"/>
+    <!-- Stand -->
+    <rect x="52" y="80" width="16" height="9" rx="2" fill="#475569"/>
+    <rect x="38" y="87" width="44" height="6" rx="3" fill="url(#itMonitor)"/>
+
+    <!-- Screen UI Lines -->
+    <rect x="34" y="42" width="26" height="4" rx="2" fill="#38bdf8"/>
+    <rect x="34" y="50" width="40" height="3" rx="1.5" fill="#7dd3fc" opacity="0.65"/>
+    <rect x="34" y="57" width="30" height="3" rx="1.5" fill="#7dd3fc" opacity="0.45"/>
+  </g>
+
+  <!-- Floating 3D Headset / Support Bubble -->
+  <g filter="url(#shadowIT)">
+    <circle cx="90" cy="30" r="15" fill="url(#itBadge)"/>
+    <!-- Headset Arc inside badge -->
+    <path d="M83 31 V29 A7 7 0 0 1 97 29 V31" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <rect x="81" y="29" width="4" height="6" rx="2" fill="#ffffff"/>
+    <rect x="95" y="29" width="4" height="6" rx="2" fill="#ffffff"/>
+    <path d="M97 35 Q94 39 90 38" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Gear/Accent -->
+  <g filter="url(#shadowIT)">
+    <circle cx="24" cy="72" r="9" fill="url(#itHeadset)"/>
+    <circle cx="24" cy="72" r="3.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="18" cy="30" r="2.5" fill="#38bdf8"/>
+  <circle cx="102" cy="76" r="2.5" fill="#34d399"/>
+</svg>
