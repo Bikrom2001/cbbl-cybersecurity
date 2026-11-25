@@ -378,24 +378,48 @@
   </div>
 </div>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="training.html">Training</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Regular Professional Training</li>
-    </ol>
-  </div>
-</nav>
-
 <main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <p class="eyebrow">Training · Professional</p>
-    <h1 class="display-5 fw-bold mb-3">Job-focused IT courses, taught in labs</h1>
-    <p class="lead mb-0">Twenty courses built around the tasks employers actually assign. Evening and weekend batches, lab access between classes, and an assessment that produces evidence of skill.</p>
+<!-- Page Hero (Modern Light Theme matching Site Architecture) -->
+<section class="tech-glow-hero">
+  <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
+
+  <div class="container-xl position-relative">
+    <div class="tech-glow-hero__badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <span>TRAINING · PROFESSIONAL</span>
+    </div>
+
+    <h1 class="tech-glow-hero__title">
+      Job-focused IT courses, taught in labs
+    </h1>
+
+    <p class="tech-glow-hero__lead">
+      Twenty courses built around the tasks employers actually assign. Evening
+      and weekend batches, lab access between classes, and an assessment that
+      produces evidence of skill.
+    </p>
+
+    <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+      <a class="btn-hero-pill-primary" href="#catalogue">
+        <span>Browse 20 courses</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+      <a class="btn-hero-pill-secondary" href="contact.html">
+        <span>Download catalogue</span>
+      </a>
+    </div>
+
+    <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <a href="training.html">Training</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <span class="current" aria-current="page">Regular Professional Training</span>
+    </nav>
   </div>
 </section>
 
@@ -407,7 +431,10 @@
         <h2 class="h1 mb-1">Course catalogue</h2>
         <p class="text-muted small mb-0"><span data-result-count>20 courses</span> · filter to narrow the list</p>
       </div>
-      <a class="btn btn-secondary btn-sm" href="contact.html">Download catalogue</a>
+      <a class="btn-hero-pill-primary" href="contact.html">
+        <span>Download catalogue</span>
+        <i class="bi bi-download" aria-hidden="true"></i>
+      </a>
     </div>
 
     <!-- Filter Pills -->
@@ -423,179 +450,526 @@
 
     <!-- Catalogue Grid -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="catalogue">
+      <!-- 1. Ethical Hacking Fundamentals -->
       <div class="col" data-category="security">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>Ethical Hacking Fundamentals</h3>
-          <p>Reconnaissance, exploitation and defensible reporting in an isolated lab.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">10 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-ethical-hacking.jpg" alt="Ethical Hacking Fundamentals" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--offensive">Beginner · Security</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 10 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Ethical Hacking Fundamentals</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Reconnaissance, exploitation and defensible reporting in an isolated lab.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 2. SOC Analyst Foundations -->
       <div class="col" data-category="security">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Intermediate</span></div>
-          <h3>SOC Analyst Foundations</h3>
-          <p>Alert triage, log analysis, detection logic, tuning and escalation.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">12 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-soc-analyst.jpg" alt="SOC Analyst Foundations" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--defensive">Intermediate · Security</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 12 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">SOC Analyst Foundations</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Alert triage, log analysis, detection logic, tuning and escalation.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 3. Network Administration (CCNA-aligned) -->
       <div class="col" data-category="network">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>Network Administration (CCNA-aligned)</h3>
-          <p>VLANs, routing, network services, hardening and as-built documentation.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">12 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/subject-network-investigation.jpg" alt="Network Administration (CCNA-aligned)" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--nsda">Beginner · Networking</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 12 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Network Administration (CCNA-aligned)</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              VLANs, routing, network services, hardening and as-built documentation.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 4. Network Security Essentials -->
       <div class="col" data-category="network">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Intermediate</span></div>
-          <h3>Network Security Essentials</h3>
-          <p>Segmentation, firewall policy, remote access and flow monitoring.</p>
-          <div class="card__meta"><span class="chip">Online</span><span class="chip">8 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/subject-secure-comms.jpg" alt="Network Security Essentials" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--defensive">Intermediate · Network</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 8 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-globe me-1"></i> Online</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Network Security Essentials</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Segmentation, firewall policy, remote access and flow monitoring.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 5. Linux & Server Administration -->
       <div class="col" data-category="ops">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>Linux &amp; Server Administration</h3>
-          <p>Install, secure and operate Linux servers, with backup and restore testing.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">10 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-server-admin.jpg" alt="Linux &amp; Server Administration" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--nsda">Beginner · IT &amp; DevOps</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 10 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Linux &amp; Server Administration</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Install, secure and operate Linux servers, with backup and restore testing.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 6. Cloud Computing Foundations -->
       <div class="col" data-category="cloud">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>Cloud Computing Foundations</h3>
-          <p>Service models, core services, identity, cost control and resilience.</p>
-          <div class="card__meta"><span class="chip">Online</span><span class="chip">6 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/apply-cyber-visual.jpg" alt="Cloud Computing Foundations" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--nsda">Beginner · Cloud</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 6 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-globe me-1"></i> Online</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Cloud Computing Foundations</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Service models, core services, identity, cost control and resilience.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 7. Cloud Security Essentials -->
       <div class="col" data-category="cloud">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Intermediate</span></div>
-          <h3>Cloud Security Essentials</h3>
-          <p>Identity risk, misconfiguration review, guardrails and logging.</p>
-          <div class="card__meta"><span class="chip">Online</span><span class="chip">8 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-software-security.jpg" alt="Cloud Security Essentials" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--offensive">Intermediate · Cloud</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 8 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-globe me-1"></i> Online</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Cloud Security Essentials</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Identity risk, misconfiguration review, guardrails and logging.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 8. Full-Stack Web Development -->
       <div class="col" data-category="dev">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>Full-Stack Web Development</h3>
-          <p>Build, test and deploy a database-backed application end to end.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">16 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-computer-operation.jpg" alt="Full-Stack Web Development" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--nsda">Beginner · Development</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 16 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Full-Stack Web Development</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Build, test and deploy a database-backed application end to end.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 9. Python Programming for Automation -->
       <div class="col" data-category="dev">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>Python Programming for Automation</h3>
-          <p>Files, APIs, spreadsheets and scheduled tasks, written safely.</p>
-          <div class="card__meta"><span class="chip">Online</span><span class="chip">8 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/subject-osint.jpg" alt="Python Programming for Automation" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--nsda">Beginner · Development</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 8 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-globe me-1"></i> Online</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Python Programming for Automation</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Files, APIs, spreadsheets and scheduled tasks, written safely.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 10. Data Analytics with Python -->
       <div class="col" data-category="data">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Intermediate</span></div>
-          <h3>Data Analytics with Python</h3>
-          <p>Cleaning, SQL, statistics, visualisation and decision-ready reporting.</p>
-          <div class="card__meta"><span class="chip">Online</span><span class="chip">10 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/subject-digital-evidence.jpg" alt="Data Analytics with Python" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--defensive">Intermediate · Data</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 10 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-globe me-1"></i> Online</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">Data Analytics with Python</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Cleaning, SQL, statistics, visualisation and decision-ready reporting.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 11. DevOps Foundations -->
       <div class="col" data-category="ops">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Intermediate</span></div>
-          <h3>DevOps Foundations</h3>
-          <p>Docker, CI/CD, configuration, deployment and tested rollback.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">10 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-assessment-methodology.jpg" alt="DevOps Foundations" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--defensive">Intermediate · DevOps</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 10 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">DevOps Foundations</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Docker, CI/CD, configuration, deployment and tested rollback.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- 12. IT Support & Service Desk Practice -->
       <div class="col" data-category="ops">
-        <article class="card h-100 shadow-sm">
-          <div class="card__meta"><span class="chip chip--level">Beginner</span></div>
-          <h3>IT Support &amp; Service Desk Practice</h3>
-          <p>Ticket discipline, diagnosis, communication and documentation.</p>
-          <div class="card__meta"><span class="chip">Hybrid</span><span class="chip">8 weeks</span></div>
-          <div class="course-card__foot">
-            <span class="fee">Contact for fee</span>
-            <a class="btn btn-sm btn-secondary" href="course-details-template.html">View</a>
+        <div class="course-card-v2 h-100">
+          <div class="course-card-v2-thumb">
+            <img src="images/course-thumb-it-support.jpg" alt="IT Support &amp; Service Desk Practice" class="course-card-v2-img" loading="lazy" />
+            <div class="v2-thumb-gradient"></div>
+            <div class="v2-thumb-floating-top">
+              <span class="v2-badge v2-badge--nsda">Beginner · Support</span>
+              <div class="v2-pulse-status"><span class="v2-pulse-dot"></span> Open</div>
+            </div>
+            <div class="v2-thumb-floating-bottom">
+              <span class="v2-thumb-tag"><i class="bi bi-clock me-1"></i> 8 weeks</span>
+              <span class="v2-thumb-tag"><i class="bi bi-laptop me-1"></i> Hybrid</span>
+            </div>
           </div>
-        </article>
+          <div class="course-card-v2-body">
+            <h3 class="course-card-v2-title">
+              <a href="course-details-template.html">IT Support &amp; Service Desk Practice</a>
+            </h3>
+            <p class="course-card-v2-desc">
+              Ticket discipline, diagnosis, communication and documentation.
+            </p>
+          </div>
+          <div class="course-card-v2-foot">
+            <div class="v2-fee-box">
+              <span class="small text-muted fw-semibold">Contact for fee</span>
+            </div>
+            <a href="course-details-template.html" class="v2-card-action-btn">
+              <span>View</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <p class="small text-muted mt-4">This demo shows 12 of 20 courses. The full catalogue also includes Front-End Development, Flutter, QA Automation, Data Science &amp; ML, Database Administration, UI/UX Design, Digital Marketing and Career Readiness.</p>
   </div>
 </section>
 
 <!-- Differences and Schedules Section -->
 <section class="section section--surface">
   <div class="container-xl">
-    <div class="row g-4 g-lg-5">
+    <div class="row g-4 g-lg-5 align-items-start">
       <div class="col-lg-8">
-        <p class="eyebrow">How our courses differ</p>
+        <p class="eyebrow text-success fw-bold">How our courses differ</p>
         <h2 class="h1 mb-4">Five promises about teaching</h2>
-        <ul class="ticks">
-          <li>Lab hours are the majority of contact time.</li>
-          <li>Every module ends in a reviewed task.</li>
-          <li>Prerequisites are stated honestly and checked at admission.</li>
-          <li>Instructors still practise in the field.</li>
-          <li>Career support is included, not sold separately.</li>
-        </ul>
+
+        <div class="competency-steps">
+          <div class="competency-step-card">
+            <span class="competency-step-num">01</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Lab hours are the majority of contact time.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-pc-display"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">02</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Every module ends in a reviewed task.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-check2-square"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">03</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Prerequisites are stated honestly and checked at admission.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-shield-check"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">04</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Instructors still practise in the field.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-person-workspace"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">05</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Career support is included, not sold separately.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-briefcase"></i>
+            </span>
+          </div>
+        </div>
       </div>
+
       <div class="col-lg-4">
-        <aside class="aside-card shadow-sm sticky-top-nav">
-          <h3 class="h5 mb-3">Fees and schedules</h3>
-          <dl class="mb-0">
-            <dt>Fees</dt><dd>Published per course in BDT. Instalments by agreement.</dd>
-            <dt>Evening batches</dt><dd>18:30–21:30, two or three days a week.</dd>
-            <dt>Weekend batches</dt><dd>Friday or Saturday intensive.</dd>
-            <dt>Class size</dt><dd>12–18 learners.</dd>
-          </dl>
+        <aside class="certification-vault-card sticky-top-nav">
+          <div class="certification-vault-head">
+            <div class="certification-vault-badge" aria-hidden="true">
+              <i class="bi bi-calendar-check"></i>
+            </div>
+            <h3 class="certification-vault-title">Fees and schedules</h3>
+          </div>
+          <ul class="confidentiality-list">
+            <li>
+              <i class="bi bi-cash-coin" aria-hidden="true"></i>
+              <span><strong>Fees:</strong> Published per course in BDT. Instalments by agreement.</span>
+            </li>
+            <li>
+              <i class="bi bi-moon-stars" aria-hidden="true"></i>
+              <span><strong>Evening batches:</strong> 18:30–21:30, two or three days a week.</span>
+            </li>
+            <li>
+              <i class="bi bi-calendar-week" aria-hidden="true"></i>
+              <span><strong>Weekend batches:</strong> Friday or Saturday intensive.</span>
+            </li>
+            <li>
+              <i class="bi bi-people" aria-hidden="true"></i>
+              <span><strong>Class size:</strong> 12–18 learners.</span>
+            </li>
+          </ul>
         </aside>
       </div>
     </div>

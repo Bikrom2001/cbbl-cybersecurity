@@ -378,67 +378,111 @@
   </div>
 </div>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="training.html">Training</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Vendor Exam Vouchers</li>
-    </ol>
-  </div>
-</nav>
-
 <main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <p class="eyebrow">Training · Certification</p>
-    <h1 class="display-5 fw-bold mb-3">Exam vouchers, with the terms explained before you pay</h1>
-    <p class="lead mb-0">We help learners and teams obtain certification exam vouchers and plan the exam properly. This page states exactly what we are, what we are not, and what happens if an exam does not go to plan.</p>
-  </div>
-</section>
+<!-- Page Hero (Modern Light Theme matching Site Architecture) -->
+<section class="tech-glow-hero">
+  <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
 
-<!-- Status Disclosure Notice -->
-<section class="section py-4">
-  <div class="container-xl">
-    <div class="notice notice--danger my-0 shadow-sm">
-      <strong>Status disclosure</strong>
-      CBBL is <strong>not currently an authorised reseller or official partner</strong> of any certification vendor. Vouchers are procured on your behalf through authorised channels, and the vendor's own terms govern the exam. We do not claim partner status, discount agreements or guaranteed pricing. <em>Status verified: [date to be inserted at publication].</em>
+  <div class="container-xl position-relative">
+    <div class="tech-glow-hero__badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <span>TRAINING · CERTIFICATION</span>
     </div>
+
+    <h1 class="tech-glow-hero__title">
+      Exam vouchers, with the terms explained before you pay
+    </h1>
+
+    <p class="tech-glow-hero__lead">
+      We help learners and teams obtain certification exam vouchers and plan
+      the exam properly. This page states exactly what we are, what we are not,
+      and what happens if an exam does not go to plan.
+    </p>
+
+    <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <a href="training.html">Training</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <span class="current" aria-current="page">Vendor Exam Vouchers</span>
+    </nav>
   </div>
 </section>
 
 <!-- How It Works Section -->
-<section class="section pt-0">
+<section class="section">
   <div class="container-xl">
     <div class="section-head mb-4">
-      <p class="eyebrow">How it works</p>
+      <p class="eyebrow text-success fw-bold">How it works</p>
       <h2 class="h1">Four steps, no surprises</h2>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Confirm the exam</h3>
-          <p>Vendor, exam code, version and current fee — checked against the vendor's own page.</p>
+
+    <div class="process-timeline-grid">
+      <!-- Step 01 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">01</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-patch-check"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Confirm the exam</h3>
+          <p class="process-step-desc">
+            Vendor, exam code, version and current fee — checked against the
+            vendor's own page.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Written quotation</h3>
-          <p>Voucher cost, our handling fee and the validity period, itemised.</p>
+
+      <!-- Step 02 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">02</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-file-earmark-text"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Written quotation</h3>
+          <p class="process-step-desc">
+            Voucher cost, our handling fee and the validity period, itemised.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Payment and issue</h3>
-          <p>Voucher code issued after payment clears, with an activation guide.</p>
+
+      <!-- Step 03 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">03</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-credit-card"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Payment and issue</h3>
+          <p class="process-step-desc">
+            Voucher code issued after payment clears, with an activation guide.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Exam booking</h3>
-          <p>You book with the vendor's testing provider. We do not book on your behalf.</p>
+
+      <!-- Step 04 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">04</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-calendar-check"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Exam booking</h3>
+          <p class="process-step-desc">
+            You book with the vendor's testing provider. We do not book on
+            your behalf.
+          </p>
         </div>
       </div>
     </div>
@@ -450,41 +494,114 @@
   <div class="container-xl">
     <div class="row g-4 g-lg-5">
       <div class="col-lg-8">
-        <p class="eyebrow">What is included</p>
+        <p class="eyebrow text-success fw-bold">What is included</p>
         <h2 class="h1 mb-4">Be clear about the boundary</h2>
-        <div class="table-responsive bg-white rounded-3 shadow-sm border mb-3">
-          <table class="table table-hover align-middle mb-0">
-            <caption class="p-3 text-muted small">Included and not included</caption>
-            <thead class="table-light">
-              <tr>
-                <th scope="col" class="py-3 px-3">Included</th>
-                <th scope="col" class="py-3 px-3">Not included</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="px-3">Exam voucher procurement</td><td class="px-3">Exam scheduling with the testing provider</td></tr>
-              <tr><td class="px-3">Written quotation with validity period</td><td class="px-3">Guaranteed pass or score improvement</td></tr>
-              <tr><td class="px-3">Activation guidance</td><td class="px-3">Retake vouchers (unless the vendor includes them)</td></tr>
-              <tr><td class="px-3">Exam-readiness guidance</td><td class="px-3">Vendor membership or continuing-education fees</td></tr>
-              <tr><td class="px-3">Receipt for reimbursement</td><td class="px-3">Vendor policy decisions or appeals</td></tr>
-            </tbody>
-          </table>
+
+        <div class="boundary-cards-grid">
+          <!-- Included Card -->
+          <div class="boundary-card boundary-card--included">
+            <div class="boundary-card__head">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+              <span>Included</span>
+            </div>
+            <ul class="boundary-card__list">
+              <li>
+                <i class="bi bi-check2" aria-hidden="true"></i>
+                <span>Exam voucher procurement</span>
+              </li>
+              <li>
+                <i class="bi bi-check2" aria-hidden="true"></i>
+                <span>Written quotation with validity period</span>
+              </li>
+              <li>
+                <i class="bi bi-check2" aria-hidden="true"></i>
+                <span>Activation guidance</span>
+              </li>
+              <li>
+                <i class="bi bi-check2" aria-hidden="true"></i>
+                <span>Exam-readiness guidance</span>
+              </li>
+              <li>
+                <i class="bi bi-check2" aria-hidden="true"></i>
+                <span>Receipt for reimbursement</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Not Included Card -->
+          <div class="boundary-card boundary-card--excluded">
+            <div class="boundary-card__head">
+              <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+              <span>Not included</span>
+            </div>
+            <ul class="boundary-card__list">
+              <li>
+                <i class="bi bi-dash-lg" aria-hidden="true"></i>
+                <span>Exam scheduling with the testing provider</span>
+              </li>
+              <li>
+                <i class="bi bi-dash-lg" aria-hidden="true"></i>
+                <span>Guaranteed pass or score improvement</span>
+              </li>
+              <li>
+                <i class="bi bi-dash-lg" aria-hidden="true"></i>
+                <span>Retake vouchers (unless the vendor includes them)</span>
+              </li>
+              <li>
+                <i class="bi bi-dash-lg" aria-hidden="true"></i>
+                <span>Vendor membership or continuing-education fees</span>
+              </li>
+              <li>
+                <i class="bi bi-dash-lg" aria-hidden="true"></i>
+                <span>Vendor policy decisions or appeals</span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p class="small text-muted mb-0">Voucher validity, transferability and refund rules are set by the vendor. We pass them on in writing before payment.</p>
+
+        <div class="entry-note-banner">
+          <i class="bi bi-info-circle-fill flex-shrink-0" aria-hidden="true"></i>
+          <span>Voucher validity, transferability and refund rules are set by the vendor. We pass them on in writing before payment.</span>
+        </div>
       </div>
 
       <div class="col-lg-4">
-        <aside class="aside-card shadow-sm sticky-top-nav">
-          <h3 class="h5 mb-2">Common voucher families</h3>
-          <p class="small text-muted mb-3">Indicative only — availability and price change. Confirmed per order.</p>
-          <ul class="ticks mb-4" style="font-size:.88rem">
-            <li>Entry-level IT and networking certifications</li>
-            <li>Cybersecurity analyst and operations certifications</li>
-            <li>Offensive security certifications</li>
-            <li>Cloud platform certifications</li>
-            <li>Project and service management certifications</li>
+        <aside class="certification-vault-card sticky-top-nav">
+          <div class="certification-vault-head">
+            <div class="certification-vault-badge" aria-hidden="true">
+              <i class="bi bi-ticket-perforated"></i>
+            </div>
+            <h3 class="certification-vault-title">Common voucher families</h3>
+          </div>
+          <p class="certification-vault-text small mb-3" style="opacity: 0.85;">
+            Indicative only — availability and price change. Confirmed per order.
+          </p>
+          <ul class="confidentiality-list mb-4">
+            <li>
+              <i class="bi bi-router" aria-hidden="true"></i>
+              <span>Entry-level IT and networking certifications</span>
+            </li>
+            <li>
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              <span>Cybersecurity analyst and operations certifications</span>
+            </li>
+            <li>
+              <i class="bi bi-terminal" aria-hidden="true"></i>
+              <span>Offensive security certifications</span>
+            </li>
+            <li>
+              <i class="bi bi-cloud-check" aria-hidden="true"></i>
+              <span>Cloud platform certifications</span>
+            </li>
+            <li>
+              <i class="bi bi-kanban" aria-hidden="true"></i>
+              <span>Project and service management certifications</span>
+            </li>
           </ul>
-          <a class="btn btn-secondary btn-sm w-100" href="#voucher-form">Request a quotation</a>
+          <a class="certification-vault-btn" href="#voucher-form">
+            <span>Request a quotation</span>
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </a>
         </aside>
       </div>
     </div>
@@ -494,25 +611,30 @@
 <!-- Quotation Form Section -->
 <section class="section" id="voucher-form">
   <div class="container-xl">
-    <div class="row g-4 g-lg-5">
+    <div class="section-head mb-5">
+      <p class="eyebrow text-success fw-bold">Quotation</p>
+      <h2 class="h1 mb-2">Ask for a voucher quote</h2>
+      <p class="lead mb-0">
+        Tell us the exam code and the date you plan to sit it. We reply with
+        cost, validity and terms in writing.
+      </p>
+    </div>
+
+    <div class="row g-4 g-lg-5 align-items-start">
       <div class="col-lg-8">
-        <p class="eyebrow">Quotation</p>
-        <h2 class="h1 mb-2">Ask for a voucher quote</h2>
-        <p class="lead mb-4">Tell us the exam code and the date you plan to sit it. We reply with cost, validity and terms in writing.</p>
-        
-        <form class="form-card shadow-sm" data-demo-form novalidate>
+        <form class="apply-form-card" data-demo-form novalidate>
           <div class="form-success" role="status" aria-live="polite">
             <strong>Received.</strong> Reference <span data-ref>CBBL-2026-0000</span>. A quotation follows within one working day.
           </div>
           <div class="row g-3">
             <div class="col-md-6">
               <label for="v-name" class="form-label">Full name <span class="req text-danger">*</span></label>
-              <input id="v-name" type="text" class="form-control" required>
+              <input id="v-name" type="text" class="form-control" placeholder="e.g. Tariqul Islam" required>
               <div class="invalid-feedback">Enter your name.</div>
             </div>
             <div class="col-md-6">
               <label for="v-email" class="form-label">Email <span class="req text-danger">*</span></label>
-              <input id="v-email" type="email" class="form-control" required>
+              <input id="v-email" type="email" class="form-control" placeholder="you@example.com" required>
               <div class="invalid-feedback">Enter a valid email.</div>
             </div>
             <div class="col-md-6">
@@ -545,14 +667,59 @@
       </div>
 
       <div class="col-lg-4">
-        <aside class="aside-card shadow-sm sticky-top-nav">
-          <h3 class="h5 mb-3">Payment and refunds</h3>
-          <dl class="mb-0">
-            <dt>Payment</dt><dd>Bank transfer or agreed corporate invoice. Voucher issued after clearance.</dd>
-            <dt>Validity</dt><dd>As stated by the vendor, communicated before payment.</dd>
-            <dt>Refunds</dt><dd>Unused, unactivated vouchers may be refundable minus the handling fee; activated vouchers are subject to vendor policy.</dd>
-            <dt>Handling fee</dt><dd>Itemised separately from the voucher price.</dd>
-          </dl>
+        <aside class="policy-aside-card sticky-top-nav">
+          <div class="policy-aside-card__head">
+            <div class="policy-aside-card__badge" aria-hidden="true">
+              <i class="bi bi-credit-card-2-front"></i>
+            </div>
+            <h3 class="policy-aside-card__title">Payment and refunds</h3>
+          </div>
+          <div class="policy-aside-list">
+            <div class="policy-aside-item">
+              <span class="policy-aside-item__icon" aria-hidden="true">
+                <i class="bi bi-bank"></i>
+              </span>
+              <div>
+                <div class="policy-aside-item__label">Payment</div>
+                <p class="policy-aside-item__desc">
+                  Bank transfer or agreed corporate invoice. Voucher issued after clearance.
+                </p>
+              </div>
+            </div>
+            <div class="policy-aside-item">
+              <span class="policy-aside-item__icon" aria-hidden="true">
+                <i class="bi bi-calendar-event"></i>
+              </span>
+              <div>
+                <div class="policy-aside-item__label">Validity</div>
+                <p class="policy-aside-item__desc">
+                  As stated by the vendor, communicated before payment.
+                </p>
+              </div>
+            </div>
+            <div class="policy-aside-item">
+              <span class="policy-aside-item__icon" aria-hidden="true">
+                <i class="bi bi-arrow-counterclockwise"></i>
+              </span>
+              <div>
+                <div class="policy-aside-item__label">Refunds</div>
+                <p class="policy-aside-item__desc">
+                  Unused, unactivated vouchers may be refundable minus the handling fee; activated vouchers are subject to vendor policy.
+                </p>
+              </div>
+            </div>
+            <div class="policy-aside-item">
+              <span class="policy-aside-item__icon" aria-hidden="true">
+                <i class="bi bi-receipt"></i>
+              </span>
+              <div>
+                <div class="policy-aside-item__label">Handling fee</div>
+                <p class="policy-aside-item__desc">
+                  Itemised separately from the voucher price.
+                </p>
+              </div>
+            </div>
+          </div>
         </aside>
       </div>
     </div>
@@ -560,70 +727,100 @@
 </section>
 
 <!-- FAQ Accordion Section -->
-<section class="section section--surface">
-  <div class="container-xl" style="max-width:920px">
-    <div class="section-head mb-4 text-center mx-auto">
-      <p class="eyebrow">FAQ</p>
+<section class="section section--surface" id="faq">
+  <div class="container-xl">
+    <div class="section-head mb-5 text-center mx-auto" style="max-width: 680px">
+      <p class="eyebrow text-success fw-bold">FAQ</p>
       <h2 class="h1">Voucher questions</h2>
     </div>
-    <div class="accordion shadow-sm rounded-3 overflow-hidden border" id="vouchersFaqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingV1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV1" aria-expanded="true" aria-controls="collapseV1">
-            Are you an official partner of the certification vendors?
-          </button>
-        </h2>
-        <div id="collapseV1" class="accordion-collapse collapse show" aria-labelledby="headingV1" data-bs-parent="#vouchersFaqAccordion">
-          <div class="accordion-body">
-            No. The status notice at the top of this page states this plainly. Vouchers are procured through authorised channels and vendor terms apply.
+
+    <div class="row g-4 g-lg-5 align-items-stretch">
+      <!-- Left Column: Gradient CTA Card -->
+      <div class="col-lg-4">
+        <div class="faq-cta-card">
+          <div class="faq-cta-card__body">
+            <div class="faq-cta-card__icon" aria-hidden="true">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 12C15.954 12 7 19.611 7 29C7 33.48 9.054 37.552 12.404 40.58L10.2 48.4L18.42 44.54C21.045 45.486 23.947 46 27 46C38.046 46 47 38.389 47 29C47 19.611 38.046 12 27 12Z" fill="#FFFFFF"/>
+                <path d="M26.8 33.8C25.95 33.8 25.3 34.45 25.3 35.3C25.3 36.15 25.95 36.8 26.8 36.8C27.65 36.8 28.3 36.15 28.3 35.3C28.3 34.45 27.65 33.8 26.8 33.8ZM27 20C23.5 20 21.1 22.1 21.1 25.2H24.2C24.2 23.6 25.3 22.6 26.9 22.6C28.4 22.6 29.4 23.5 29.4 24.8C29.4 26 28.6 26.7 27.2 27.6C25.6 28.6 25.1 29.7 25.2 31.8H28.2C28.2 30.3 28.6 29.6 30 28.7C31.7 27.6 32.7 26.4 32.7 24.5C32.7 21.8 30.4 20 27 20Z" fill="#0F7A4F"/>
+                <path d="M51 28.5C56.523 30.2 60.5 34.8 60.5 40.2C60.5 43.4 59.1 46.3 56.8 48.4L58.4 54L52.6 51.2C50.7 51.9 48.6 52.3 46.4 52.3C39.8 52.3 34.2 48.6 32.2 43.5" fill="rgba(255,255,255,0.88)"/>
+              </svg>
+            </div>
+            <h3 class="faq-cta-card__title">Do you have more questions?</h3>
+            <p class="faq-cta-card__desc">
+              Have more questions about exam vouchers, validity, or invoicing? Reach out to our team for clear answers.
+            </p>
           </div>
+          <a href="contact.html" class="faq-cta-card__btn">Contact Us</a>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingV2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV2" aria-expanded="false" aria-controls="collapseV2">
-            Do you guarantee a passing score?
-          </button>
-        </h2>
-        <div id="collapseV2" class="accordion-collapse collapse" aria-labelledby="headingV2" data-bs-parent="#vouchersFaqAccordion">
-          <div class="accordion-body">
-            No, and no organisation can. We can help you prepare and we can tell you honestly whether you are ready.
+
+      <!-- Right Column: Rounded Plus/Minus FAQ Cards -->
+      <div class="col-lg-8">
+        <div class="plus-faq-accordion" id="vouchersFaqAccordion">
+          <!-- Item 1 -->
+          <div class="plus-faq-item">
+            <button class="plus-faq-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV1" aria-expanded="true" aria-controls="collapseV1">
+              <span class="plus-faq-title">Are you an official partner of the certification vendors?</span>
+              <span class="plus-faq-toggle" aria-hidden="true"></span>
+            </button>
+            <div id="collapseV1" class="collapse show" data-bs-parent="#vouchersFaqAccordion">
+              <div class="plus-faq-body">
+                No. The status notice at the top of this page states this plainly. Vouchers are procured through authorised channels and vendor terms apply.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingV3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV3" aria-expanded="false" aria-controls="collapseV3">
-            Can my employer pay by invoice?
-          </button>
-        </h2>
-        <div id="collapseV3" class="accordion-collapse collapse" aria-labelledby="headingV3" data-bs-parent="#vouchersFaqAccordion">
-          <div class="accordion-body">
-            Yes, for corporate orders. We need a purchase order and a billing contact.
+
+          <!-- Item 2 -->
+          <div class="plus-faq-item">
+            <button class="plus-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV2" aria-expanded="false" aria-controls="collapseV2">
+              <span class="plus-faq-title">Do you guarantee a passing score?</span>
+              <span class="plus-faq-toggle" aria-hidden="true"></span>
+            </button>
+            <div id="collapseV2" class="collapse" data-bs-parent="#vouchersFaqAccordion">
+              <div class="plus-faq-body">
+                No, and no organisation can. We can help you prepare and we can tell you honestly whether you are ready.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingV4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV4" aria-expanded="false" aria-controls="collapseV4">
-            What if my voucher expires before I sit the exam?
-          </button>
-        </h2>
-        <div id="collapseV4" class="accordion-collapse collapse" aria-labelledby="headingV4" data-bs-parent="#vouchersFaqAccordion">
-          <div class="accordion-body">
-            Validity is set by the vendor and stated in your quotation. We will remind you before expiry where possible, but the expiry date is binding.
+
+          <!-- Item 3 -->
+          <div class="plus-faq-item">
+            <button class="plus-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV3" aria-expanded="false" aria-controls="collapseV3">
+              <span class="plus-faq-title">Can my employer pay by invoice?</span>
+              <span class="plus-faq-toggle" aria-hidden="true"></span>
+            </button>
+            <div id="collapseV3" class="collapse" data-bs-parent="#vouchersFaqAccordion">
+              <div class="plus-faq-body">
+                Yes, for corporate orders. We need a purchase order and a billing contact.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingV5">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV5" aria-expanded="false" aria-controls="collapseV5">
-            Do you sell vouchers for exams you do not teach?
-          </button>
-        </h2>
-        <div id="collapseV5" class="accordion-collapse collapse" aria-labelledby="headingV5" data-bs-parent="#vouchersFaqAccordion">
-          <div class="accordion-body">
-            Yes, as a procurement service, provided the vendor channel is available. We will say so if it is not.
+
+          <!-- Item 4 -->
+          <div class="plus-faq-item">
+            <button class="plus-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV4" aria-expanded="false" aria-controls="collapseV4">
+              <span class="plus-faq-title">What if my voucher expires before I sit the exam?</span>
+              <span class="plus-faq-toggle" aria-hidden="true"></span>
+            </button>
+            <div id="collapseV4" class="collapse" data-bs-parent="#vouchersFaqAccordion">
+              <div class="plus-faq-body">
+                Validity is set by the vendor and stated in your quotation. We will remind you before expiry where possible, but the expiry date is binding.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="plus-faq-item">
+            <button class="plus-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseV5" aria-expanded="false" aria-controls="collapseV5">
+              <span class="plus-faq-title">Do you sell vouchers for exams you do not teach?</span>
+              <span class="plus-faq-toggle" aria-hidden="true"></span>
+            </button>
+            <div id="collapseV5" class="collapse" data-bs-parent="#vouchersFaqAccordion">
+              <div class="plus-faq-body">
+                Yes, as a procurement service, provided the vendor channel is available. We will say so if it is not.
+              </div>
+            </div>
           </div>
         </div>
       </div>

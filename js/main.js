@@ -2,8 +2,12 @@
 (function () {
   "use strict";
 
-  var $ = function (s, c) { return (c || document).querySelector(s); };
-  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var $ = function (s, c) {
+    return (c || document).querySelector(s);
+  };
+  var $$ = function (s, c) {
+    return Array.prototype.slice.call((c || document).querySelectorAll(s));
+  };
 
   /* Keep --header-h synced to actual .site-header height so sticky subnav sits flush */
   function syncHeaderHeight() {
@@ -58,7 +62,8 @@
         b.setAttribute("aria-pressed", b === btn ? "true" : "false");
       });
       $$(targetSel + " [data-category]").forEach(function (card) {
-        var match = (value === "all" || card.getAttribute("data-category") === value);
+        var match =
+          value === "all" || card.getAttribute("data-category") === value;
         card.classList.toggle("d-none", !match);
       });
       var count = $$(targetSel + " [data-category]").filter(function (c) {
@@ -77,7 +82,8 @@
       var bad = null;
       var inputs = form.querySelectorAll("[required]");
       inputs.forEach(function (input) {
-        var ok = input.type === "checkbox" ? input.checked : input.value.trim() !== "";
+        var ok =
+          input.type === "checkbox" ? input.checked : input.value.trim() !== "";
         if (input.type === "email" && ok) {
           ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
         }
@@ -90,7 +96,11 @@
         return;
       }
 
-      var ref = "CBBL-" + new Date().getFullYear() + "-" + String(Math.floor(Math.random() * 9000) + 1000);
+      var ref =
+        "CBBL-" +
+        new Date().getFullYear() +
+        "-" +
+        String(Math.floor(Math.random() * 9000) + 1000);
       if (success) {
         success.classList.add("is-visible");
         var refEl = success.querySelector("[data-ref]");
@@ -119,15 +129,20 @@
     subnavLinks.forEach(function (a) {
       map[a.getAttribute("href").slice(1)] = a;
     });
-    var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) {
-          subnavLinks.forEach(function (a) { a.removeAttribute("aria-current"); });
-          var link = map[en.target.id];
-          if (link) link.setAttribute("aria-current", "true");
-        }
-      });
-    }, { rootMargin: "-30% 0px -60% 0px" });
+    var obs = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            subnavLinks.forEach(function (a) {
+              a.removeAttribute("aria-current");
+            });
+            var link = map[en.target.id];
+            if (link) link.setAttribute("aria-current", "true");
+          }
+        });
+      },
+      { rootMargin: "-30% 0px -60% 0px" },
+    );
 
     Object.keys(map).forEach(function (id) {
       var el = document.getElementById(id);
@@ -145,7 +160,9 @@
      ========================================================================= */
   var counters = $$("[data-counter]");
   if (counters.length) {
-    var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var prefersReducedMotion =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     var animateCounter = function (el) {
       var rawTarget = el.getAttribute("data-counter") || el.textContent || "";
@@ -153,12 +170,12 @@
       var start = parseInt(el.getAttribute("data-start") || "0", 10);
       var prefix = el.getAttribute("data-prefix") || "";
       var suffix = el.getAttribute("data-suffix") || "";
-      
+
       // Auto-detect suffix (e.g. "+", "%") if not explicitly provided
       if (!suffix && /[^\d\s]$/.test(rawTarget.trim())) {
         suffix = rawTarget.trim().match(/[^\d\s]+$/)[0];
       }
-      
+
       var duration = parseInt(el.getAttribute("data-duration") || "2000", 10);
 
       if (prefersReducedMotion || isNaN(target)) {
@@ -192,17 +209,20 @@
     };
 
     if ("IntersectionObserver" in window) {
-      var counterObserver = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            animateCounter(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.2,
-        rootMargin: "0px 0px -40px 0px"
-      });
+      var counterObserver = new IntersectionObserver(
+        function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.2,
+          rootMargin: "0px 0px -40px 0px",
+        },
+      );
 
       counters.forEach(function (el) {
         counterObserver.observe(el);

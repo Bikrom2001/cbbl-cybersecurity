@@ -7818,3 +7818,362 @@ aside[id] {
     min-height: 300px;
   }
 }
+
+/* ==========================================================================
+   Clean White Policy Aside Card (Vendor Vouchers — Payment & Refunds)
+   ========================================================================== */
+.policy-aside-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px -10px rgba(11, 61, 58, 0.08);
+  overflow: hidden;
+}
+
+.policy-aside-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0b3d3a 0%, #12a46b 100%);
+}
+
+.policy-aside-card__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.policy-aside-card__badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  color: #15803d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.policy-aside-card__title {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.policy-aside-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.policy-aside-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+}
+
+.policy-aside-item__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #12a46b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.policy-aside-item__label {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.policy-aside-item__desc {
+  font-size: 0.84rem;
+  line-height: 1.48;
+  color: #475569;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Included vs Not Included Comparison Cards (Vendor Vouchers)
+   ========================================================================== */
+.boundary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.boundary-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(11, 61, 58, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.boundary-card--included {
+  border-color: #a7f3d0;
+}
+
+.boundary-card--excluded {
+  border-color: #e2e8f0;
+}
+
+.boundary-card__head {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.boundary-card--included .boundary-card__head {
+  background: #ecfdf5;
+  color: #065f46;
+  border-bottom: 1px solid #a7f3d0;
+}
+
+.boundary-card--excluded .boundary-card__head {
+  background: #f8fafc;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.boundary-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.boundary-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #334155;
+}
+
+.boundary-card--included .boundary-card__list li i {
+  color: #12a46b;
+  font-size: 0.95rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.boundary-card--excluded .boundary-card__list li i {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767.98px) {
+  .boundary-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Vibrant Framed-Photo Support Cards (Job Placement Page)
+   ========================================================================== */
+.support-color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.support-color-card {
+  border-radius: 20px;
+  padding: 26px 20px 24px;
+  background: linear-gradient(155deg, #0b3d3a 0%, #0f7a4f 100%);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 14px 32px -10px rgba(15, 23, 42, 0.2);
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease;
+}
+
+.support-color-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 42px -10px rgba(15, 23, 42, 0.28);
+}
+
+.support-color-card--teal {
+  background: linear-gradient(155deg, #0b3d3a 0%, #0f7a4f 100%);
+}
+
+.support-color-card__title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+
+.support-color-card__sub {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 16px;
+}
+
+.support-color-card__frame {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  border: 3px solid #ffffff;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  margin-bottom: 16px;
+}
+
+.support-color-card__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.support-color-card:hover .support-color-card__frame img {
+  transform: scale(1.05);
+}
+
+.support-color-card__desc {
+  font-size: 0.89rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.94);
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .support-color-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .support-color-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Clean White Support Cards with Geometric Mark & Arrow Button (Job Placement)
+   ========================================================================== */
+.support-clean-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.support-clean-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 26px 24px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 12px 34px -8px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.support-clean-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 42px -10px rgba(15, 23, 42, 0.13);
+  border-color: rgba(15, 122, 79, 0.22);
+}
+
+.support-clean-card__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 18px;
+}
+
+.support-clean-card__mark {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.support-clean-card__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.support-clean-card__title {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 5px;
+  line-height: 1.25;
+}
+
+.support-clean-card__desc {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #475569;
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .support-clean-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .support-clean-grid {
+    grid-template-columns: 1fr;
+  }
+}
