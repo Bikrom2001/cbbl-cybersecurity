@@ -7343,3 +7343,478 @@ aside[id] {
     flex: 1 1 auto;
   }
 }
+
+/* ==========================================================================
+   Modern 13 Tracks Grid (Advanced Cybersecurity Page)
+   ========================================================================== */
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.track-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e6ece9;
+  border-radius: 16px;
+  padding: 24px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 18px rgba(11, 61, 58, 0.04);
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-4px);
+  border-color: #8fdcbc;
+  box-shadow: 0 14px 30px -8px rgba(11, 61, 58, 0.11);
+}
+
+.track-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.track-card__icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #ebf3ec;
+  color: #155e3d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease;
+}
+
+.track-card:hover .track-card__icon {
+  background: #0b3d3a;
+  color: #ffffff;
+}
+
+.track-card__num {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  transition: color 0.22s ease;
+}
+
+.track-card:hover .track-card__num {
+  color: #12a46b;
+}
+
+.track-card__title {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.track-card__divider {
+  width: 32px;
+  height: 2px;
+  background: #d9a24b;
+  border-radius: 2px;
+  margin: 10px 0 12px;
+}
+
+.track-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.58;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.track-card__footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.track-card__deliverable {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.35;
+}
+
+.track-card__deliverable strong {
+  color: #0b3d3a;
+  font-weight: 600;
+}
+
+.track-card__apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: #ebf3ec;
+  color: #0b3d3a;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.track-card__apply:hover {
+  background: #0b3d3a;
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+@media (max-width: 991.98px) {
+  .tracks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tracks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Modern Rubric Cards Grid (Advanced Cybersecurity Page)
+   ========================================================================== */
+.rubric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.rubric-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  box-shadow: 0 4px 16px rgba(11, 61, 58, 0.03);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.rubric-card:hover {
+  transform: translateY(-2px);
+  border-color: #8fdcbc;
+  box-shadow: 0 10px 24px -6px rgba(11, 61, 58, 0.09);
+}
+
+.rubric-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rubric-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  color: #15803d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.rubric-card:hover .rubric-card__icon {
+  background: #0b3d3a;
+  border-color: #0b3d3a;
+  color: #ffffff;
+}
+
+.rubric-card__weight {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0b3d3a;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.rubric-card__title {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.rubric-card__bar {
+  width: 100%;
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.rubric-card__bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0b3d3a, #12a46b);
+}
+
+@media (max-width: 575.98px) {
+  .rubric-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Modern Prerequisites Cards Grid (Advanced Cybersecurity Page — #prereqs)
+   ========================================================================== */
+.prereqs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.prereq-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(11, 61, 58, 0.03);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.prereq-card:hover {
+  transform: translateY(-2px);
+  border-color: #8fdcbc;
+  box-shadow: 0 10px 26px -6px rgba(11, 61, 58, 0.09);
+}
+
+.prereq-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.prereq-card__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prereq-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  color: #15803d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.prereq-card:hover .prereq-card__icon {
+  background: #0b3d3a;
+  border-color: #0b3d3a;
+  color: #ffffff;
+}
+
+.prereq-card__title {
+  font-family: var(--font-display);
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.prereq-exp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.prereq-card__knowledge {
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.prereq-knowledge-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+  margin-right: 4px;
+}
+
+.prereq-skill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 0.81rem;
+  font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  .prereqs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prereq-card {
+    padding: 18px;
+  }
+}
+
+/* ==========================================================================
+   Photo Overlay Subject Area Cards (Law Enforcement / Institutional Training)
+   ========================================================================== */
+.subject-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.subject-photo-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  min-height: 340px;
+  background: #0b3d3a;
+  box-shadow: 0 10px 28px -8px rgba(11, 61, 58, 0.18);
+  transition:
+    transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.28s ease;
+}
+
+.subject-photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(11, 61, 58, 0.28);
+}
+
+.subject-photo-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.subject-photo-card:hover .subject-photo-card__img {
+  transform: scale(1.05);
+}
+
+.subject-photo-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(7, 41, 39, 0.94) 0%,
+    rgba(11, 61, 58, 0.72) 42%,
+    rgba(11, 61, 58, 0.1) 75%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 22px 20px;
+}
+
+.subject-photo-card__title {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.subject-photo-card__desc {
+  font-size: 0.85rem;
+  line-height: 1.48;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .subject-photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .subject-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-photo-card {
+    min-height: 300px;
+  }
+}

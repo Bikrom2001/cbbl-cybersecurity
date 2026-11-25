@@ -378,153 +378,280 @@
   </div>
 </div>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="training.html">Training</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Advanced Cybersecurity</li>
-    </ol>
-  </div>
-</nav>
-
 <main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <p class="eyebrow">Training · Advanced</p>
-    <h1 class="display-5 fw-bold mb-3">For practitioners who already do the work</h1>
-    <p class="lead mb-4">These tracks assume you are employed in security or infrastructure and want depth, not an introduction. Every track is lab-intensive and assessed on a professional deliverable.</p>
-    <div class="btn-row">
-      <a class="btn btn-accent" href="contact.html">Apply for a track</a>
-      <a class="btn btn-secondary" href="#prereqs">Review prerequisites</a>
-    </div>
-  </div>
-</section>
+<!-- Page Hero (Modern Light Theme matching Site Architecture) -->
+<section class="tech-glow-hero">
+  <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
 
-<!-- Prerequisite Notice -->
-<section class="section py-4">
-  <div class="container-xl">
-    <div class="notice notice--danger my-0 shadow-sm">
-      <strong>Prerequisite check</strong>
-      Advanced tracks are not entry-level. Applicants without the stated experience are redirected to a foundation course. We would rather turn away a fee than set someone up to fail.
+  <div class="container-xl position-relative">
+    <div class="tech-glow-hero__badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <span>TRAINING · ADVANCED</span>
     </div>
+
+    <h1 class="tech-glow-hero__title">
+      For practitioners who already do the work
+    </h1>
+
+    <p class="tech-glow-hero__lead">
+      These tracks assume you are employed in security or infrastructure and
+      want depth, not an introduction. Every track is lab-intensive and assessed
+      on a professional deliverable.
+    </p>
+
+    <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+      <a class="btn-hero-pill-primary" href="contact.html">
+        <span>Apply for a track</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+      <a class="btn-hero-pill-secondary" href="#prereqs">
+        <span>Review prerequisites</span>
+      </a>
+    </div>
+
+    <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <a href="training.html">Training</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <span class="current" aria-current="page">Advanced Cybersecurity</span>
+    </nav>
   </div>
 </section>
 
 <!-- Thirteen Tracks Section -->
-<section class="section pt-0">
+<section class="section">
   <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">Thirteen tracks</p>
+    <div class="section-head mb-5">
+      <p class="eyebrow text-success fw-bold">Thirteen tracks</p>
       <h2 class="h1">Choose the discipline, not the badge</h2>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Advanced Penetration Testing</h3>
-          <p>Web, network and Active Directory paths, evidencing and reporting.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: full penetration test report</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Red Team Operations</h3>
-          <p>Campaign design, infrastructure, OPSEC, safety controls and debrief.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: campaign plan and debrief</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Blue Team &amp; SOC Operations</h3>
-          <p>Detection engineering, triage, escalation and tuning.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: detection use-case pack</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Threat Hunting</h3>
-          <p>Hypothesis-driven hunts, telemetry and evidence discipline.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: hunt report</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Digital Forensics</h3>
-          <p>Disk, memory and timeline analysis with chain of custody.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: forensic examination report</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Malware Analysis</h3>
-          <p>Static and dynamic analysis in a contained environment.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: analysis report with indicators</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Cloud Security Architecture</h3>
-          <p>Identity, network, data protection and guardrails at design stage.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: architecture document</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>DevSecOps</h3>
-          <p>Secure pipelines, secrets, supply chain and proportionate gates.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: hardened CI/CD pipeline</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Secure Software Development</h3>
-          <p>Threat modelling, secure coding and targeted security testing.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: threat model and code review</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Advanced Network Defense</h3>
-          <p>Segmentation, monitoring placement and zero-trust design.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: defence design and validation plan</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Incident Response</h3>
-          <p>Triage, containment, recovery and communications.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: playbook and post-incident report</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Cybersecurity GRC</h3>
-          <p>Risk registers, policy, control mapping and audit readiness.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: risk and controls framework</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>AI-Enabled Security Operations</h3>
-          <p>Automation, enrichment and model risk in the SOC.</p>
-          <p class="small text-muted mt-auto mb-3">Deliverable: detection automation prototype</p>
-          <a class="card__links" href="contact.html">Apply →</a>
-        </article>
-      </div>
+
+    <div class="tracks-grid">
+      <!-- 01 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-terminal" aria-hidden="true"></i></div>
+            <span class="track-card__num">01</span>
+          </div>
+          <h3 class="track-card__title">Advanced Penetration Testing</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Web, network and Active Directory paths, evidencing and reporting.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> full penetration test report</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-crosshair" aria-hidden="true"></i></div>
+            <span class="track-card__num">02</span>
+          </div>
+          <h3 class="track-card__title">Red Team Operations</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Campaign design, infrastructure, OPSEC, safety controls and debrief.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> campaign plan and debrief</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-shield-shaded" aria-hidden="true"></i></div>
+            <span class="track-card__num">03</span>
+          </div>
+          <h3 class="track-card__title">Blue Team &amp; SOC Operations</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Detection engineering, triage, escalation and tuning.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> detection use-case pack</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-radar" aria-hidden="true"></i></div>
+            <span class="track-card__num">04</span>
+          </div>
+          <h3 class="track-card__title">Threat Hunting</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Hypothesis-driven hunts, telemetry and evidence discipline.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> hunt report</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-search" aria-hidden="true"></i></div>
+            <span class="track-card__num">05</span>
+          </div>
+          <h3 class="track-card__title">Digital Forensics</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Disk, memory and timeline analysis with chain of custody.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> forensic examination report</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-bug" aria-hidden="true"></i></div>
+            <span class="track-card__num">06</span>
+          </div>
+          <h3 class="track-card__title">Malware Analysis</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Static and dynamic analysis in a contained environment.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> analysis report with indicators</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 07 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-cloud-lock" aria-hidden="true"></i></div>
+            <span class="track-card__num">07</span>
+          </div>
+          <h3 class="track-card__title">Cloud Security Architecture</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Identity, network, data protection and guardrails at design stage.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> architecture document</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 08 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-git" aria-hidden="true"></i></div>
+            <span class="track-card__num">08</span>
+          </div>
+          <h3 class="track-card__title">DevSecOps</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Secure pipelines, secrets, supply chain and proportionate gates.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> hardened CI/CD pipeline</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 09 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-code-square" aria-hidden="true"></i></div>
+            <span class="track-card__num">09</span>
+          </div>
+          <h3 class="track-card__title">Secure Software Development</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Threat modelling, secure coding and targeted security testing.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> threat model and code review</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
+            <span class="track-card__num">10</span>
+          </div>
+          <h3 class="track-card__title">Advanced Network Defense</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Segmentation, monitoring placement and zero-trust design.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> defence design and validation plan</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-lightning-charge" aria-hidden="true"></i></div>
+            <span class="track-card__num">11</span>
+          </div>
+          <h3 class="track-card__title">Incident Response</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Triage, containment, recovery and communications.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> playbook and post-incident report</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-file-earmark-check" aria-hidden="true"></i></div>
+            <span class="track-card__num">12</span>
+          </div>
+          <h3 class="track-card__title">Cybersecurity GRC</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Risk registers, policy, control mapping and audit readiness.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> risk and controls framework</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="track-card">
+        <div>
+          <div class="track-card__head">
+            <div class="track-card__icon"><i class="bi bi-cpu" aria-hidden="true"></i></div>
+            <span class="track-card__num">13</span>
+          </div>
+          <h3 class="track-card__title">AI-Enabled Security Operations</h3>
+          <div class="track-card__divider" aria-hidden="true"></div>
+          <p class="track-card__desc">Automation, enrichment and model risk in the SOC.</p>
+        </div>
+        <div class="track-card__footer">
+          <span class="track-card__deliverable"><strong>Deliverable:</strong> detection automation prototype</span>
+          <a class="track-card__apply" href="contact.html">Apply <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -532,30 +659,144 @@
 <!-- Prerequisites Section -->
 <section class="section section--surface" id="prereqs">
   <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">Prerequisites</p>
+    <div class="section-head mb-5">
+      <p class="eyebrow text-success fw-bold">Prerequisites</p>
       <h2 class="h1">Experience required, per track</h2>
-      <p class="lead">Applicants submit a short CV and a statement of experience. A 15-minute technical conversation confirms fit.</p>
+      <p class="lead mb-0">
+        Applicants submit a short CV and a statement of experience. A 15-minute
+        technical conversation confirms fit.
+      </p>
     </div>
-    <div class="table-responsive bg-white rounded-3 shadow-sm border">
-      <table class="table table-hover align-middle mb-0">
-        <caption class="p-3 text-muted small">Minimum entry requirements</caption>
-        <thead class="table-light">
-          <tr>
-            <th scope="col" class="py-3 px-3">Track</th>
-            <th scope="col" class="py-3 px-3">Experience</th>
-            <th scope="col" class="py-3 px-3">Knowledge</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="fw-semibold px-3">Advanced Penetration Testing</td><td class="px-3">2+ years security or systems</td><td class="px-3">Networking, Linux, web</td></tr>
-          <tr><td class="fw-semibold px-3">Red Team Operations</td><td class="px-3">3+ years, prior testing</td><td class="px-3">Active Directory, scripting</td></tr>
-          <tr><td class="fw-semibold px-3">Blue Team &amp; SOC</td><td class="px-3">1+ year SOC or IT ops</td><td class="px-3">Log sources, SIEM, networking</td></tr>
-          <tr><td class="fw-semibold px-3">Digital Forensics</td><td class="px-3">2+ years IT or security</td><td class="px-3">File systems, OS internals</td></tr>
-          <tr><td class="fw-semibold px-3">Cloud Security Architecture</td><td class="px-3">2+ years cloud or infra</td><td class="px-3">IAM, networking, containers</td></tr>
-          <tr><td class="fw-semibold px-3">Cybersecurity GRC</td><td class="px-3">2+ years security, audit or risk</td><td class="px-3">Control frameworks, policy</td></tr>
-        </tbody>
-      </table>
+
+    <div class="prereqs-grid">
+      <!-- 1. Advanced Penetration Testing -->
+      <article class="prereq-card">
+        <div class="prereq-card__head">
+          <div class="prereq-card__title-wrap">
+            <span class="prereq-card__icon" aria-hidden="true">
+              <i class="bi bi-terminal"></i>
+            </span>
+            <h3 class="prereq-card__title">Advanced Penetration Testing</h3>
+          </div>
+          <span class="prereq-exp-pill">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            2+ years security or systems
+          </span>
+        </div>
+        <div class="prereq-card__knowledge">
+          <span class="prereq-knowledge-label">Knowledge:</span>
+          <span class="prereq-skill-chip">Networking</span>
+          <span class="prereq-skill-chip">Linux</span>
+          <span class="prereq-skill-chip">Web</span>
+        </div>
+      </article>
+
+      <!-- 2. Red Team Operations -->
+      <article class="prereq-card">
+        <div class="prereq-card__head">
+          <div class="prereq-card__title-wrap">
+            <span class="prereq-card__icon" aria-hidden="true">
+              <i class="bi bi-crosshair"></i>
+            </span>
+            <h3 class="prereq-card__title">Red Team Operations</h3>
+          </div>
+          <span class="prereq-exp-pill">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            3+ years, prior testing
+          </span>
+        </div>
+        <div class="prereq-card__knowledge">
+          <span class="prereq-knowledge-label">Knowledge:</span>
+          <span class="prereq-skill-chip">Active Directory</span>
+          <span class="prereq-skill-chip">Scripting</span>
+        </div>
+      </article>
+
+      <!-- 3. Blue Team & SOC -->
+      <article class="prereq-card">
+        <div class="prereq-card__head">
+          <div class="prereq-card__title-wrap">
+            <span class="prereq-card__icon" aria-hidden="true">
+              <i class="bi bi-shield-shaded"></i>
+            </span>
+            <h3 class="prereq-card__title">Blue Team &amp; SOC</h3>
+          </div>
+          <span class="prereq-exp-pill">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            1+ year SOC or IT ops
+          </span>
+        </div>
+        <div class="prereq-card__knowledge">
+          <span class="prereq-knowledge-label">Knowledge:</span>
+          <span class="prereq-skill-chip">Log sources</span>
+          <span class="prereq-skill-chip">SIEM</span>
+          <span class="prereq-skill-chip">Networking</span>
+        </div>
+      </article>
+
+      <!-- 4. Digital Forensics -->
+      <article class="prereq-card">
+        <div class="prereq-card__head">
+          <div class="prereq-card__title-wrap">
+            <span class="prereq-card__icon" aria-hidden="true">
+              <i class="bi bi-search"></i>
+            </span>
+            <h3 class="prereq-card__title">Digital Forensics</h3>
+          </div>
+          <span class="prereq-exp-pill">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            2+ years IT or security
+          </span>
+        </div>
+        <div class="prereq-card__knowledge">
+          <span class="prereq-knowledge-label">Knowledge:</span>
+          <span class="prereq-skill-chip">File systems</span>
+          <span class="prereq-skill-chip">OS internals</span>
+        </div>
+      </article>
+
+      <!-- 5. Cloud Security Architecture -->
+      <article class="prereq-card">
+        <div class="prereq-card__head">
+          <div class="prereq-card__title-wrap">
+            <span class="prereq-card__icon" aria-hidden="true">
+              <i class="bi bi-cloud-lock"></i>
+            </span>
+            <h3 class="prereq-card__title">Cloud Security Architecture</h3>
+          </div>
+          <span class="prereq-exp-pill">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            2+ years cloud or infra
+          </span>
+        </div>
+        <div class="prereq-card__knowledge">
+          <span class="prereq-knowledge-label">Knowledge:</span>
+          <span class="prereq-skill-chip">IAM</span>
+          <span class="prereq-skill-chip">Networking</span>
+          <span class="prereq-skill-chip">Containers</span>
+        </div>
+      </article>
+
+      <!-- 6. Cybersecurity GRC -->
+      <article class="prereq-card">
+        <div class="prereq-card__head">
+          <div class="prereq-card__title-wrap">
+            <span class="prereq-card__icon" aria-hidden="true">
+              <i class="bi bi-file-earmark-check"></i>
+            </span>
+            <h3 class="prereq-card__title">Cybersecurity GRC</h3>
+          </div>
+          <span class="prereq-exp-pill">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            2+ years security, audit or risk
+          </span>
+        </div>
+        <div class="prereq-card__knowledge">
+          <span class="prereq-knowledge-label">Knowledge:</span>
+          <span class="prereq-skill-chip">Control frameworks</span>
+          <span class="prereq-skill-chip">Policy</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -563,34 +804,97 @@
 <!-- Assessment Rubric & Lab Rules Section -->
 <section class="section">
   <div class="container-xl">
-    <div class="row g-4 g-lg-5">
+    <div class="row g-4 g-lg-5 align-items-start">
       <div class="col-lg-8">
-        <p class="eyebrow">Assessment</p>
+        <p class="eyebrow text-success fw-bold">Assessment</p>
         <h2 class="h1 mb-4">One deliverable, four criteria</h2>
-        <div class="table-responsive bg-white rounded-3 shadow-sm border mb-2">
-          <table class="table table-hover align-middle mb-0">
-            <caption class="p-3 text-muted small">Rubric</caption>
-            <thead class="table-light">
-              <tr>
-                <th scope="col" class="py-3 px-3">Criterion</th>
-                <th scope="col" class="py-3 px-3 text-end">Weight</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="px-3">Technical accuracy</td><td class="px-3 text-end">40%</td></tr>
-              <tr><td class="px-3">Depth of analysis</td><td class="px-3 text-end">25%</td></tr>
-              <tr><td class="px-3">Quality of written deliverable</td><td class="px-3 text-end">20%</td></tr>
-              <tr><td class="px-3">Communication in debrief</td><td class="px-3 text-end">15%</td></tr>
-            </tbody>
-          </table>
+
+        <div class="rubric-grid">
+          <div class="rubric-card">
+            <div class="rubric-card__head">
+              <div class="rubric-card__icon" aria-hidden="true">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <span class="rubric-card__weight">40%</span>
+            </div>
+            <div>
+              <h3 class="rubric-card__title">Technical accuracy</h3>
+              <div class="rubric-card__bar">
+                <div class="rubric-card__bar-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rubric-card">
+            <div class="rubric-card__head">
+              <div class="rubric-card__icon" aria-hidden="true">
+                <i class="bi bi-layers"></i>
+              </div>
+              <span class="rubric-card__weight">25%</span>
+            </div>
+            <div>
+              <h3 class="rubric-card__title">Depth of analysis</h3>
+              <div class="rubric-card__bar">
+                <div class="rubric-card__bar-fill" style="width: 25%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rubric-card">
+            <div class="rubric-card__head">
+              <div class="rubric-card__icon" aria-hidden="true">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <span class="rubric-card__weight">20%</span>
+            </div>
+            <div>
+              <h3 class="rubric-card__title">Quality of written deliverable</h3>
+              <div class="rubric-card__bar">
+                <div class="rubric-card__bar-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rubric-card">
+            <div class="rubric-card__head">
+              <div class="rubric-card__icon" aria-hidden="true">
+                <i class="bi bi-mic"></i>
+              </div>
+              <span class="rubric-card__weight">15%</span>
+            </div>
+            <div>
+              <h3 class="rubric-card__title">Communication in debrief</h3>
+              <div class="rubric-card__bar">
+                <div class="rubric-card__bar-fill" style="width: 15%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="small text-muted mb-0">Pass requires 70% overall and no criterion below 50%. Feedback is written and specific.</p>
+
+        <div class="entry-note-banner">
+          <i class="bi bi-shield-check flex-shrink-0" aria-hidden="true"></i>
+          <span>Pass requires 70% overall and no criterion below 50%. Feedback is written and specific.</span>
+        </div>
       </div>
+
       <div class="col-lg-4">
-        <aside class="aside-card shadow-sm sticky-top-nav">
-          <h3 class="h5 mb-3">Lab rules</h3>
-          <p class="small mb-2">All exercises run inside CBBL's isolated lab. Techniques learned are not applied to systems without written authorisation. Participants sign an acceptable-use agreement.</p>
-          <p class="small text-muted mb-0">Offensive tracks teach attack techniques in order to defend against them — within a controlled environment and a professional ethics framework.</p>
+        <aside class="certification-vault-card sticky-top-nav">
+          <div class="certification-vault-head">
+            <div class="certification-vault-badge" aria-hidden="true">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3 class="certification-vault-title">Lab rules</h3>
+          </div>
+          <p class="certification-vault-text">
+            All exercises run inside CBBL's isolated lab. Techniques learned are
+            not applied to systems without written authorisation. Participants
+            sign an acceptable-use agreement.
+          </p>
+          <div class="certification-vault-note mb-0">
+            Offensive tracks teach attack techniques in order to defend against
+            them — within a controlled environment and a professional ethics
+            framework.
+          </div>
         </aside>
       </div>
     </div>

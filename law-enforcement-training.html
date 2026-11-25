@@ -378,58 +378,203 @@
   </div>
 </div>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="training.html">Training</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Institutional Training</li>
-    </ol>
-  </div>
-</nav>
-
 <main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <p class="eyebrow">Training · Institutional</p>
-    <h1 class="display-5 fw-bold mb-3">Professional training for institutional and public-safety teams</h1>
-    <p class="lead mb-4">CBBL delivers structured technology and cybersecurity training to institutional clients by arrangement. Enquiries are handled confidentially by a designated coordinator, and no client is named publicly without written permission.</p>
-    <div class="btn-row">
-      <a class="btn btn-accent" href="#enquiry">Make a confidential enquiry</a>
-      <a class="btn btn-secondary" href="#process">How engagement works</a>
-    </div>
-  </div>
-</section>
+<!-- Page Hero (Modern Light Theme matching Site Architecture) -->
+<section class="tech-glow-hero">
+  <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+  <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
 
-<!-- Notice Box -->
-<section class="section py-4">
-  <div class="container-xl">
-    <div class="notice notice--info my-0 shadow-sm">
-      <strong>Scope of this page</strong>
-      This page describes subject areas and the engagement process only. It does not describe operational techniques, tactics, tooling or casework. Specific curricula are shared with an authorised representative after an NDA.
+  <div class="container-xl position-relative">
+    <div class="tech-glow-hero__badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <span>TRAINING · INSTITUTIONAL</span>
     </div>
+
+    <h1 class="tech-glow-hero__title">
+      Professional training for institutional and public-safety teams
+    </h1>
+
+    <p class="tech-glow-hero__lead">
+      CBBL delivers structured technology and cybersecurity training to
+      institutional clients by arrangement. Enquiries are handled confidentially
+      by a designated coordinator, and no client is named publicly without
+      written permission.
+    </p>
+
+    <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+      <a class="btn-hero-pill-primary" href="#enquiry">
+        <span>Make a confidential enquiry</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+      <a class="btn-hero-pill-secondary" href="#process">
+        <span>How engagement works</span>
+      </a>
+    </div>
+
+    <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <a href="training.html">Training</a>
+      <span class="separator" aria-hidden="true">&gt;</span>
+      <span class="current" aria-current="page">Institutional Training</span>
+    </nav>
   </div>
 </section>
 
 <!-- Subject Areas Section -->
-<section class="section pt-0">
+<section class="section">
   <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">Subject areas</p>
+    <div class="section-head mb-5">
+      <p class="eyebrow text-success fw-bold">Subject areas</p>
       <h2 class="h1">Eight areas we can deliver</h2>
-      <p class="lead">Each area is taught at awareness, practitioner or advanced level, depending on the audience and the outcome agreed in the training needs analysis.</p>
+      <p class="lead mb-0">
+        Each area is taught at awareness, practitioner or advanced level,
+        depending on the audience and the outcome agreed in the training needs
+        analysis.
+      </p>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Digital evidence handling</h3><p class="mb-0">Principles of preservation, documentation and chain of custody for digital material.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Cybercrime awareness</h3><p class="mb-0">Threat landscape, common fraud patterns and reporting pathways for non-technical staff.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Network investigation fundamentals</h3><p class="mb-0">Reading network logs and understanding traffic patterns in an investigative context.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Mobile device security</h3><p class="mb-0">Device hygiene, data protection and secure communication practices.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Incident coordination</h3><p class="mb-0">Roles, escalation and inter-unit communication during a technology incident.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Secure communications</h3><p class="mb-0">Practical guidance on protecting sensitive communication channels.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Open-source intelligence discipline</h3><p class="mb-0">Lawful collection, source evaluation, record keeping and ethical boundaries.</p></article></div>
-      <div class="col"><article class="card h-100 shadow-sm"><h3>Train-the-trainer</h3><p class="mb-0">Preparing internal instructors to deliver and assess the same curriculum consistently.</p></article></div>
+
+    <div class="subject-photo-grid">
+      <!-- 1. Digital evidence handling -->
+      <article class="subject-photo-card">
+        <img
+          src="images/subject-digital-evidence.jpg"
+          alt="Digital evidence handling"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">Digital evidence handling</h3>
+          <p class="subject-photo-card__desc">
+            Principles of preservation, documentation and chain of custody for
+            digital material.
+          </p>
+        </div>
+      </article>
+
+      <!-- 2. Cybercrime awareness -->
+      <article class="subject-photo-card">
+        <img
+          src="images/subject-cybercrime-awareness.jpg"
+          alt="Cybercrime awareness"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">Cybercrime awareness</h3>
+          <p class="subject-photo-card__desc">
+            Threat landscape, common fraud patterns and reporting pathways for
+            non-technical staff.
+          </p>
+        </div>
+      </article>
+
+      <!-- 3. Network investigation fundamentals -->
+      <article class="subject-photo-card">
+        <img
+          src="images/subject-network-investigation.jpg"
+          alt="Network investigation fundamentals"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">
+            Network investigation fundamentals
+          </h3>
+          <p class="subject-photo-card__desc">
+            Reading network logs and understanding traffic patterns in an
+            investigative context.
+          </p>
+        </div>
+      </article>
+
+      <!-- 4. Mobile device security -->
+      <article class="subject-photo-card">
+        <img
+          src="images/subject-mobile-security.jpg"
+          alt="Mobile device security"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">Mobile device security</h3>
+          <p class="subject-photo-card__desc">
+            Device hygiene, data protection and secure communication practices.
+          </p>
+        </div>
+      </article>
+
+      <!-- 5. Incident coordination -->
+      <article class="subject-photo-card">
+        <img
+          src="images/course-thumb-soc-analyst.jpg"
+          alt="Incident coordination"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">Incident coordination</h3>
+          <p class="subject-photo-card__desc">
+            Roles, escalation and inter-unit communication during a technology
+            incident.
+          </p>
+        </div>
+      </article>
+
+      <!-- 6. Secure communications -->
+      <article class="subject-photo-card">
+        <img
+          src="images/subject-secure-comms.jpg"
+          alt="Secure communications"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">Secure communications</h3>
+          <p class="subject-photo-card__desc">
+            Practical guidance on protecting sensitive communication channels.
+          </p>
+        </div>
+      </article>
+
+      <!-- 7. Open-source intelligence discipline -->
+      <article class="subject-photo-card">
+        <img
+          src="images/subject-osint.jpg"
+          alt="Open-source intelligence discipline"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">
+            Open-source intelligence discipline
+          </h3>
+          <p class="subject-photo-card__desc">
+            Lawful collection, source evaluation, record keeping and ethical
+            boundaries.
+          </p>
+        </div>
+      </article>
+
+      <!-- 8. Train-the-trainer -->
+      <article class="subject-photo-card">
+        <img
+          src="images/course-thumb-assessment-methodology.jpg"
+          alt="Train-the-trainer"
+          class="subject-photo-card__img"
+          loading="lazy"
+        />
+        <div class="subject-photo-card__overlay">
+          <h3 class="subject-photo-card__title">Train-the-trainer</h3>
+          <p class="subject-photo-card__desc">
+            Preparing internal instructors to deliver and assess the same
+            curriculum consistently.
+          </p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -438,32 +583,74 @@
 <section class="section section--surface" id="process">
   <div class="container-xl">
     <div class="section-head mb-4">
-      <p class="eyebrow">Engagement</p>
+      <p class="eyebrow text-success fw-bold">Engagement</p>
       <h2 class="h1">Five stages, all documented</h2>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Confidential enquiry</h3>
-          <p>Via the form below or a direct call. A designated coordinator responds.</p>
+
+    <div class="process-timeline-grid">
+      <!-- Stage 01 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">01</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-telephone"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Confidential enquiry</h3>
+          <p class="process-step-desc">
+            Via the form below or a direct call. A designated coordinator
+            responds.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>NDA and authorisation</h3>
-          <p>Mutual NDA signed; a named authorised representative confirmed.</p>
+
+      <!-- Stage 02 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">02</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-shield-check"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">NDA and authorisation</h3>
+          <p class="process-step-desc">
+            Mutual NDA signed; a named authorised representative confirmed.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Needs analysis</h3>
-          <p>Audience profile, current capability and the outcome required.</p>
+
+      <!-- Stage 03 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">03</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-clipboard2-pulse"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Needs analysis</h3>
+          <p class="process-step-desc">
+            Audience profile, current capability and the outcome required.
+          </p>
         </div>
       </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Delivery</h3>
-          <p>On-site or at a CBBL facility, with attendance and assessment records.</p>
+
+      <!-- Stage 04 -->
+      <div class="process-step-card">
+        <div>
+          <div class="process-step-card__top">
+            <span class="process-step-num">04</span>
+            <span class="process-step-icon" aria-hidden="true">
+              <i class="bi bi-mortarboard"></i>
+            </span>
+          </div>
+          <h3 class="process-step-title">Delivery</h3>
+          <p class="process-step-desc">
+            On-site or at a CBBL facility, with attendance and assessment
+            records.
+          </p>
         </div>
       </div>
     </div>
@@ -475,16 +662,83 @@
   <div class="container-xl">
     <div class="row g-4 g-lg-5">
       <div class="col-lg-7">
-        <p class="eyebrow">Confidentiality</p>
+        <p class="eyebrow text-success fw-bold">Confidentiality</p>
         <h2 class="h1 mb-4">How we protect institutional work</h2>
-        <ul class="ticks mb-4">
-          <li>No client name, logo or photograph is published without written permission.</li>
-          <li>Participant records are held separately and are not used in marketing.</li>
-          <li>Training materials are versioned and issued to the authorised representative only.</li>
-          <li>Instructors sign a confidentiality undertaking before delivery.</li>
-          <li>Any request outside our competence is declined in writing rather than improvised.</li>
-        </ul>
-        <p class="small text-muted mb-0">CBBL does not claim government endorsement, authorisation or a formal partnership unless it has been granted and can be evidenced in writing.</p>
+
+        <div class="competency-steps">
+          <div class="competency-step-card">
+            <span class="competency-step-num">01</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                No client name, logo or photograph is published without written
+                permission.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-eye-slash"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">02</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Participant records are held separately and are not used in
+                marketing.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-database-lock"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">03</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Training materials are versioned and issued to the authorised
+                representative only.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-file-earmark-lock2"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">04</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Instructors sign a confidentiality undertaking before delivery.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-pen"></i>
+            </span>
+          </div>
+
+          <div class="competency-step-card">
+            <span class="competency-step-num">05</span>
+            <div class="competency-step-content">
+              <p class="competency-step-desc">
+                Any request outside our competence is declined in writing rather
+                than improvised.
+              </p>
+            </div>
+            <span class="competency-step-icon" aria-hidden="true">
+              <i class="bi bi-shield-exclamation"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="entry-note-banner">
+          <i class="bi bi-shield-check flex-shrink-0" aria-hidden="true"></i>
+          <span
+            >CBBL does not claim government endorsement, authorisation or a
+            formal partnership unless it has been granted and can be evidenced
+            in writing.</span
+          >
+        </div>
       </div>
 
       <div class="col-lg-5">
