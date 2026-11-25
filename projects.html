@@ -588,47 +588,81 @@
       <!-- Case Study 1 -->
       <section class="py-5 bg-light border-top border-bottom">
         <div class="container-xl">
-          <div class="mb-4">
-            <p class="text-success text-uppercase fw-bold small mb-1">
-              Case study
-            </p>
-            <h2 class="h2 fw-bold text-dark">
+          <div class="cs-header mb-4">
+            <span class="cs-badge">Case study · 01</span>
+            <h2 class="h2 fw-bold text-dark mt-2 mb-0">
               Assessment for a mid-sized financial institution
             </h2>
           </div>
-          <div class="row g-4 g-lg-5">
-            <div class="col-lg-8">
-              <div class="mb-4">
-                <h3 class="h5 fw-bold text-dark">The problem</h3>
-                <p class="text-secondary">
+
+          <div class="row g-4 g-lg-5 align-items-start">
+            <div class="col-lg-8 d-flex flex-column gap-4">
+              <!-- The Problem -->
+              <div class="cs-block cs-block--problem">
+                <div class="cs-block__head">
+                  <span class="cs-block__icon cs-block__icon--problem" aria-hidden="true">
+                    <i class="bi bi-exclamation-circle"></i>
+                  </span>
+                  <h3 class="h5 fw-bold text-dark mb-0">The problem</h3>
+                </div>
+                <p class="text-secondary mb-0 mt-2">
                   The client had completed an external audit with findings they
                   did not fully understand, and no agreed sequence for fixing
                   them. Two internal teams disagreed about priority.
                 </p>
               </div>
 
-              <div class="mb-4">
-                <h3 class="h5 fw-bold text-dark">Approach</h3>
-                <ol class="text-secondary ps-3 mb-0 d-flex flex-column gap-2">
-                  <li>
-                    Scoping session with IT, risk and operations to agree what
-                    &ldquo;important&rdquo; meant for them.
-                  </li>
-                  <li>
-                    Technical review of the internal network, identity
-                    configuration and the customer-facing application.
-                  </li>
-                  <li>
-                    Validation of each finding, with evidence and a realistic
-                    exploitation path where one existed.
-                  </li>
-                  <li>Remediation workshop to agree owners and sequence.</li>
-                </ol>
+              <!-- Approach -->
+              <div class="cs-block">
+                <div class="cs-block__head mb-3">
+                  <span class="cs-block__icon" aria-hidden="true">
+                    <i class="bi bi-diagram-3"></i>
+                  </span>
+                  <h3 class="h5 fw-bold text-dark mb-0">Approach</h3>
+                </div>
+                <div class="cs-steps">
+                  <div class="cs-step">
+                    <span class="cs-step__num">01</span>
+                    <p class="cs-step__text">
+                      Scoping session with IT, risk and operations to agree what
+                      &ldquo;important&rdquo; meant for them.
+                    </p>
+                  </div>
+                  <div class="cs-step">
+                    <span class="cs-step__num">02</span>
+                    <p class="cs-step__text">
+                      Technical review of the internal network, identity
+                      configuration and the customer-facing application.
+                    </p>
+                  </div>
+                  <div class="cs-step">
+                    <span class="cs-step__num">03</span>
+                    <p class="cs-step__text">
+                      Validation of each finding, with evidence and a realistic
+                      exploitation path where one existed.
+                    </p>
+                  </div>
+                  <div class="cs-step">
+                    <span class="cs-step__num">04</span>
+                    <p class="cs-step__text">
+                      Remediation workshop to agree owners and sequence.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h3 class="h5 fw-bold text-dark">Outcome</h3>
-                <p class="text-secondary mb-2">
+              <!-- Outcome -->
+              <div class="cs-block cs-block--outcome">
+                <div class="cs-outcome-top">
+                  <div class="cs-block__head">
+                    <span class="cs-block__icon cs-block__icon--outcome" aria-hidden="true">
+                      <i class="bi bi-check2-circle"></i>
+                    </span>
+                    <h3 class="h5 fw-bold text-dark mb-0">Outcome</h3>
+                  </div>
+                  <span class="cs-metric-pill">14 / 22 findings closed in Q1</span>
+                </div>
+                <p class="text-secondary mt-3 mb-2">
                   A single prioritised roadmap, agreed by both teams, with 14 of
                   22 findings closed within one quarter. The remaining items
                   were accepted with documented compensating controls.
@@ -640,43 +674,48 @@
               </div>
             </div>
 
+            <!-- Right Column: At a glance -->
             <div class="col-lg-4">
-              <aside
-                class="card border shadow-sm p-4 bg-white sticky-top"
-                style="top: 90px"
-              >
-                <h3
-                  class="h6 text-uppercase fw-bold text-success border-bottom pb-2 mb-3"
-                >
-                  At a glance
-                </h3>
-                <dl class="row g-2 mb-4 small">
-                  <dt class="col-4 text-secondary">Sector</dt>
-                  <dd class="col-8 fw-semibold text-dark">
-                    Financial services
-                  </dd>
-                  <dt class="col-4 text-secondary">Duration</dt>
-                  <dd class="col-8 fw-semibold text-dark">6 weeks</dd>
-                  <dt class="col-4 text-secondary">Scope</dt>
-                  <dd class="col-8 fw-semibold text-dark">
-                    Internal network, identity, one application
-                  </dd>
-                  <dt class="col-4 text-secondary">Deliverable</dt>
-                  <dd class="col-8 fw-semibold text-dark">
-                    Findings report + prioritised roadmap
-                  </dd>
-                  <dt class="col-4 text-secondary">Follow-up</dt>
-                  <dd class="col-8 fw-semibold text-dark">
-                    Remediation workshop
-                  </dd>
-                </dl>
-                <div class="border-top pt-3">
-                  <h4 class="h6 fw-bold mb-1">What made it work</h4>
-                  <p class="small text-secondary mb-0">
-                    Agreeing the definition of &ldquo;important&rdquo; before
-                    testing began. It turned a technical argument into a
-                    business decision.
-                  </p>
+              <aside class="cs-aside sticky-top" style="top: 90px">
+                <div class="cs-aside__top">
+                  <span class="cs-aside__eyebrow">At a glance</span>
+                  <i class="bi bi-bank" aria-hidden="true"></i>
+                </div>
+                <div class="cs-aside__body">
+                  <dl class="cs-meta-list mb-0">
+                    <div class="cs-meta-row">
+                      <dt>Sector</dt>
+                      <dd>Financial services</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Duration</dt>
+                      <dd>6 weeks</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Scope</dt>
+                      <dd>Internal network, identity, one application</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Deliverable</dt>
+                      <dd>Findings report + prioritised roadmap</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Follow-up</dt>
+                      <dd>Remediation workshop</dd>
+                    </div>
+                  </dl>
+
+                  <div class="cs-insight-box mt-4">
+                    <h4 class="cs-insight-box__title">
+                      <i class="bi bi-lightbulb me-1" aria-hidden="true"></i>
+                      What made it work
+                    </h4>
+                    <p class="cs-insight-box__text mb-0">
+                      Agreeing the definition of &ldquo;important&rdquo; before
+                      testing began. It turned a technical argument into a
+                      business decision.
+                    </p>
+                  </div>
                 </div>
               </aside>
             </div>
@@ -687,47 +726,81 @@
       <!-- Case Study 2 -->
       <section class="py-5">
         <div class="container-xl">
-          <div class="mb-4">
-            <p class="text-success text-uppercase fw-bold small mb-1">
-              Case study
-            </p>
-            <h2 class="h2 fw-bold text-dark">
+          <div class="cs-header mb-4">
+            <span class="cs-badge">Case study · 02</span>
+            <h2 class="h2 fw-bold text-dark mt-2 mb-0">
               Closed-cohort training for a technology team
             </h2>
           </div>
-          <div class="row g-4 g-lg-5">
-            <div class="col-lg-8">
-              <div class="mb-4">  
-                <h3 class="h5 fw-bold text-dark">The problem</h3>
-                <p class="text-secondary">
+
+          <div class="row g-4 g-lg-5 align-items-start">
+            <div class="col-lg-8 d-flex flex-column gap-4">
+              <!-- The Problem -->
+              <div class="cs-block cs-block--problem">
+                <div class="cs-block__head">
+                  <span class="cs-block__icon cs-block__icon--problem" aria-hidden="true">
+                    <i class="bi bi-exclamation-circle"></i>
+                  </span>
+                  <h3 class="h5 fw-bold text-dark mb-0">The problem</h3>
+                </div>
+                <p class="text-secondary mb-0 mt-2">
                   A product team of nine was shipping quickly with no consistent
                   security practice, and had failed an internal review. Generic
                   courses had not changed behaviour.
                 </p>
               </div>
 
-              <div class="mb-4">
-                <h3 class="h5 fw-bold text-dark">Approach</h3>
-                <ol class="text-secondary ps-3 mb-0 d-flex flex-column gap-2">
-                  <li>Skills baseline and interviews with three team leads.</li>
-                  <li>
-                    Curriculum built around their own codebase and deployment
-                    pipeline.
-                  </li>
-                  <li>
-                    Eight weekly sessions, each ending in a task applied to a
-                    real repository.
-                  </li>
-                  <li>
-                    Final assessment: a threat model and a code review of a
-                    peer's work.
-                  </li>
-                </ol>
+              <!-- Approach -->
+              <div class="cs-block">
+                <div class="cs-block__head mb-3">
+                  <span class="cs-block__icon" aria-hidden="true">
+                    <i class="bi bi-diagram-3"></i>
+                  </span>
+                  <h3 class="h5 fw-bold text-dark mb-0">Approach</h3>
+                </div>
+                <div class="cs-steps">
+                  <div class="cs-step">
+                    <span class="cs-step__num">01</span>
+                    <p class="cs-step__text">
+                      Skills baseline and interviews with three team leads.
+                    </p>
+                  </div>
+                  <div class="cs-step">
+                    <span class="cs-step__num">02</span>
+                    <p class="cs-step__text">
+                      Curriculum built around their own codebase and deployment
+                      pipeline.
+                    </p>
+                  </div>
+                  <div class="cs-step">
+                    <span class="cs-step__num">03</span>
+                    <p class="cs-step__text">
+                      Eight weekly sessions, each ending in a task applied to a
+                      real repository.
+                    </p>
+                  </div>
+                  <div class="cs-step">
+                    <span class="cs-step__num">04</span>
+                    <p class="cs-step__text">
+                      Final assessment: a threat model and a code review of a
+                      peer's work.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h3 class="h5 fw-bold text-dark">Outcome</h3>
-                <p class="text-secondary mb-2">
+              <!-- Outcome -->
+              <div class="cs-block cs-block--outcome">
+                <div class="cs-outcome-top">
+                  <div class="cs-block__head">
+                    <span class="cs-block__icon cs-block__icon--outcome" aria-hidden="true">
+                      <i class="bi bi-check2-circle"></i>
+                    </span>
+                    <h3 class="h5 fw-bold text-dark mb-0">Outcome</h3>
+                  </div>
+                  <span class="cs-metric-pill">9 / 9 participants passed</span>
+                </div>
+                <p class="text-secondary mt-3 mb-2">
                   All nine participants passed. Security review findings on the
                   next release dropped substantially, and two internal champions
                   now run the practice monthly.
@@ -739,30 +812,37 @@
               </div>
             </div>
 
+            <!-- Right Column: At a glance -->
             <div class="col-lg-4">
-              <aside
-                class="card border shadow-sm p-4 bg-white sticky-top"
-                style="top: 90px"
-              >
-                <h3
-                  class="h6 text-uppercase fw-bold text-success border-bottom pb-2 mb-3"
-                >
-                  At a glance
-                </h3>
-                <dl class="row g-2 mb-0 small">
-                  <dt class="col-5 text-secondary">Sector</dt>
-                  <dd class="col-7 fw-semibold text-dark">Technology</dd>
-                  <dt class="col-5 text-secondary">Participants</dt>
-                  <dd class="col-7 fw-semibold text-dark">9</dd>
-                  <dt class="col-5 text-secondary">Duration</dt>
-                  <dd class="col-7 fw-semibold text-dark">12 weeks</dd>
-                  <dt class="col-5 text-secondary">Delivery</dt>
-                  <dd class="col-7 fw-semibold text-dark">On-site, weekly</dd>
-                  <dt class="col-5 text-secondary">Assessment</dt>
-                  <dd class="col-7 fw-semibold text-dark">
-                    Threat model + peer code review
-                  </dd>
-                </dl>
+              <aside class="cs-aside sticky-top" style="top: 90px">
+                <div class="cs-aside__top">
+                  <span class="cs-aside__eyebrow">At a glance</span>
+                  <i class="bi bi-cpu" aria-hidden="true"></i>
+                </div>
+                <div class="cs-aside__body">
+                  <dl class="cs-meta-list mb-0">
+                    <div class="cs-meta-row">
+                      <dt>Sector</dt>
+                      <dd>Technology</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Participants</dt>
+                      <dd>9</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Duration</dt>
+                      <dd>12 weeks</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Delivery</dt>
+                      <dd>On-site, weekly</dd>
+                    </div>
+                    <div class="cs-meta-row">
+                      <dt>Assessment</dt>
+                      <dd>Threat model + peer code review</dd>
+                    </div>
+                  </dl>
+                </div>
               </aside>
             </div>
           </div>

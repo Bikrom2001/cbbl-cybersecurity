@@ -8177,3 +8177,206 @@ aside[id] {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   Case Study 1 Redesign (Projects Page)
+   ========================================================================== */
+.cs-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(15, 122, 79, 0.1);
+  color: #0f7a4f;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cs-block {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 24px 26px;
+  box-shadow: 0 8px 24px -10px rgba(15, 23, 42, 0.06);
+}
+
+.cs-block--problem {
+  border-left: 4px solid #e11d48;
+}
+
+.cs-block--outcome {
+  background: linear-gradient(180deg, #f3fbf7 0%, #ffffff 100%);
+  border: 1px solid rgba(15, 122, 79, 0.2);
+  border-left: 4px solid #0f7a4f;
+}
+
+.cs-block__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cs-block__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(15, 122, 79, 0.1);
+  color: #0f7a4f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.cs-block__icon--problem {
+  background: rgba(225, 29, 72, 0.1);
+  color: #e11d48;
+}
+
+.cs-block__icon--outcome {
+  background: #0f7a4f;
+  color: #ffffff;
+}
+
+.cs-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.cs-step {
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cs-step__num {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #0f7a4f;
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cs-step__text {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+}
+
+.cs-outcome-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cs-metric-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(15, 122, 79, 0.12);
+  color: #0b5e3c;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.cs-aside {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 34px -12px rgba(15, 23, 42, 0.1);
+  overflow: hidden;
+}
+
+.cs-aside__top {
+  background: linear-gradient(135deg, #0b3d3a 0%, #0f7a4f 100%);
+  color: #ffffff;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-aside__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.cs-aside__body {
+  padding: 20px 22px 22px;
+}
+
+.cs-meta-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-meta-row {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.07);
+  font-size: 0.86rem;
+}
+
+.cs-meta-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cs-meta-row dt {
+  color: #64748b;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cs-meta-row dd {
+  color: #0f172a;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cs-insight-box {
+  background: #f8fafc;
+  border-left: 3px solid #0f7a4f;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.cs-insight-box__title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px;
+}
+
+.cs-insight-box__text {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #475569;
+}
+
+@media (max-width: 767.98px) {
+  .cs-steps {
+    grid-template-columns: 1fr;
+  }
+}
