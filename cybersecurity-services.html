@@ -1,740 +1,1688 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cybersecurity Services &amp; IT Solutions — Dhaka | CBBL</title>
-<meta name="description" content="Cybersecurity assessments, penetration testing support, cloud security and IT infrastructure solutions in Bangladesh. Scoped in writing, practical reporting.">
-<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!-- Custom Styles -->
-<link rel="stylesheet" href="css/styles.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Creating Better Bangladesh Limited","alternateName":"CBBL","url":"https://cbbl.com.bd","logo":"https://cbbl.com.bd/images/cbbl-logo.svg","foundingDate":"2016","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"description":"Cybersecurity services, IT solutions, software development and professional training."}
-</script>
-</head>
-<body>
-<a class="skip" href="#main">Skip to main content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cybersecurity Services &amp; IT Solutions — Dhaka | CBBL</title>
+    <meta
+      name="description"
+      content="Cybersecurity assessments, penetration testing support, cloud security and IT infrastructure solutions in Bangladesh. Scoped in writing, practical reporting."
+    />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Creating Better Bangladesh Limited",
+        "alternateName": "CBBL",
+        "url": "https://cbbl.com.bd",
+        "logo": "https://cbbl.com.bd/images/cbbl-logo.svg",
+        "foundingDate": "2016",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "BD"
+        },
+        "description": "Cybersecurity services, IT solutions, software development and professional training."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
 
-<!-- Bootstrap 5 Navbar Header -->
-<header class="site-header sticky-top">
-  <nav class="navbar navbar-expand-lg py-2">
-    <div class="container-xl d-flex align-items-center">
-      <a class="navbar-brand me-3" href="index.html" aria-label="CBBL home">
-        <img src="images/cbbl-logo.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="40">
-      </a>
-      
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item">
-            <a class="nav-link px-3" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="about.html">About</a>
-          </li>
-                    <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle px-3" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu dropdown-menu--services shadow-lg border-0" aria-labelledby="servicesDropdown">
-              <div class="row g-3">
-                <div class="col-lg-7">
-                  <div class="dropdown-col-title">Core Capabilities</div>
-                  <div class="d-flex flex-column gap-1">
-                    <a class="dropdown-rich-item" href="cybersecurity-services.html">
-                      <div class="dropdown-icon-box">
-                        <i class="bi bi-shield-check"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>Cybersecurity Services</span>
-                          <span class="dropdown-mini-tag">Core</span>
-                        </div>
-                        <p class="dropdown-rich-desc">VAPT assessments, threat modeling, cloud audit &amp; compliance.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-
-                    <a class="dropdown-rich-item" href="cybersecurity-services.html#it">
-                      <div class="dropdown-icon-box dropdown-icon-box--blue">
-                        <i class="bi bi-hdd-network"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>IT Solutions</span>
-                        </div>
-                        <p class="dropdown-rich-desc">Enterprise infrastructure, firewalls, routing &amp; 24/7 support.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-
-                    <a class="dropdown-rich-item" href="projects.html">
-                      <div class="dropdown-icon-box dropdown-icon-box--purple">
-                        <i class="bi bi-code-slash"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>Software Development</span>
-                        </div>
-                        <p class="dropdown-rich-desc">Web, mobile &amp; enterprise business portals with secure SDLC.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-
-                    <a class="dropdown-rich-item" href="contact.html">
-                      <div class="dropdown-icon-box dropdown-icon-box--amber">
-                        <i class="bi bi-box-seam"></i>
-                      </div>
-                      <div class="dropdown-rich-content">
-                        <div class="dropdown-rich-title">
-                          <span>IT Procurement &amp; Import</span>
-                        </div>
-                        <p class="dropdown-rich-desc">Certified hardware, server appliances &amp; equipment sourcing.</p>
-                      </div>
-                      <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col-lg-5">
-                  <div class="dropdown-highlight-panel">
-                    <div class="dropdown-highlight-title">
-                      <i class="bi bi-stars text-success"></i> Popular Security Tracks
-                    </div>
-                    <div class="dropdown-quick-links">
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#assessment">
-                        <span>Security Assessment</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#pentest">
-                        <span>Penetration Testing (VAPT)</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#cloud">
-                        <span>Cloud Security &amp; ISO 27001</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#ir">
-                        <span>Incident Response Readiness</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                      <a class="dropdown-quick-link" href="cybersecurity-services.html#awareness">
-                        <span>Security Awareness Training</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="dropdown-bottom-strip">
-                    <div class="dropdown-bottom-strip-text">
-                      <i class="bi bi-shield-lock-fill text-success fs-5"></i>
-                      <span>Every engagement begins with a documented written scope.</span>
-                    </div>
-                    <a class="dropdown-bottom-strip-cta" href="contact.html">
-                      <span>Request scoping call</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-                    <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle px-3" href="#" id="trainingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Training
-            </a>
-            <div class="dropdown-menu dropdown-menu--training shadow-lg border-0" aria-labelledby="trainingDropdown">
-              <div class="dropdown-col-title">Training Ecosystem &amp; Certifications</div>
-              <div class="row g-2">
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="nsda-training.html">
-                    <div class="dropdown-icon-box">
-                      <i class="bi bi-award"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>NSDA Training Programs</span>
-                        <span class="dropdown-mini-tag">Govt.</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Levels 3–5, competency-based national qualifications.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="professional-training.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--blue">
-                      <i class="bi bi-laptop"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Regular Professional Training</span>
-                        <span class="dropdown-mini-tag">20 Courses</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Hands-on job-ready IT courses with practical labs.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="advanced-cybersecurity.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--purple">
-                      <i class="bi bi-shield-shaded"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Advanced Cybersecurity</span>
-                        <span class="dropdown-mini-tag">13 Tracks</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Offensive &amp; defensive security tracks for practitioners.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="corporate-training.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--amber">
-                      <i class="bi bi-building"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Corporate &amp; Custom Training</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Tailored syllabus, workforce upskilling &amp; delivery.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="law-enforcement-training.html">
-                    <div class="dropdown-icon-box">
-                      <i class="bi bi-file-lock2"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Institutional Training</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Confidential, specialized technical instruction.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-md-6">
-                  <a class="dropdown-rich-item" href="vendor-vouchers.html">
-                    <div class="dropdown-icon-box dropdown-icon-box--blue">
-                      <i class="bi bi-ticket-perforated"></i>
-                    </div>
-                    <div class="dropdown-rich-content">
-                      <div class="dropdown-rich-title">
-                        <span>Vendor Exam Vouchers</span>
-                      </div>
-                      <p class="dropdown-rich-desc">Global exam voucher procurement &amp; registration.</p>
-                    </div>
-                    <i class="bi bi-chevron-right dropdown-item-arrow"></i>
-                  </a>
-                </div>
-
-                <div class="col-12 mt-3">
-                  <div class="dropdown-bottom-strip">
-                    <div class="dropdown-bottom-strip-text">
-                      <i class="bi bi-mortarboard-fill text-success fs-5"></i>
-                      <span>Small batches, active cyber range access &amp; certified instructors.</span>
-                    </div>
-                    <a class="dropdown-bottom-strip-cta" href="training.html">
-                      <span>Explore all courses</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="job-placement.html">Placement</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="d-flex align-items-center gap-2 ms-auto">
-        <button class="btn btn-search-trigger rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search the site">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
-        </button>
-        <a class="btn-navbar-pill d-none d-xl-inline-flex" href="contact.html">
-          <span>Enroll Now</span>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <button class="btn btn-light btn-icon rounded-circle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileDrawer" aria-controls="mobileDrawer" aria-label="Toggle navigation">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<!-- Bootstrap 5 Offcanvas Mobile Drawer -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileDrawer" aria-labelledby="mobileDrawerLabel">
-  <div class="offcanvas-header border-bottom">
-    <a href="index.html" class="d-flex align-items-center">
-      <img src="images/cbbl-logo.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="40">
-    </a>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column p-0">
-    <div class="p-3 flex-grow-1">
-      <nav class="nav flex-column mobile-nav">
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="index.html">Home</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="about.html">About</a>
-        <div class="accordion accordion-flush" id="mobileNavAccordion">
-          <div class="accordion-item border-0">
-            <h2 class="accordion-header" id="headingMobileServices">
-              <button class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobileServices" aria-expanded="false" aria-controls="collapseMobileServices">
-                Services
-              </button>
-            </h2>
-            <div id="collapseMobileServices" class="accordion-collapse collapse" aria-labelledby="headingMobileServices" data-bs-parent="#mobileNavAccordion">
-              <div class="accordion-body py-1 ps-4 pe-2">
-                <a class="nav-link py-2 text-muted" href="cybersecurity-services.html">Cybersecurity Services</a>
-                <a class="nav-link py-2 text-muted" href="cybersecurity-services.html#it">IT Solutions</a>
-                <a class="nav-link py-2 text-muted" href="projects.html">Software Development</a>
-                <a class="nav-link py-2 text-muted" href="contact.html">IT Procurement &amp; Import</a>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item border-0">
-            <h2 class="accordion-header" id="headingMobileTraining">
-              <button class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobileTraining" aria-expanded="false" aria-controls="collapseMobileTraining">
-                Training
-              </button>
-            </h2>
-            <div id="collapseMobileTraining" class="accordion-collapse collapse" aria-labelledby="headingMobileTraining" data-bs-parent="#mobileNavAccordion">
-              <div class="accordion-body py-1 ps-4 pe-2">
-                <a class="nav-link py-2 text-muted" href="nsda-training.html">NSDA Training Programs</a>
-                <a class="nav-link py-2 text-muted" href="professional-training.html">Regular Professional Training</a>
-                <a class="nav-link py-2 text-muted" href="advanced-cybersecurity.html">Advanced Cybersecurity</a>
-                <a class="nav-link py-2 text-muted" href="corporate-training.html">Corporate &amp; Custom Training</a>
-                <a class="nav-link py-2 text-muted" href="law-enforcement-training.html">Institutional Training</a>
-                <a class="nav-link py-2 text-muted" href="vendor-vouchers.html">Vendor Exam Vouchers</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="job-placement.html">Placement</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="projects.html">Projects</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="contact.html">Contact</a>
-        <a class="nav-link py-2 px-3 fw-medium text-dark" href="trust-and-credentials.html">Trust &amp; Credentials</a>
-      </nav>
-    </div>
-    <div class="p-3 border-top bg-white">
-      <a class="btn-navbar-pill w-100 text-center" href="contact.html">
-        <span>Enroll Now</span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap 5 Search Modal -->
-<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 shadow-lg rounded-4 p-3 p-md-4">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-semibold" id="searchModalLabel">Search courses, services and pages</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body pt-3">
-        <form action="professional-training.html" role="search">
-          <div class="input-group mb-3">
-            <input type="text" id="searchInput" class="form-control form-control-lg" name="q" placeholder="e.g. ethical hacking, NSDA level 5, cloud security" aria-label="Search" required>
-            <button class="btn btn-primary px-4" type="submit">Search</button>
-          </div>
-        </form>
-        <p class="search-suggest text-muted small mb-0">
-          Popular: 
-          <a href="professional-training.html" class="badge bg-light text-dark text-decoration-none border me-1">cybersecurity course</a>
-          <a href="nsda-training.html" class="badge bg-light text-dark text-decoration-none border me-1">NSDA</a>
-          <a href="cybersecurity-services.html" class="badge bg-light text-dark text-decoration-none border me-1">security assessment</a>
-          <a href="corporate-training.html" class="badge bg-light text-dark text-decoration-none border me-1">corporate training</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Breadcrumb -->
-<nav class="breadcrumb-wrap" aria-label="breadcrumb">
-  <div class="container-xl">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Cybersecurity Services &amp; IT Solutions</li>
-    </ol>
-  </div>
-</nav>
-
-<main id="main">
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container-xl">
-    <p class="eyebrow">Services</p>
-    <h1 class="display-5 fw-bold mb-3">Cybersecurity and IT solutions, delivered to a defined scope</h1>
-    <p class="lead mb-4">We help organisations understand their technology exposure, build defensive capability and deploy infrastructure that people can actually manage.</p>
-    <div class="btn-row">
-      <a class="btn btn-primary" href="contact.html">Request a Scoping Call</a>
-      <a class="btn btn-secondary" href="#process">How we work</a>
-    </div>
-  </div>
-</section>
-
-<!-- Subnav -->
-<div class="subnav">
-  <div class="container-xl">
-    <ul>
-      <li><a href="#consultancy">Consultancy</a></li>
-      <li><a href="#assessment">Assessments</a></li>
-      <li><a href="#it">IT Solutions</a></li>
-      <li><a href="#process">Method</a></li>
-      <li><a href="#deliverables">Deliverables</a></li>
-      <li><a href="#limits">Limits &amp; NDA</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- Twelve Security Services Section -->
-<section class="section">
-  <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">What we help with</p>
-      <h2 class="h1">Twelve security services, one method</h2>
-      <p class="lead">Each service below is described the same way: what it is, who it is for, what we do and what you receive. No proprietary-product claims.</p>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="consultancy">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4.4-3 8-7 9-4-1-7-4.6-7-9V6z"/></svg></div>
-          <h3>Cybersecurity consultancy</h3>
-          <p>Structured advice on reducing technology risk against your business priorities. You receive a prioritised 6–12 month roadmap.</p>
-          <a class="card__links" href="contact.html">Request a scoping call →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="assessment">
-          <div class="card__meta"><span class="chip chip--green">Most requested</span></div>
-          <h3>Security assessment and vulnerability assessment support</h3>
-          <p>Independent review of your environment, findings validated and ranked by real exploitability and business impact.</p>
-          <a class="card__links" href="contact.html">Request an assessment scope →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="pentest">
-          <h3>Penetration testing coordination</h3>
-          <p>Qualified testers, CBBL-managed scope, scheduling, evidence handling and remediation follow-up. Written authorisation required.</p>
-          <a class="card__links" href="contact.html">Discuss a testing engagement →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="awareness">
-          <h3>Security awareness training</h3>
-          <p>Role-specific sessions that change behaviour: phishing, social engineering, data handling and reporting.</p>
-          <a class="card__links" href="corporate-training.html">Request an awareness programme →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="network">
-          <h3>Network security consulting</h3>
-          <p>Segmentation, firewall policy, remote access and monitoring design, with a migration plan.</p>
-          <a class="card__links" href="contact.html">Request a network review →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="cloud">
-          <h3>Cloud security consulting</h3>
-          <p>Identity, data protection and logging review for cloud environments, with prioritised configuration changes.</p>
-          <a class="card__links" href="contact.html">Request a cloud review →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Endpoint and infrastructure guidance</h3>
-          <p>Hardening baselines for servers and endpoints, with a rollout checklist your team can follow.</p>
-          <a class="card__links" href="contact.html">Request guidance →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm" id="ir">
-          <h3>Incident-response readiness</h3>
-          <p>Plan, severity matrix, roles, escalation paths and a tabletop exercise with a written improvement plan.</p>
-          <a class="card__links" href="contact.html">Request an IR readiness review →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Policy and compliance advisory</h3>
-          <p>Policy set review, drafting and an obligations-to-controls mapping. Advisory only — we do not certify compliance.</p>
-          <a class="card__links" href="contact.html">Request a policy review →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>IT audit support</h3>
-          <p>Technical evidence gathering, control review and observation logs for internal or external auditors.</p>
-          <a class="card__links" href="contact.html">Discuss audit support →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Managed security coordination</h3>
-          <p>Monitoring delivered by a specialist partner, with CBBL managing scope, onboarding and service reviews. We do not claim an in-house 24/7 SOC.</p>
-          <a class="card__links" href="contact.html">Discuss monitoring options →</a>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Solution implementation support</h3>
-          <p>Requirements, vendor evaluation, deployment, tuning and runbooks for third-party security technology.</p>
-          <a class="card__links" href="contact.html">Request implementation support →</a>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- IT Solutions Section -->
-<section class="section section--surface" id="it">
-  <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">IT solutions</p>
-      <h2 class="h1">Infrastructure that someone owns</h2>
-      <p class="lead">Design, supply, deploy and support — with a named owner for each element and documentation your team can actually use.</p>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Network design and deployment</h3>
-          <p>Switching, routing, wireless and segmentation, delivered with an as-built diagram and an IP register.</p>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Server and storage</h3>
-          <p>Physical and virtual server platforms, backup design, and a restore test that proves the backup works.</p>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>End-user computing</h3>
-          <p>Standard device builds, patching policy, endpoint protection and a documented onboarding process.</p>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>IT procurement and import</h3>
-          <p>Requirements, vendor comparison, import and delivery — with warranty and support terms stated in writing.</p>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Support and maintenance</h3>
-          <p>Defined response times, an escalation path and a monthly summary of what was fixed and what keeps breaking.</p>
-        </article>
-      </div>
-      <div class="col">
-        <article class="card h-100 shadow-sm">
-          <h3>Cloud and hybrid migration</h3>
-          <p>Workload assessment, migration plan, identity design and a rollback position agreed before anything moves.</p>
-        </article>
-      </div>
-    </div>
-    <div class="notice notice--info mt-4">
-      <strong>Hardware supply</strong>
-      Equipment is sourced through licensed importers with warranty terms passed on in writing. Lead times and model availability are confirmed per order rather than promised from a catalogue.
-    </div>
-  </div>
-</section>
-
-<!-- How an Engagement Runs -->
-<section class="section section--surface pt-0" id="process">
-  <div class="container-xl">
-    <div class="section-head mb-4">
-      <p class="eyebrow">How an engagement runs</p>
-      <h2 class="h1">Five steps, each with an output</h2>
-    </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Scoping call</h3>
-          <p>30–45 minutes, no cost. Problem, environment, constraint. Output: draft scope.</p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Written scope</h3>
-          <p>Objectives, targets, exclusions, schedule, roles and fee. Output: signed scope.</p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Delivery</h3>
-          <p>Work within the agreed window with a named lead. Output: evidence and interim findings.</p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="step h-100 shadow-sm">
-          <h3>Reporting</h3>
-          <p>Validated findings written for technical and management readers. Output: report and plan.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Deliverables and Limits Section -->
-<section class="section" id="deliverables">
-  <div class="container-xl">
-    <div class="row g-4 g-lg-5">
-      <div class="col-lg-8">
-        <p class="eyebrow">What you receive</p>
-        <h2 class="h1 mb-4">A report three people can use</h2>
-        <ul class="ticks">
-          <li><strong>Executive summary</strong> — the risk in business terms with a prioritised top five.</li>
-          <li><strong>Findings</strong> — description, evidence reference, severity, business impact, specific remediation.</li>
-          <li><strong>Remediation plan</strong> — sequenced by risk and effort, with an owner column.</li>
-          <li><strong>Appendix</strong> — scope, method summary, limitations and glossary.</li>
-        </ul>
-        <p class="text-muted">We do not deliver raw scanner output as a report.</p>
-      </div>
-      <div class="col-lg-4">
-        <aside class="aside-card shadow-sm sticky-top-nav" id="limits">
-          <h3 class="h5 mb-3">Scope, limits and confidentiality</h3>
-          <ul class="ticks" style="font-size:.88rem">
-            <li>Signed scope and NDA before work.</li>
-            <li>Written authorisation required to test any system.</li>
-            <li>Client data minimised, masked and deleted.</li>
-            <li>Findings belong to the client.</li>
-            <li>Partner-delivered work is named as such.</li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="section section--surface" id="faq">
-  <div class="container-xl" style="max-width:920px">
-    <div class="section-head mb-4 text-center mx-auto">
-      <p class="eyebrow">FAQ</p>
-      <h2 class="h1">Questions we are asked before scoping</h2>
-    </div>
-    <div class="accordion shadow-sm rounded-3 overflow-hidden border" id="servicesFaqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingS1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS1" aria-expanded="true" aria-controls="collapseS1">
-            Do you provide penetration testing directly?
-          </button>
-        </h2>
-        <div id="collapseS1" class="accordion-collapse collapse show" aria-labelledby="headingS1" data-bs-parent="#servicesFaqAccordion">
-          <div class="accordion-body">
-            We coordinate and support penetration testing with qualified practitioners under a defined scope. At scoping we tell you exactly who performs the testing and under what authorisation.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingS2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS2" aria-expanded="false" aria-controls="collapseS2">
-            How much does an assessment cost?
-          </button>
-        </h2>
-        <div id="collapseS2" class="accordion-collapse collapse" aria-labelledby="headingS2" data-bs-parent="#servicesFaqAccordion">
-          <div class="accordion-body">
-            It depends on the number of systems, depth and whether testing is included. We provide a fixed fee after the scoping call rather than quoting from a price list.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingS3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS3" aria-expanded="false" aria-controls="collapseS3">
-            Will testing disrupt operations?
-          </button>
-        </h2>
-        <div id="collapseS3" class="accordion-collapse collapse" aria-labelledby="headingS3" data-bs-parent="#servicesFaqAccordion">
-          <div class="accordion-body">
-            Testing windows and intensity are agreed in advance. Destructive tests are excluded unless explicitly authorised, and critical systems can be tested out of hours.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingS4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS4" aria-expanded="false" aria-controls="collapseS4">
-            Can you help us prepare for an audit?
-          </button>
-        </h2>
-        <div id="collapseS4" class="accordion-collapse collapse" aria-labelledby="headingS4" data-bs-parent="#servicesFaqAccordion">
-          <div class="accordion-body">
-            Yes — as advisory and evidence support. We do not certify compliance; that remains with your organisation and its auditors.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingS5">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS5" aria-expanded="false" aria-controls="collapseS5">
-            Do you run a 24/7 SOC?
-          </button>
-        </h2>
-        <div id="collapseS5" class="accordion-collapse collapse" aria-labelledby="headingS5" data-bs-parent="#servicesFaqAccordion">
-          <div class="accordion-body">
-            No. We coordinate managed monitoring through specialist partners and act as your technical interface. We describe this accurately rather than implying capability we do not have.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Call to Action Band -->
-<section class="section">
-  <div class="container-xl">
-    <div class="cta-band shadow-sm">
-      <h2 class="h1 text-white mb-2">Start with a conversation, not a quotation</h2>
-      <p class="text-white-50 mb-4">A 30-minute scoping call usually clarifies whether you need an assessment, a control, or simply a policy.</p>
-      <div class="btn-row">
-        <a class="btn btn-accent" href="contact.html">Request a Security Consultation</a>
-        <a class="btn btn-onDark" href="training.html">See training programmes</a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- Bootstrap 5 Footer -->
-<footer class="site-footer bg-dark-teal text-white-50 py-5">
-  <div class="container-xl">
-    <div class="row g-4 justify-content-between">
-      <div class="col-lg-4 col-md-6">
-        <div class="footer__brand">
-          <a href="index.html" class="d-inline-block mb-3" aria-label="CBBL Home">
-            <img src="images/cbbl-logo-light.svg" alt="CBBL — Creating Better Bangladesh" width="160" height="40">
+    <!-- Bootstrap 5 Navbar Header -->
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg py-2">
+        <div class="container-xl d-flex align-items-center">
+          <a class="navbar-brand me-3" href="index.html" aria-label="CBBL home">
+            <img
+              src="images/cbbl-logo.svg"
+              alt="CBBL — Creating Better Bangladesh"
+              width="160"
+              height="40"
+            />
           </a>
-          <p class="footer__tag text-white-50 small mb-3">Cybersecurity services, IT solutions and professional training. Build capability. Prove it.</p>
-          <p class="small text-white-50 mb-3">Panthapath, Dhaka 1205, Bangladesh<br><a href="tel:+8801799446655" class="text-white-50 text-decoration-none">+880 1799-446655</a> · <a href="mailto:info@cbbl.com.bd" class="text-white-50 text-decoration-none">info@cbbl.com.bd</a></p>
-          <div class="footer__social mt-3">
+
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link px-3" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-3"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu--services shadow-lg border-0"
+                  aria-labelledby="servicesDropdown"
+                >
+                  <div class="row g-3">
+                    <div class="col-lg-7">
+                      <div class="dropdown-col-title">Core Capabilities</div>
+                      <div class="d-flex flex-column gap-1">
+                        <a
+                          class="dropdown-rich-item"
+                          href="cybersecurity-services.html"
+                        >
+                          <div class="dropdown-icon-box">
+                            <i class="bi bi-shield-check"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>Cybersecurity Services</span>
+                              <span class="dropdown-mini-tag">Core</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              VAPT assessments, threat modeling, cloud audit
+                              &amp; compliance.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+
+                        <a
+                          class="dropdown-rich-item"
+                          href="cybersecurity-services.html#it"
+                        >
+                          <div
+                            class="dropdown-icon-box dropdown-icon-box--blue"
+                          >
+                            <i class="bi bi-hdd-network"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>IT Solutions</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              Enterprise infrastructure, firewalls, routing
+                              &amp; 24/7 support.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+
+                        <a class="dropdown-rich-item" href="projects.html">
+                          <div
+                            class="dropdown-icon-box dropdown-icon-box--purple"
+                          >
+                            <i class="bi bi-code-slash"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>Software Development</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              Web, mobile &amp; enterprise business portals with
+                              secure SDLC.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+
+                        <a class="dropdown-rich-item" href="contact.html">
+                          <div
+                            class="dropdown-icon-box dropdown-icon-box--amber"
+                          >
+                            <i class="bi bi-box-seam"></i>
+                          </div>
+                          <div class="dropdown-rich-content">
+                            <div class="dropdown-rich-title">
+                              <span>IT Procurement &amp; Import</span>
+                            </div>
+                            <p class="dropdown-rich-desc">
+                              Certified hardware, server appliances &amp;
+                              equipment sourcing.
+                            </p>
+                          </div>
+                          <i
+                            class="bi bi-chevron-right dropdown-item-arrow"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                      <div class="dropdown-highlight-panel">
+                        <div class="dropdown-highlight-title">
+                          <i class="bi bi-stars text-success"></i> Popular
+                          Security Tracks
+                        </div>
+                        <div class="dropdown-quick-links">
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#assessment"
+                          >
+                            <span>Security Assessment</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#pentest"
+                          >
+                            <span>Penetration Testing (VAPT)</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#cloud"
+                          >
+                            <span>Cloud Security &amp; ISO 27001</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#ir"
+                          >
+                            <span>Incident Response Readiness</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                          <a
+                            class="dropdown-quick-link"
+                            href="cybersecurity-services.html#awareness"
+                          >
+                            <span>Security Awareness Training</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="dropdown-bottom-strip">
+                        <div class="dropdown-bottom-strip-text">
+                          <i
+                            class="bi bi-shield-lock-fill text-success fs-5"
+                          ></i>
+                          <span
+                            >Every engagement begins with a documented written
+                            scope.</span
+                          >
+                        </div>
+                        <a
+                          class="dropdown-bottom-strip-cta"
+                          href="contact.html"
+                        >
+                          <span>Request scoping call</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-3"
+                  href="#"
+                  id="trainingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Training
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu--training shadow-lg border-0"
+                  aria-labelledby="trainingDropdown"
+                >
+                  <div class="dropdown-col-title">
+                    Training Ecosystem &amp; Certifications
+                  </div>
+                  <div class="row g-2">
+                    <div class="col-md-6">
+                      <a class="dropdown-rich-item" href="nsda-training.html">
+                        <div class="dropdown-icon-box">
+                          <i class="bi bi-award"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>NSDA Training Programs</span>
+                            <span class="dropdown-mini-tag">Govt.</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Levels 3–5, competency-based national
+                            qualifications.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="professional-training.html"
+                      >
+                        <div class="dropdown-icon-box dropdown-icon-box--blue">
+                          <i class="bi bi-laptop"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Regular Professional Training</span>
+                            <span class="dropdown-mini-tag">20 Courses</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Hands-on job-ready IT courses with practical labs.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="advanced-cybersecurity.html"
+                      >
+                        <div
+                          class="dropdown-icon-box dropdown-icon-box--purple"
+                        >
+                          <i class="bi bi-shield-shaded"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Advanced Cybersecurity</span>
+                            <span class="dropdown-mini-tag">13 Tracks</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Offensive &amp; defensive security tracks for
+                            practitioners.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="corporate-training.html"
+                      >
+                        <div class="dropdown-icon-box dropdown-icon-box--amber">
+                          <i class="bi bi-building"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Corporate &amp; Custom Training</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Tailored syllabus, workforce upskilling &amp;
+                            delivery.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="dropdown-rich-item"
+                        href="law-enforcement-training.html"
+                      >
+                        <div class="dropdown-icon-box">
+                          <i class="bi bi-file-lock2"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Institutional Training</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Confidential, specialized technical instruction.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a class="dropdown-rich-item" href="vendor-vouchers.html">
+                        <div class="dropdown-icon-box dropdown-icon-box--blue">
+                          <i class="bi bi-ticket-perforated"></i>
+                        </div>
+                        <div class="dropdown-rich-content">
+                          <div class="dropdown-rich-title">
+                            <span>Vendor Exam Vouchers</span>
+                          </div>
+                          <p class="dropdown-rich-desc">
+                            Global exam voucher procurement &amp; registration.
+                          </p>
+                        </div>
+                        <i class="bi bi-chevron-right dropdown-item-arrow"></i>
+                      </a>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                      <div class="dropdown-bottom-strip">
+                        <div class="dropdown-bottom-strip-text">
+                          <i
+                            class="bi bi-mortarboard-fill text-success fs-5"
+                          ></i>
+                          <span
+                            >Small batches, active cyber range access &amp;
+                            certified instructors.</span
+                          >
+                        </div>
+                        <a
+                          class="dropdown-bottom-strip-cta"
+                          href="training.html"
+                        >
+                          <span>Explore all courses</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="job-placement.html">Placement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center gap-2 ms-auto">
+            <button
+              class="btn btn-search-trigger rounded-circle"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+              aria-label="Search the site"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m16.5 16.5 4 4" />
+              </svg>
+            </button>
+            <a
+              class="btn-navbar-pill d-none d-xl-inline-flex"
+              href="contact.html"
+            >
+              <span>Enroll Now</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <button
+              class="btn btn-light btn-icon rounded-circle d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileDrawer"
+              aria-controls="mobileDrawer"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Bootstrap 5 Offcanvas Mobile Drawer -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileDrawer"
+      aria-labelledby="mobileDrawerLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <a href="index.html" class="d-flex align-items-center">
+          <img
+            src="images/cbbl-logo.svg"
+            alt="CBBL — Creating Better Bangladesh"
+            width="160"
+            height="40"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column p-0">
+        <div class="p-3 flex-grow-1">
+          <nav class="nav flex-column mobile-nav">
+            <a class="nav-link py-2 px-3 fw-medium text-dark" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link py-2 px-3 fw-medium text-dark" href="about.html"
+              >About</a
+            >
+            <div class="accordion accordion-flush" id="mobileNavAccordion">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingMobileServices">
+                  <button
+                    class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMobileServices"
+                    aria-expanded="false"
+                    aria-controls="collapseMobileServices"
+                  >
+                    Services
+                  </button>
+                </h2>
+                <div
+                  id="collapseMobileServices"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingMobileServices"
+                  data-bs-parent="#mobileNavAccordion"
+                >
+                  <div class="accordion-body py-1 ps-4 pe-2">
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="cybersecurity-services.html"
+                      >Cybersecurity Services</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="cybersecurity-services.html#it"
+                      >IT Solutions</a
+                    >
+                    <a class="nav-link py-2 text-muted" href="projects.html"
+                      >Software Development</a
+                    >
+                    <a class="nav-link py-2 text-muted" href="contact.html"
+                      >IT Procurement &amp; Import</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingMobileTraining">
+                  <button
+                    class="accordion-button collapsed py-2 px-3 fw-medium text-dark bg-transparent shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMobileTraining"
+                    aria-expanded="false"
+                    aria-controls="collapseMobileTraining"
+                  >
+                    Training
+                  </button>
+                </h2>
+                <div
+                  id="collapseMobileTraining"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingMobileTraining"
+                  data-bs-parent="#mobileNavAccordion"
+                >
+                  <div class="accordion-body py-1 ps-4 pe-2">
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="nsda-training.html"
+                      >NSDA Training Programs</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="professional-training.html"
+                      >Regular Professional Training</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="advanced-cybersecurity.html"
+                      >Advanced Cybersecurity</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="corporate-training.html"
+                      >Corporate &amp; Custom Training</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="law-enforcement-training.html"
+                      >Institutional Training</a
+                    >
+                    <a
+                      class="nav-link py-2 text-muted"
+                      href="vendor-vouchers.html"
+                      >Vendor Exam Vouchers</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="job-placement.html"
+              >Placement</a
+            >
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="projects.html"
+              >Projects</a
+            >
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="contact.html"
+              >Contact</a
+            >
+            <a
+              class="nav-link py-2 px-3 fw-medium text-dark"
+              href="trust-and-credentials.html"
+              >Trust &amp; Credentials</a
+            >
+          </nav>
+        </div>
+        <div class="p-3 border-top bg-white">
+          <a class="btn-navbar-pill w-100 text-center" href="contact.html">
+            <span>Enroll Now</span>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Search Modal -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 p-3 p-md-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-semibold" id="searchModalLabel">
+              Search courses, services and pages
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-3">
+            <form action="professional-training.html" role="search">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control form-control-lg"
+                  name="q"
+                  placeholder="e.g. ethical hacking, NSDA level 5, cloud security"
+                  aria-label="Search"
+                  required
+                />
+                <button class="btn btn-primary px-4" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+            <p class="search-suggest text-muted small mb-0">
+              Popular:
+              <a
+                href="professional-training.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >cybersecurity course</a
+              >
+              <a
+                href="nsda-training.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >NSDA</a
+              >
+              <a
+                href="cybersecurity-services.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >security assessment</a
+              >
+              <a
+                href="corporate-training.html"
+                class="badge bg-light text-dark text-decoration-none border me-1"
+                >corporate training</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- Page Hero (Modern Light Theme matching Site Architecture) -->
+      <section class="tech-glow-hero">
+        <div class="tech-glow-hero__dots" aria-hidden="true"></div>
+        <div class="tech-glow-hero__glow-left" aria-hidden="true"></div>
+        <div class="tech-glow-hero__glow-right" aria-hidden="true"></div>
+
+        <div class="container-xl position-relative">
+          <div class="tech-glow-hero__badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>SERVICES</span>
+          </div>
+
+          <h1 class="tech-glow-hero__title">
+            Cybersecurity and IT solutions, delivered to a defined scope
+          </h1>
+
+          <p class="tech-glow-hero__lead">
+            We help organisations understand their technology exposure, build
+            defensive capability and deploy infrastructure that people can
+            actually manage.
+          </p>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <a class="btn-hero-pill-primary" href="contact.html">
+              <span>Request a Scoping Call</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a class="btn-hero-pill-secondary" href="#process">
+              <span>How we work</span>
+            </a>
+          </div>
+
+          <nav class="tech-glow-hero__breadcrumb" aria-label="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator" aria-hidden="true">&gt;</span>
+            <span class="current" aria-current="page"
+              >Cybersecurity Services &amp; IT Solutions</span
+            >
+          </nav>
+        </div>
+      </section>
+
+      <!-- Subnav -->
+      <div class="subnav">
+        <div class="container-xl">
+          <ul>
+            <li><a href="#consultancy">Consultancy</a></li>
+            <li><a href="#assessment">Assessments</a></li>
+            <li><a href="#it">IT Solutions</a></li>
+            <li><a href="#process">Method</a></li>
+            <li><a href="#deliverables">Deliverables</a></li>
+            <li><a href="#limits">Limits &amp; NDA</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Twelve Security Services Section -->
+      <section class="section">
+        <div class="container-xl">
+          <div class="section-head mb-5">
+            <p class="eyebrow text-success fw-bold">What we help with</p>
+            <h2 class="h1">Twelve security services, one method</h2>
+            <p class="lead mb-0">
+              Each service below is described the same way: what it is, who it
+              is for, what we do and what you receive. No proprietary-product
+              claims.
+            </p>
+          </div>
+
+          <div class="services-ref-grid">
+            <!-- 1. Featured Dark Green Card: Cybersecurity consultancy -->
+            <article
+              class="service-ref-card service-ref-card--featured"
+              id="consultancy"
+            >
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-shield-check" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">Cybersecurity consultancy</h3>
+                <p class="service-ref-desc">
+                  Structured advice on reducing technology risk against your
+                  business priorities. You receive a prioritised 6–12 month
+                  roadmap.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a class="service-ref-cta-pill" href="contact.html">
+                  <span>Request a scoping call</span>
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. Security assessment and vulnerability assessment support -->
+            <article class="service-ref-card" id="assessment">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-clipboard2-pulse" aria-hidden="true"></i>
+                  </div>
+                  <span class="service-ref-badge">Most requested</span>
+                </div>
+                <h3 class="service-ref-title">
+                  Security assessment and vulnerability assessment support
+                </h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Independent review of your environment, findings validated and
+                  ranked by real exploitability and business impact.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request an assessment scope"
+                  title="Request an assessment scope"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. Penetration testing coordination -->
+            <article class="service-ref-card" id="pentest">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-crosshair" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">
+                  Penetration testing coordination
+                </h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Qualified testers, CBBL-managed scope, scheduling, evidence
+                  handling and remediation follow-up. Written authorisation
+                  required.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Discuss a testing engagement"
+                  title="Discuss a testing engagement"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. Security awareness training -->
+            <article class="service-ref-card" id="awareness">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-people" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">Security awareness training</h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Role-specific sessions that change behaviour: phishing, social
+                  engineering, data handling and reporting.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="corporate-training.html"
+                  aria-label="Request an awareness programme"
+                  title="Request an awareness programme"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. Network security consulting -->
+            <article class="service-ref-card" id="network">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-hdd-network" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">Network security consulting</h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Segmentation, firewall policy, remote access and monitoring
+                  design, with a migration plan.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request a network review"
+                  title="Request a network review"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 6. Cloud security consulting -->
+            <article class="service-ref-card" id="cloud">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-cloud-check" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">Cloud security consulting</h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Identity, data protection and logging review for cloud
+                  environments, with prioritised configuration changes.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request a cloud review"
+                  title="Request a cloud review"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 7. Endpoint and infrastructure guidance -->
+            <article class="service-ref-card">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i
+                      class="bi bi-pc-display-horizontal"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">
+                  Endpoint and infrastructure guidance
+                </h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Hardening baselines for servers and endpoints, with a rollout
+                  checklist your team can follow.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request guidance"
+                  title="Request guidance"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 8. Incident-response readiness -->
+            <article class="service-ref-card" id="ir">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">Incident-response readiness</h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Plan, severity matrix, roles, escalation paths and a tabletop
+                  exercise with a written improvement plan.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request an IR readiness review"
+                  title="Request an IR readiness review"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 9. Policy and compliance advisory -->
+            <article class="service-ref-card">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-file-earmark-ruled" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">
+                  Policy and compliance advisory
+                </h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Policy set review, drafting and an obligations-to-controls
+                  mapping. Advisory only — we do not certify compliance.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request a policy review"
+                  title="Request a policy review"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 10. IT audit support -->
+            <article class="service-ref-card">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">IT audit support</h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Technical evidence gathering, control review and observation
+                  logs for internal or external auditors.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Discuss audit support"
+                  title="Discuss audit support"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 11. Managed security coordination -->
+            <article class="service-ref-card">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-eye" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">Managed security coordination</h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Monitoring delivered by a specialist partner, with CBBL
+                  managing scope, onboarding and service reviews. We do not
+                  claim an in-house 24/7 SOC.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Discuss monitoring options"
+                  title="Discuss monitoring options"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 12. Solution implementation support -->
+            <article class="service-ref-card">
+              <div>
+                <div class="service-ref-card__head">
+                  <div class="service-ref-icon">
+                    <i class="bi bi-sliders" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <h3 class="service-ref-title">
+                  Solution implementation support
+                </h3>
+                <div class="service-ref-divider" aria-hidden="true"></div>
+                <p class="service-ref-desc">
+                  Requirements, vendor evaluation, deployment, tuning and
+                  runbooks for third-party security technology.
+                </p>
+              </div>
+              <div class="service-ref-footer">
+                <a
+                  class="service-ref-arrow"
+                  href="contact.html"
+                  aria-label="Request implementation support"
+                  title="Request implementation support"
+                >
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- IT Solutions Section -->
+      <section class="section section--surface" id="it">
+        <div class="container-xl">
+          <div class="section-head mb-5">
+            <p class="eyebrow text-success fw-bold">IT solutions</p>
+            <h2 class="h1">Infrastructure that someone owns</h2>
+            <p class="lead mb-0">
+              Design, supply, deploy and support — with a named owner for each
+              element and documentation your team can actually use.
+            </p>
+          </div>
+
+          <div class="it-solutions-grid">
+            <article class="it-solution-card">
+              <div class="it-solution-card__head">
+                <div class="it-solution-icon">
+                  <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                </div>
+                <span class="it-solution-num">01</span>
+              </div>
+              <h3 class="it-solution-title">Network design and deployment</h3>
+              <p class="it-solution-desc">
+                Switching, routing, wireless and segmentation, delivered with an
+                as-built diagram and an IP register.
+              </p>
+            </article>
+
+            <article class="it-solution-card">
+              <div class="it-solution-card__head">
+                <div class="it-solution-icon">
+                  <i class="bi bi-hdd-stack" aria-hidden="true"></i>
+                </div>
+                <span class="it-solution-num">02</span>
+              </div>
+              <h3 class="it-solution-title">Server and storage</h3>
+              <p class="it-solution-desc">
+                Physical and virtual server platforms, backup design, and a
+                restore test that proves the backup works.
+              </p>
+            </article>
+
+            <article class="it-solution-card">
+              <div class="it-solution-card__head">
+                <div class="it-solution-icon">
+                  <i class="bi bi-laptop" aria-hidden="true"></i>
+                </div>
+                <span class="it-solution-num">03</span>
+              </div>
+              <h3 class="it-solution-title">End-user computing</h3>
+              <p class="it-solution-desc">
+                Standard device builds, patching policy, endpoint protection and
+                a documented onboarding process.
+              </p>
+            </article>
+
+            <article class="it-solution-card">
+              <div class="it-solution-card__head">
+                <div class="it-solution-icon">
+                  <i class="bi bi-box-seam" aria-hidden="true"></i>
+                </div>
+                <span class="it-solution-num">04</span>
+              </div>
+              <h3 class="it-solution-title">IT procurement and import</h3>
+              <p class="it-solution-desc">
+                Requirements, vendor comparison, import and delivery — with
+                warranty and support terms stated in writing.
+              </p>
+            </article>
+
+            <article class="it-solution-card">
+              <div class="it-solution-card__head">
+                <div class="it-solution-icon">
+                  <i class="bi bi-headset" aria-hidden="true"></i>
+                </div>
+                <span class="it-solution-num">05</span>
+              </div>
+              <h3 class="it-solution-title">Support and maintenance</h3>
+              <p class="it-solution-desc">
+                Defined response times, an escalation path and a monthly summary
+                of what was fixed and what keeps breaking.
+              </p>
+            </article>
+
+            <article class="it-solution-card">
+              <div class="it-solution-card__head">
+                <div class="it-solution-icon">
+                  <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                </div>
+                <span class="it-solution-num">06</span>
+              </div>
+              <h3 class="it-solution-title">Cloud and hybrid migration</h3>
+              <p class="it-solution-desc">
+                Workload assessment, migration plan, identity design and a
+                rollback position agreed before anything moves.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How an Engagement Runs -->
+      <section class="section section--surface pt-4" id="process">
+        <div class="container-xl">
+          <div class="section-head mb-4">
+            <p class="eyebrow text-success fw-bold">How an engagement runs</p>
+            <h2 class="h1">Five steps, each with an output</h2>
+          </div>
+
+          <div class="process-timeline-grid">
+            <!-- Step 01 -->
+            <div class="process-step-card">
+              <div>
+                <div class="process-step-card__top">
+                  <span class="process-step-num">01</span>
+                  <span class="process-step-icon" aria-hidden="true">
+                    <i class="bi bi-telephone"></i>
+                  </span>
+                </div>
+                <h3 class="process-step-title">Scoping call</h3>
+                <p class="process-step-desc">
+                  30–45 minutes, no cost. Problem, environment, constraint.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="process-step-card">
+              <div>
+                <div class="process-step-card__top">
+                  <span class="process-step-num">02</span>
+                  <span class="process-step-icon" aria-hidden="true">
+                    <i class="bi bi-file-earmark-check"></i>
+                  </span>
+                </div>
+                <h3 class="process-step-title">Written scope</h3>
+                <p class="process-step-desc">
+                  Objectives, targets, exclusions, schedule, roles and fee.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="process-step-card">
+              <div>
+                <div class="process-step-card__top">
+                  <span class="process-step-num">03</span>
+                  <span class="process-step-icon" aria-hidden="true">
+                    <i class="bi bi-gear-wide-connected"></i>
+                  </span>
+                </div>
+                <h3 class="process-step-title">Delivery</h3>
+                <p class="process-step-desc">
+                  Work within the agreed window with a named lead.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="process-step-card">
+              <div>
+                <div class="process-step-card__top">
+                  <span class="process-step-num">04</span>
+                  <span class="process-step-icon" aria-hidden="true">
+                    <i class="bi bi-file-earmark-bar-graph"></i>
+                  </span>
+                </div>
+                <h3 class="process-step-title">Reporting</h3>
+                <p class="process-step-desc">
+                  Validated findings written for technical and management
+                  readers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deliverables and Limits Section -->
+      <section class="section" id="deliverables">
+        <div class="container-xl">
+          <div class="row g-4 g-lg-5 align-items-start">
+            <div class="col-lg-8">
+              <p class="eyebrow text-success fw-bold">What you receive</p>
+              <h2 class="h1 mb-4">A report your whole team can act on</h2>
+
+              <div class="deliverables-grid">
+                <div class="deliverable-card">
+                  <div class="deliverable-card__icon">
+                    <i class="bi bi-bar-chart-line" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="deliverable-card__title">Executive summary</h3>
+                    <p class="deliverable-card__desc">
+                      The risk in business terms with a prioritised top five.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="deliverable-card">
+                  <div class="deliverable-card__icon">
+                    <i class="bi bi-exclamation-diamond" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="deliverable-card__title">Findings</h3>
+                    <p class="deliverable-card__desc">
+                      Description, evidence reference, severity, business
+                      impact, specific remediation.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="deliverable-card">
+                  <div class="deliverable-card__icon">
+                    <i class="bi bi-list-check" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="deliverable-card__title">Remediation plan</h3>
+                    <p class="deliverable-card__desc">
+                      Sequenced by risk and effort, with an owner column.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="deliverable-card">
+                  <div class="deliverable-card__icon">
+                    <i class="bi bi-journal-code" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h3 class="deliverable-card__title">Appendix</h3>
+                    <p class="deliverable-card__desc">
+                      Scope, method summary, limitations and glossary.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="deliverables-note">
+                <i class="bi bi-shield-check" aria-hidden="true"></i>
+                <span>We do not deliver raw scanner output as a report.</span>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <aside class="confidentiality-card sticky-top-nav" id="limits">
+                <div class="confidentiality-card__head">
+                  <div class="confidentiality-card__badge" aria-hidden="true">
+                    <i class="bi bi-shield-lock"></i>
+                  </div>
+                  <h3 class="confidentiality-card__title">
+                    Scope, limits and confidentiality
+                  </h3>
+                </div>
+                <ul class="confidentiality-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>Signed scope and NDA before work.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>Written authorisation required to test any system.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>Client data minimised, masked and deleted.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>Findings belong to the client.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>Partner-delivered work is named as such.</span>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section section--surface" id="faq">
+        <div class="container-xl">
+          <div
+            class="section-head mb-5 text-center mx-auto"
+            style="max-width: 680px"
+          >
+            <p class="eyebrow text-success fw-bold">FAQ</p>
+            <h2 class="h1">Questions we are asked before scoping</h2>
+          </div>
+
+          <div class="row g-4 g-lg-5 align-items-stretch">
+            <!-- Left Column: Gradient CTA Card -->
+            <div class="col-lg-4">
+              <div class="faq-cta-card">
+                <div class="faq-cta-card__body">
+                  <div class="faq-cta-card__icon" aria-hidden="true">
+                    <svg
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M27 12C15.954 12 7 19.611 7 29C7 33.48 9.054 37.552 12.404 40.58L10.2 48.4L18.42 44.54C21.045 45.486 23.947 46 27 46C38.046 46 47 38.389 47 29C47 19.611 38.046 12 27 12Z"
+                        fill="#FFFFFF"
+                      />
+                      <path
+                        d="M26.8 33.8C25.95 33.8 25.3 34.45 25.3 35.3C25.3 36.15 25.95 36.8 26.8 36.8C27.65 36.8 28.3 36.15 28.3 35.3C28.3 34.45 27.65 33.8 26.8 33.8ZM27 20C23.5 20 21.1 22.1 21.1 25.2H24.2C24.2 23.6 25.3 22.6 26.9 22.6C28.4 22.6 29.4 23.5 29.4 24.8C29.4 26 28.6 26.7 27.2 27.6C25.6 28.6 25.1 29.7 25.2 31.8H28.2C28.2 30.3 28.6 29.6 30 28.7C31.7 27.6 32.7 26.4 32.7 24.5C32.7 21.8 30.4 20 27 20Z"
+                        fill="#0F7A4F"
+                      />
+                      <path
+                        d="M51 28.5C56.523 30.2 60.5 34.8 60.5 40.2C60.5 43.4 59.1 46.3 56.8 48.4L58.4 54L52.6 51.2C50.7 51.9 48.6 52.3 46.4 52.3C39.8 52.3 34.2 48.6 32.2 43.5"
+                        fill="rgba(255,255,255,0.88)"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="faq-cta-card__title">
+                    Do you have more questions?
+                  </h3>
+                  <p class="faq-cta-card__desc">
+                    Have more questions? We're here to help with clear answers,
+                    scope guidance, and next steps.
+                  </p>
+                </div>
+                <a href="contact.html" class="faq-cta-card__btn">Contact Us</a>
+              </div>
+            </div>
+
+            <!-- Right Column: Rounded Plus/Minus FAQ Cards -->
+            <div class="col-lg-8">
+              <div class="plus-faq-accordion" id="servicesFaqAccordion">
+                <!-- Item 1 -->
+                <div class="plus-faq-item">
+                  <button
+                    class="plus-faq-trigger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseS1"
+                    aria-expanded="true"
+                    aria-controls="collapseS1"
+                  >
+                    <span class="plus-faq-title"
+                      >Do you provide penetration testing directly?</span
+                    >
+                    <span class="plus-faq-toggle" aria-hidden="true"></span>
+                  </button>
+                  <div
+                    id="collapseS1"
+                    class="collapse show"
+                    data-bs-parent="#servicesFaqAccordion"
+                  >
+                    <div class="plus-faq-body">
+                      We coordinate and support penetration testing with
+                      qualified practitioners under a defined scope. At scoping
+                      we tell you exactly who performs the testing and under
+                      what authorisation.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="plus-faq-item">
+                  <button
+                    class="plus-faq-trigger collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseS2"
+                    aria-expanded="false"
+                    aria-controls="collapseS2"
+                  >
+                    <span class="plus-faq-title"
+                      >How much does an assessment cost?</span
+                    >
+                    <span class="plus-faq-toggle" aria-hidden="true"></span>
+                  </button>
+                  <div
+                    id="collapseS2"
+                    class="collapse"
+                    data-bs-parent="#servicesFaqAccordion"
+                  >
+                    <div class="plus-faq-body">
+                      It depends on the number of systems, depth and whether
+                      testing is included. We provide a fixed fee after the
+                      scoping call rather than quoting from a price list.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="plus-faq-item">
+                  <button
+                    class="plus-faq-trigger collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseS3"
+                    aria-expanded="false"
+                    aria-controls="collapseS3"
+                  >
+                    <span class="plus-faq-title"
+                      >Will testing disrupt operations?</span
+                    >
+                    <span class="plus-faq-toggle" aria-hidden="true"></span>
+                  </button>
+                  <div
+                    id="collapseS3"
+                    class="collapse"
+                    data-bs-parent="#servicesFaqAccordion"
+                  >
+                    <div class="plus-faq-body">
+                      Testing windows and intensity are agreed in advance.
+                      Destructive tests are excluded unless explicitly
+                      authorised, and critical systems can be tested out of
+                      hours.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="plus-faq-item">
+                  <button
+                    class="plus-faq-trigger collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseS4"
+                    aria-expanded="false"
+                    aria-controls="collapseS4"
+                  >
+                    <span class="plus-faq-title"
+                      >Can you help us prepare for an audit?</span
+                    >
+                    <span class="plus-faq-toggle" aria-hidden="true"></span>
+                  </button>
+                  <div
+                    id="collapseS4"
+                    class="collapse"
+                    data-bs-parent="#servicesFaqAccordion"
+                  >
+                    <div class="plus-faq-body">
+                      Yes — as advisory and evidence support. We do not certify
+                      compliance; that remains with your organisation and its
+                      auditors.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="plus-faq-item">
+                  <button
+                    class="plus-faq-trigger collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseS5"
+                    aria-expanded="false"
+                    aria-controls="collapseS5"
+                  >
+                    <span class="plus-faq-title">Do you run a 24/7 SOC?</span>
+                    <span class="plus-faq-toggle" aria-hidden="true"></span>
+                  </button>
+                  <div
+                    id="collapseS5"
+                    class="collapse"
+                    data-bs-parent="#servicesFaqAccordion"
+                  >
+                    <div class="plus-faq-body">
+                      No. We coordinate managed monitoring through specialist
+                      partners and act as your technical interface. We describe
+                      this accurately rather than implying capability we do not
+                      have.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Band -->
+      <section class="section">
+        <div class="container-xl">
+          <div class="cta-band shadow-sm">
+            <h2 class="h1 text-white mb-2">
+              Start with a conversation, not a quotation
+            </h2>
+            <p class="text-white-50 mb-4">
+              A 30-minute scoping call usually clarifies whether you need an
+              assessment, a control, or simply a policy.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-accent" href="contact.html"
+                >Request a Security Consultation</a
+              >
+              <a class="btn btn-onDark" href="training.html"
+                >See training programmes</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap 5 Footer -->
+    <footer class="site-footer bg-dark-teal text-white-50 py-5">
+      <div class="container-xl">
+        <div class="row g-4 justify-content-between">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer__brand">
+              <a
+                href="index.html"
+                class="d-inline-block mb-3"
+                aria-label="CBBL Home"
+              >
+                <img
+                  src="images/cbbl-logo-light.svg"
+                  alt="CBBL — Creating Better Bangladesh"
+                  width="160"
+                  height="40"
+                />
+              </a>
+              <p class="footer__tag text-white-50 small mb-3">
+                Cybersecurity services, IT solutions and professional training.
+                Build capability. Prove it.
+              </p>
+              <p class="small text-white-50 mb-3">
+                Panthapath, Dhaka 1205, Bangladesh<br /><a
+                  href="tel:+8801799446655"
+                  class="text-white-50 text-decoration-none"
+                  >+880 1799-446655</a
+                >
+                ·
+                <a
+                  href="mailto:info@cbbl.com.bd"
+                  class="text-white-50 text-decoration-none"
+                  >info@cbbl.com.bd</a
+                >
+              </p>
+              <div class="footer__social mt-3">
                 <a
                   href="#"
                   class="footer__social-btn"
@@ -745,7 +1693,8 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.5 4.76 5.75V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.47-2.2 3v5.8h-4z"
                     /></svg
                 ></a>
@@ -759,21 +1708,20 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"
                     /></svg
                 ></a>
-                <a
-                  href="#"
-                  class="footer__social-btn"
-                  aria-label="CBBL on X"
+                <a href="#" class="footer__social-btn" aria-label="CBBL on X"
                   ><svg
                     width="14"
                     height="14"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
                     /></svg
                 ></a>
@@ -787,72 +1735,215 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    ><path
+                  >
+                    <path
                       d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10 15V9l5 3z"
                     /></svg
                 ></a>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h6
+              class="text-uppercase text-gold fw-bold mb-3 small tracking-wide"
+            >
+              Services
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+              <li>
+                <a
+                  href="cybersecurity-services.html"
+                  class="text-white-50 text-decoration-none"
+                  >Cybersecurity Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="cybersecurity-services.html#it"
+                  class="text-white-50 text-decoration-none"
+                  >IT Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-white-50 text-decoration-none"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >IT Procurement &amp; Import</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h6
+              class="text-uppercase text-gold fw-bold mb-3 small tracking-wide"
+            >
+              Training
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+              <li>
+                <a
+                  href="nsda-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >NSDA Programs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="professional-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >Professional Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="advanced-cybersecurity.html"
+                  class="text-white-50 text-decoration-none"
+                  >Advanced Cybersecurity</a
+                >
+              </li>
+              <li>
+                <a
+                  href="corporate-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >Corporate Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="law-enforcement-training.html"
+                  class="text-white-50 text-decoration-none"
+                  >Institutional Training</a
+                >
+              </li>
+              <li>
+                <a
+                  href="vendor-vouchers.html"
+                  class="text-white-50 text-decoration-none"
+                  >Vendor Vouchers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6
+              class="text-uppercase text-gold fw-bold mb-3 small tracking-wide"
+            >
+              Company
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+              <li>
+                <a href="about.html" class="text-white-50 text-decoration-none"
+                  >About CBBL</a
+                >
+              </li>
+              <li>
+                <a
+                  href="job-placement.html"
+                  class="text-white-50 text-decoration-none"
+                  >Placement Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="text-white-50 text-decoration-none"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="trust-and-credentials.html"
+                  class="text-white-50 text-decoration-none"
+                  >Trust &amp; Credentials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#news"
+                  class="text-white-50 text-decoration-none"
+                  >News &amp; Events</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer__legal border-top border-secondary border-opacity-25 mt-5 pt-3 d-flex flex-wrap justify-content-between align-items-center gap-3 small text-white-50"
+        >
+          <p class="mb-0">
+            © <span data-year>2026</span> Creating Better Bangladesh Limited.
+            All rights reserved.
+          </p>
+          <nav class="d-flex flex-wrap gap-3" aria-label="Legal">
+            <a
+              href="contact.html#legal"
+              class="text-white-50 text-decoration-none"
+              >Privacy Policy</a
+            >
+            <a
+              href="contact.html#legal"
+              class="text-white-50 text-decoration-none"
+              >Terms of Use</a
+            >
+            <a
+              href="contact.html#legal"
+              class="text-white-50 text-decoration-none"
+              >Cookie Notice</a
+            >
+            <a href="index.html" class="text-white-50 text-decoration-none"
+              >Sitemap</a
+            >
+          </nav>
         </div>
       </div>
-      <div class="col-lg-2 col-md-6 col-6">
-        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Services</h6>
-        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-          <li><a href="cybersecurity-services.html" class="text-white-50 text-decoration-none">Cybersecurity Services</a></li>
-          <li><a href="cybersecurity-services.html#it" class="text-white-50 text-decoration-none">IT Solutions</a></li>
-          <li><a href="projects.html" class="text-white-50 text-decoration-none">Software Development</a></li>
-          <li><a href="contact.html" class="text-white-50 text-decoration-none">IT Procurement &amp; Import</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-6">
-        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Training</h6>
-        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-          <li><a href="nsda-training.html" class="text-white-50 text-decoration-none">NSDA Programs</a></li>
-          <li><a href="professional-training.html" class="text-white-50 text-decoration-none">Professional Training</a></li>
-          <li><a href="advanced-cybersecurity.html" class="text-white-50 text-decoration-none">Advanced Cybersecurity</a></li>
-          <li><a href="corporate-training.html" class="text-white-50 text-decoration-none">Corporate Training</a></li>
-          <li><a href="law-enforcement-training.html" class="text-white-50 text-decoration-none">Institutional Training</a></li>
-          <li><a href="vendor-vouchers.html" class="text-white-50 text-decoration-none">Vendor Vouchers</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-2 col-md-6">
-        <h6 class="text-uppercase text-gold fw-bold mb-3 small tracking-wide">Company</h6>
-        <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-          <li><a href="about.html" class="text-white-50 text-decoration-none">About CBBL</a></li>
-          <li><a href="job-placement.html" class="text-white-50 text-decoration-none">Placement Support</a></li>
-          <li><a href="projects.html" class="text-white-50 text-decoration-none">Projects</a></li>
-          <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
-          <li><a href="trust-and-credentials.html" class="text-white-50 text-decoration-none">Trust &amp; Credentials</a></li>
-          <li><a href="index.html#news" class="text-white-50 text-decoration-none">News &amp; Events</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__legal border-top border-secondary border-opacity-25 mt-5 pt-3 d-flex flex-wrap justify-content-between align-items-center gap-3 small text-white-50">
-      <p class="mb-0">© <span data-year>2026</span> Creating Better Bangladesh Limited. All rights reserved.</p>
-      <nav class="d-flex flex-wrap gap-3" aria-label="Legal">
-        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Privacy Policy</a>
-        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Terms of Use</a>
-        <a href="contact.html#legal" class="text-white-50 text-decoration-none">Cookie Notice</a>
-        <a href="index.html" class="text-white-50 text-decoration-none">Sitemap</a>
-      </nav>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<!-- Cookie Banner -->
-<div class="cookie bg-white border rounded-3 shadow-lg p-3 p-md-4" id="cookieBanner" role="region" aria-label="Cookie notice">
-  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
-    <p class="mb-0 small text-muted"><strong>Cookies.</strong> We use necessary cookies to run the site and, with your consent, analytics cookies to understand which pages help. You can change this any time.</p>
-    <div class="d-flex flex-wrap gap-2 flex-shrink-0">
-      <button class="btn btn-primary btn-sm" data-cookie="all">Accept all</button>
-      <button class="btn btn-secondary btn-sm" data-cookie="essential">Reject non-essential</button>
-      <a class="btn btn-sm text-decoration-none" href="contact.html#legal">Cookie settings</a>
+    <!-- Cookie Banner -->
+    <div
+      class="cookie bg-white border rounded-3 shadow-lg p-3 p-md-4"
+      id="cookieBanner"
+      role="region"
+      aria-label="Cookie notice"
+    >
+      <div
+        class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3"
+      >
+        <p class="mb-0 small text-muted">
+          <strong>Cookies.</strong> We use necessary cookies to run the site
+          and, with your consent, analytics cookies to understand which pages
+          help. You can change this any time.
+        </p>
+        <div class="d-flex flex-wrap gap-2 flex-shrink-0">
+          <button class="btn btn-primary btn-sm" data-cookie="all">
+            Accept all
+          </button>
+          <button class="btn btn-secondary btn-sm" data-cookie="essential">
+            Reject non-essential
+          </button>
+          <a class="btn btn-sm text-decoration-none" href="contact.html#legal"
+            >Cookie settings</a
+          >
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Bootstrap 5 Bundle JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Main Interactions JS -->
-<script src="js/main.js"></script>
-</body>
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main Interactions JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
